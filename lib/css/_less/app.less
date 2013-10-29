@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+ body {
+	 padding-bottom: 2em;
+ }
+
+::selection {
+	background: @pink; /* Safari */
+	}
+::-moz-selection {
+	background: @pink; /* Firefox */
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+.site {
+	margin: 0 auto;
+}
+.content {
+	min-height: 30em;
+	padding: 0 0 2em;
+}
+
+li {
+	list-style: none;
+}
+hr {
+	height: .05em;
+	border: none;
+	background: #ccc;
+}
+.intro {
+	padding: 3em 0;
+}
+header.main {
+	background-color: black;
+	background-image: url(/lib/img/photo.jpg);
+	background-repeat: no-repeat;
+
+	
+	a {
+		color: white;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+	.site {
+		.tagline {
+			margin: 0 auto;
+			color: white;
+			text-shadow: 3px 3px 10px rgba(0,0,0, .7);
+			position: relative;
+			h1 {
+				color: white;
+				font-weight: 100;
+			}
+		}
+	}
+	
+	.site {
+		.tagline {
+			max-width: 50em;
+			max-height: 32em;
+			left: 50%;
+			margin-left: -25em;
+			.copy {
+				//top: 6em;
+				left: 27em;
+			}
+		}
+	}
+	
+}
+li {
+	padding: 2%;
+	h2 {
+		font-weight: lighter;
+		text-align: center;
+		padding: .5em 0 1em;
+	}
+	ul {
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+		}
+		border-bottom: 1px solid @grayLight;
+		li {
+			list-style: none !important;
+			width: 24%;
+			float: left;
+			line-height: 1.25;
+			min-height: 11em;
+			&:first-child {
+				//background: green;
+			}
+			&:nth-child(3n - 1) {
+				
+				img {
+					width: 8em;
+					height: 8em;
+				}
+			}
+			&:nth-child(3n) {
+				width: 48%;
+				padding: 4%;
+				//background: blue;
+				&:after {
+					content: '';
+					width: 100%;
+					display: inline-block;
+					
+				}
+			}
+		}
+	}
+
+}
+
+.footer {
+	.site;
+	margin-top: 2em;
+	.contact {
+		float: left;
+		padding: .5em 0;
+		width: 33%;
+		min-width: 15em;
+	}
+	.colophon {
+		clear: both;
+		text-align: right;
+	}
+}
+.like {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	right: 0;
+	height: 2em;
+	background: @pink;
+	text-align: right;
+	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.75);
+	.fb, .twitter {
+		float: right;
+		padding: .25em 0;
+	}
+	.twitter {
+		padding-right: 1em;
+	}
+}
