@@ -40,91 +40,50 @@ hr {
 	padding: 3em 0;
 }
 header.main {
-	background-color: black;
-	background-image: url(/lib/img/photo.jpg);
+	background-image: url(/lib/img/sample.jpg);
 	background-repeat: no-repeat;
-
-	
 	a {
 		color: white;
 		&:hover {
 			text-decoration: none;
 		}
 	}
-	
+	.overlay {
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+		padding: 50px 0;
+	}
 	.site {
+		
+		.logo {
+			margin: auto;
+			padding: 40px 0;
+			text-align: center;
+			h1 {
+				font-size: 4em;
+				letter-spacing: -3px;
+				color: white;
+				text-shadow: 0px 0px 20px rgba(0,0,0,.3);
+			}
+		}
+		
 		.tagline {
 			margin: 0 auto;
 			color: white;
-			text-shadow: 3px 3px 10px rgba(0,0,0, .7);
+			text-shadow: 0px 0px 20px rgba(255,255,255, .7);
 			position: relative;
+			max-width: 50em;
+			max-height: 32em;
+			left: 50%;
+			margin-left: -25em;
 			h1 {
 				color: white;
 				font-weight: 100;
 			}
 		}
 	}
-	
-	.site {
-		.tagline {
-			max-width: 50em;
-			max-height: 32em;
-			left: 50%;
-			margin-left: -25em;
-			.copy {
-				//top: 6em;
-				left: 27em;
-			}
-		}
-	}
+
 	
 }
-li {
-	padding: 2%;
-	h2 {
-		font-weight: lighter;
-		text-align: center;
-		padding: .5em 0 1em;
-	}
-	ul {
-		&:after {
-			content: '';
-			display: inline-block;
-			width: 100%;
-		}
-		border-bottom: 1px solid @grayLight;
-		li {
-			list-style: none !important;
-			width: 24%;
-			float: left;
-			line-height: 1.25;
-			min-height: 11em;
-			&:first-child {
-				//background: green;
-			}
-			&:nth-child(3n - 1) {
-				
-				img {
-					width: 8em;
-					height: 8em;
-				}
-			}
-			&:nth-child(3n) {
-				width: 48%;
-				padding: 4%;
-				//background: blue;
-				&:after {
-					content: '';
-					width: 100%;
-					display: inline-block;
-					
-				}
-			}
-		}
-	}
-
-}
-
 .footer {
 	.site;
 	margin-top: 2em;

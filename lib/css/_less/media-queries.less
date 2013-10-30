@@ -4,22 +4,13 @@
 		width: 60%;
 		font-size: @bump;
 	}
-	.intro {
-		//width: 75%;
-	}
-	header.main, .gradient {
-		min-height: 32em;
+	header.main, .overlay {
+		min-height: 40em;
 		height: 100%;
-	}
-	header.main {
 		background-position: center bottom;
-	
 		
 		.site {
 			.tagline {
-				.copy {
-					top: 4.5em;
-				}
 			}
 		}
 	}
@@ -38,14 +29,10 @@
 	.post, .post-header, .posts {
 		font-size: @bump * .85;
 	}
-	header.main, .gradient {
+	header.main, .overlay {
 		height: 20em;
 	}
 	header.main {
-		
-		.site .tagline .copy {
-			margin-top: 1.5em;
-		}
 	}
 }
 @media only screen and (min-width:40em) and (max-width: 50em) {
@@ -54,24 +41,17 @@
 		max-width: 45em;
 		font-size: .85em;
 	}
-	header.main, .gradient {
+	header.main, .overlay {
 		height: 18em;
 	}
 	header.main {
-		.icon-techatnyulogo {
-			margin-top: -0.2em;
-		}
-		.site .tagline .copy {
-			margin-top: 2em;
-		}
 	}
 }
 @media only screen and (max-width: 40em) {
 	
-	header.main, .gradient {
+	header.main, .overlay {
 		background-position: center bottom;
 		height: 30em;
-
 	}
 	.site {
 		padding: 1em;
@@ -84,14 +64,6 @@
 			position: relative !important;
 			margin: auto !important;
 			left: 0 !important;
-			.copy {
-				position: static !important;
-				margin: auto !important;
-				//top: 6em;
-				text-align: center;
-				width: 75%;
-				font-size: 1em;
-			}
 		}
 	}
 
@@ -100,8 +72,4 @@
 			padding: 1em;
 		}
 	}
-	
-	
-	
-
 }
