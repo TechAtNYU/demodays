@@ -160,7 +160,7 @@ header.main .site {
 }
 header.main .site .logo {
   margin: auto;
-  padding: 3em 0;
+  padding: 3em 0 0;
   text-align: center;
 }
 header.main .site .logo h1 {
@@ -169,7 +169,7 @@ header.main .site .logo h1 {
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 header.main .site .tagline {
-  margin: 0 auto;
+  margin: 1.5em auto;
   text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
   position: relative;
 }
@@ -181,7 +181,7 @@ header.main .site .tagline button {
   background: #ee70a5;
   border: none;
   font: 1em "Helvetica Neue", helvetica, arial, sans-serif;
-  margin-top: 1.5em;
+  margin-top: 2em;
   padding: .35em 1em .5em;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.3);
@@ -246,6 +246,7 @@ header.main .site .tagline button {
     padding: 1em;
     width: 10em;
     height: 10em;
+    box-shadow: rgba(0, 0, 0, 0.3);
   }
 }
 @media only screen and (max-width: 70em) {
@@ -265,7 +266,7 @@ header.main .site .tagline button {
   }
   header.main,
   .overlay {
-    height: 20em;
+    min-height: 30em;
   }
 }
 @media only screen and (min-width: 40em) and (max-width: 50em) {
@@ -276,14 +277,14 @@ header.main .site .tagline button {
   }
   header.main,
   .overlay {
-    height: 18em;
+    min-height: 25em;
   }
 }
 @media only screen and (max-width: 40em) {
   header.main,
   .overlay {
     background-position: center bottom;
-    height: 30em;
+    min-height: 30em;
   }
   .site {
     padding: 1em;
