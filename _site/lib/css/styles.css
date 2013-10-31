@@ -37,7 +37,7 @@ you can use the generic selector below, but it's slower:
   content: "\e000";
 }
 body {
-  font: 1em 'Helvetica Neue', sans-serif;
+  font: 1em "Helvetica Neue", helvetica, arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -69,17 +69,14 @@ h5 {
   font-size: 1em;
   font-style: italic;
 }
-.intro {
+.header {
   font-weight: lighter;
 }
-.intro p {
-  font-size: 1.25em;
+.header h1 {
+  line-height: 1;
 }
 hr {
   clear: both;
-}
-ul + h5 {
-  margin-top: .5em;
 }
 p {
   font-size: 100%;
@@ -158,30 +155,37 @@ header.main .overlay {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
   padding: 50px 0;
 }
+header.main .site {
+  color: white;
+}
 header.main .site .logo {
   margin: auto;
-  padding: 40px 0;
+  padding: 3em 0;
   text-align: center;
 }
 header.main .site .logo h1 {
   font-size: 4em;
   letter-spacing: -3px;
-  color: white;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 header.main .site .tagline {
   margin: 0 auto;
-  color: white;
   text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
   position: relative;
-  max-width: 50em;
-  max-height: 32em;
-  left: 50%;
-  margin-left: -25em;
 }
 header.main .site .tagline h1 {
   color: white;
   font-weight: 100;
+}
+header.main .site .tagline button {
+  background: #ee70a5;
+  border: none;
+  font: 1em "Helvetica Neue", helvetica, arial, sans-serif;
+  margin-top: 1.5em;
+  padding: .35em 1em .5em;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.3);
+  font-weight: bold;
 }
 .footer {
   margin: 0 auto;
@@ -228,6 +232,20 @@ header.main .site .tagline h1 {
     min-height: 40em;
     height: 100%;
     background-position: center bottom;
+  }
+  .tagline {
+    font-size: 1.25em;
+    text-align: center;
+  }
+  .info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ee70a5;
+    color: white;
+    padding: 1em;
+    width: 10em;
+    height: 10em;
   }
 }
 @media only screen and (max-width: 70em) {
