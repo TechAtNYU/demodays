@@ -91,8 +91,8 @@ a:active {
 a:hover {
   color: #f9cbde;
 }
-.see {
-  text-align: center;
+h3 + ul {
+  margin-bottom: 1em;
 }
 * {
   margin: 0;
@@ -130,16 +130,16 @@ body {
   min-height: 30em;
   padding: 0 0 2em;
 }
-li {
-  list-style: none;
+.container > section:nth-child(2n) {
+  background: #cccccc;
+}
+.container > section li {
+  margin-left: 1em;
 }
 hr {
   height: .05em;
   border: none;
   background: #ccc;
-}
-.intro {
-  padding: 3em 0;
 }
 .placeholder {
   width: 1em;
@@ -148,6 +148,10 @@ hr {
 header.main {
   background-image: url(/lib/img/sample.jpg);
   background-repeat: no-repeat;
+  color: white;
+}
+header.main li {
+  list-style: none;
 }
 header.main a {
   color: white;
@@ -159,35 +163,28 @@ header.main .overlay {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
   padding: 50px 0;
 }
-header.main .site {
-  color: white;
-}
-header.main .site .logo {
+header.main .logo {
   margin: auto;
   padding: 3em 0 0;
   text-align: center;
 }
-header.main .site .logo h1 {
+header.main .logo h1 {
   font-size: 4em;
   letter-spacing: -3px;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
-header.main .site .info > ul {
+header.main .info > ul {
   float: left;
   display: inline-block;
 }
-header.main .site .info > ul.icons {
+header.main .info > ul.icons {
   width: 10%;
 }
-header.main .site .info > ul.logistics {
+header.main .info > ul.logistics {
   width: 80%;
   float: right;
 }
-header.main .site .info > ul.logistics .further-detail h3 {
-  text-decoration: underline;
-  cursor: help;
-}
-header.main .site .info .micro {
+header.main .info .micro {
   background: #666666;
   font-weight: 100;
   letter-spacing: 0px;
@@ -198,17 +195,17 @@ header.main .site .info .micro {
   width: 12em;
   margin-top: -0.5em;
 }
-header.main .site .tagline {
+header.main .tagline {
   margin: 1.5em auto 0;
   text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
   position: relative;
   text-align: center;
 }
-header.main .site .tagline h1 {
+header.main .tagline h1 {
   color: white;
   font-weight: 100;
 }
-header.main .site .tagline .action {
+header.main .tagline .action {
   background-color: #ee70a5;
   border: none;
   font: 1em "Helvetica Neue", helvetica, arial, sans-serif;
@@ -221,11 +218,11 @@ header.main .site .tagline .action {
   text-decoration: none;
   transition: background-color 1s ease;
 }
-header.main .site .tagline .action:hover {
+header.main .tagline .action:hover {
   background-color: #2707aa;
   cursor: pointer;
 }
-header.main .site .tagline .action > span {
+header.main .tagline .action > span {
   border: 1px dotted white;
   padding: .25em .95em .2em;
 }
@@ -281,6 +278,14 @@ header.main .site .tagline .action > span {
     line-height: 1;
     margin-bottom: .5em;
   }
+  .info .further-detail h3 {
+    text-decoration: underline;
+    cursor: help;
+  }
+  .container > section {
+    min-height: 40em;
+    padding: 2em 0;
+  }
 }
 @media only screen and (min-width: 70em) {
   .site {
@@ -304,6 +309,9 @@ header.main .site .tagline .action > span {
   }
   header.main .overlay {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAE0lEQVQIW2NkYGD4D8SMjEACDAAOKQEDKKNmJgAAAABJRU5ErkJggg==);
+  }
+  header.main .tagline .action {
+    font-size: 2em;
   }
 }
 @media only screen and (min-width: 50em) and (max-width: 70em) {
@@ -336,19 +344,36 @@ header.main .site .tagline .action > span {
   header.main,
   .overlay {
     background-position: center bottom;
-    min-height: 30em;
+    min-height: 40em;
   }
   .site {
     padding: 1em;
     width: 100%;
+    font-size: .85em;
+  }
+  header.main {
     font-size: .75em;
   }
-  header.main .tagline {
-    position: relative !important;
-    margin: auto !important;
-    left: 0 !important;
+  header.main .info {
+    margin-top: 2em;
+    display: static;
+    text-align: center;
   }
-  .posts h2 {
+  header.main .info > ul.icons {
+    display: none;
+  }
+  header.main .info > ul.logistics {
+    width: 100%;
+  }
+  header.main .info > ul.logistics li {
+    display: inline-block;
     padding: 1em;
+  }
+  header.main .info > ul.logistics li:last-child {
+    display: none;
+  }
+  header.main .info .micro {
+    display: none;
+    font-size: 0;
   }
 }

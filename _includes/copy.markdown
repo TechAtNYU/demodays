@@ -1,7 +1,7 @@
 
 #CONTENT
 
-THIS IS WHERE THE BLOG CONTENT WOULD LIVE
+THIS IS WHERE THE BLOG CONTENT WOULD LIVE IF WE WANTED TO INTEGRATE THAT
 	
 	
 3 wolf moon freegan nostrud, Pitchfork chia tousled Wes Anderson. Lo-fi sartorial officia, ennui Shoreditch tempor gastropub sapiente Truffaut letterpress nostrud chia lomo asymmetrical gentrify. Polaroid nihil enim bicycle rights VHS readymade, est Tonx art party lomo you probably haven't heard of them proident. Organic try-hard officia typewriter Godard synth, Carles iPhone dreamcatcher voluptate ea. Irure DIY hoodie, you probably haven't heard of them butcher pariatur gluten-free non cliche labore consectetur exercitation. Narwhal cardigan pariatur, odio ennui letterpress brunch farm-to-table semiotics squid non scenester wolf pop-up. Biodiesel labore VHS drinking vinegar.

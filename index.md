@@ -38,3 +38,5 @@ title: demodays
 {{ sponsors | unindent | markdownify }}
 </div>
 </section>
+
+{% include footer.html %}
