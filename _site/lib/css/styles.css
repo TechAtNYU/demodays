@@ -37,7 +37,7 @@ you can use the generic selector below, but it's slower:
   content: "\e000";
 }
 body {
-  font: 1em "Helvetica Neue", helvetica, arial, sans-serif;
+  font: 1em "Radikal-Light", helvetica, arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -53,11 +53,11 @@ h6 {
 }
 h1 {
   font-size: 2.5em;
-  font-weight: bold;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
 }
 h2 {
   font-size: 1.75em;
-  font-weight: bold;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
 }
 h3 {
   font-size: 1.5em;
@@ -70,7 +70,7 @@ h5 {
   font-style: italic;
 }
 .header {
-  font-weight: lighter;
+  font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
 }
 .header h1 {
   line-height: 1;
@@ -191,9 +191,12 @@ header.main .info > ul.logistics {
   width: 80%;
   float: right;
 }
+header.main .info > ul.logistics > li:last-child {
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+}
 header.main .info .micro {
   background: #666666;
-  font-weight: 100;
+  font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
   letter-spacing: 0px;
   font-size: .85em;
   padding: .05em;
@@ -210,18 +213,18 @@ header.main .tagline {
 }
 header.main .tagline h1 {
   color: white;
-  font-weight: 100;
+  font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
 }
 header.main .tagline .action {
   background-color: #ee70a5;
   border: none;
-  font: 1em "Helvetica Neue", helvetica, arial, sans-serif;
+  font: 1em "Radikal-Light", helvetica, arial, sans-serif;
   margin-top: 2em;
-  padding: .6em .25em .5em;
   color: white;
   display: inline-block;
+  padding: .6em .25em .35em;
   text-shadow: none;
-  font-weight: bold;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
   text-decoration: none;
   transition: background-color 1s ease;
 }
@@ -231,7 +234,7 @@ header.main .tagline .action:hover {
 }
 header.main .tagline .action > span {
   border: 1px dotted white;
-  padding: .25em .95em .2em;
+  padding: .5em .95em .25em;
 }
 .footer {
   margin: 0 auto;
