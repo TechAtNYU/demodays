@@ -1,43 +1,30 @@
-@font-face {
-  font-family: 'techatnyu';
-  src: url('/lib/fonts/techatnyu.eot');
-  src: url('/lib/fonts/techatnyu.eot?#iefix') format('embedded-opentype'), url('/lib/fonts/techatnyu.woff') format('woff'), url('/lib/fonts/techatnyu.ttf') format('truetype'), url('/lib/fonts/techatnyu.svg#techatnyu') format('svg');
-  font-weight: normal;
-  font-style: normal;
+/* -- FLUID GRID STYLES -- */
+.grid {
+  margin-bottom: 40px;
+  text-align: justify;
 }
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-  font-family: 'techatnyu';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.grid li {
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 2.5%;
 }
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-.icon-techatnyulogo {
-  font-family: 'techatnyu';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
+.grid li.half {
+  width: 40%;
 }
-.icon-techatnyulogo:before {
-  content: "\e000";
+.grid:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.grid .placeholder {
+  padding: 0;
+}
+.placeholder {
+  width: 1em;
+  display: inline-block;
 }
 body {
-  font: 1em "Radikal-Light", helvetica, arial, sans-serif;
+  font: 1em "Radikal", helvetica, arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -53,10 +40,12 @@ h6 {
 }
 h1 {
   font-size: 2.5em;
+  font-weight: bold;
   font-family: "Radikal-Bold", helvetica, arial, sans-serif;
 }
 h2 {
   font-size: 1.75em;
+  font-weight: bold;
   font-family: "Radikal-Bold", helvetica, arial, sans-serif;
 }
 h3 {
@@ -81,7 +70,7 @@ hr {
 p {
   font-size: 100%;
   line-height: 1.75;
-  margin-bottom: .5em;
+  margin-bottom: .75em;
 }
 a:link,
 a:visited,
@@ -105,6 +94,25 @@ h3 + ul {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.cf:after {
+  clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
 }
 body {
   padding-bottom: 2em;
@@ -130,31 +138,23 @@ body {
   min-height: 30em;
   padding: 0 0 2em;
 }
-.container > section:nth-child(2n) {
-  background: #eeeeee;
-}
-.container > section.setting-details img {
-  -webkit-border-radius: 1000px;
-  -moz-border-radius: 1000px;
-  -ms-border-radius: 1000px;
-  -o-border-radius: 1000px;
-  border-radius: 1000px;
-}
-.container > section li {
-  margin-left: 1em;
-}
 hr {
   height: .05em;
   border: none;
   background: #ccc;
 }
-.placeholder {
-  width: 1em;
-  display: inline-block;
+.grid img {
+  max-width: 100%;
+}
+.overlay {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  padding: 50px 0;
+  height: 100%;
 }
 header.main {
-  background-image: url(/lib/img/sample.jpg);
+  background-image: url(/lib/img/sample2.jpg);
   background-repeat: no-repeat;
+  background-color: #666666;
   color: white;
 }
 header.main li {
@@ -165,10 +165,6 @@ header.main a {
 }
 header.main a:hover {
   text-decoration: none;
-}
-header.main .overlay {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
-  padding: 50px 0;
 }
 header.main .logo {
   margin: auto;
@@ -193,6 +189,7 @@ header.main .info > ul.logistics {
 }
 header.main .info > ul.logistics > li:last-child {
   font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+  font-weight: bold;
 }
 header.main .info .micro {
   background: #666666;
@@ -214,19 +211,24 @@ header.main .tagline {
 header.main .tagline h1 {
   color: white;
   font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
+  font-weight: 100;
 }
 header.main .tagline .action {
   background-color: #ee70a5;
   border: none;
-  font: 1em "Radikal-Light", helvetica, arial, sans-serif;
+  font: 1em "Radikal", helvetica, arial, sans-serif;
   margin-top: 2em;
   color: white;
   display: inline-block;
   padding: .6em .25em .35em;
   text-shadow: none;
   font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+  font-weight: bold;
   text-decoration: none;
   transition: background-color 1s ease;
+  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
 }
 header.main .tagline .action:hover {
   background-color: #2707aa;
@@ -236,41 +238,48 @@ header.main .tagline .action > span {
   border: 1px dotted white;
   padding: .5em .95em .25em;
 }
-.footer {
-  margin: 0 auto;
-  margin-top: 2em;
+.container > section {
+  font-size: 110%;
 }
-.footer .contact {
-  float: left;
-  padding: .5em 0;
-  width: 33%;
-  min-width: 15em;
+.container > section:nth-child(2n) {
+  background: #eeeeee;
 }
-.footer .colophon {
+.container > section.intro li {
+  background: #2707aa;
+  text-align: center;
+}
+.container > section.details {
+  background-image: url(/lib/img/sample4.jpg);
+  background-position: center center;
+  color: white;
+  text-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+  padding: 0;
+}
+.container > section.details .site {
+  width: 47%;
+  margin: auto;
+}
+.container > section.speaker img {
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+}
+.container > section li {
+  margin-left: 1em;
+}
+footer {
+  background: #ee70a5;
+}
+footer .colophon {
   clear: both;
   text-align: right;
 }
-.like {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  right: 0;
-  height: 2em;
-  background: #ee70a5;
-  text-align: right;
-  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
-}
-.like .fb,
-.like .twitter {
-  float: right;
-  padding: .25em 0;
-}
-.like .twitter {
-  padding-right: 1em;
-}
 @media only screen and (min-width: 40em) {
+  header.main {
+    background-position: center center;
+  }
   .info {
     position: fixed;
     top: 0;
@@ -293,21 +302,18 @@ header.main .tagline .action > span {
     cursor: help;
   }
   .container > section {
-    min-height: 40em;
     padding: 2em 0;
   }
 }
 @media only screen and (min-width: 70em) {
   .site {
     max-width: 50em;
-    width: 60%;
+    width: 65%;
     font-size: 125%;
   }
-  header.main,
-  .overlay {
+  header.main {
     min-height: 40em;
     height: 100%;
-    background-position: center bottom;
   }
   .tagline {
     font-size: 1.25em;
@@ -334,9 +340,13 @@ header.main .tagline .action > span {
   .posts {
     font-size: 106.25%;
   }
-  header.main,
-  .overlay {
+  header.main {
     min-height: 30em;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .container > section.details {
+    background-position: center right;
   }
 }
 @media only screen and (min-width: 40em) and (max-width: 50em) {
@@ -345,14 +355,12 @@ header.main .tagline .action > span {
     max-width: 45em;
     font-size: .85em;
   }
-  header.main,
-  .overlay {
+  header.main {
     min-height: 25em;
   }
 }
 @media only screen and (max-width: 40em) {
-  header.main,
-  .overlay {
+  header.main {
     background-position: center bottom;
     min-height: 40em;
   }

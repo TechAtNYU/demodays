@@ -1,4 +1,36 @@
+//	/* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
+//	
+//	/* 3 COL */
+//	
+//	@media (max-width: 800px){
+//	  .grid li{
+//	    width: 31%;
+//	    margin-bottom: 3%;
+//	  }
+//	}
+//	
+//	/* 2 COL */
+//	
+//	@media (max-width: 600px){
+//	  .grid li{
+//	    width: 48%;
+//	    margin-bottom: 4%;
+//	  }
+//	}
+//	
+//	/* SINGLE COL */
+//	
+//	@media (max-width: 400px){
+//	  .grid li{
+//	    width: 100%;
+//	    margin-bottom: 5%;
+//	  }
+//	}
+
 @media only screen and(min-width: 40em) {
+	header.main {
+		background-position: center center;
+	}
 	.info {
 		position: fixed;
 		top: 0;
@@ -21,25 +53,23 @@
 		}
 	}
 	.container > section {
-		min-height: 40em;
 		padding: 2em 0;
 	}
 }
 @media only screen and (min-width: 70em) {
 	.site {
 		max-width: 50em;
-		width: 60%;
+		width: 65%;
 		font-size: @bump;
 	}
-	header.main, .overlay {
+	header.main {
 		min-height: 40em;
 		height: 100%;
-		background-position: center bottom;
+		//background-position: center bottom;
 	}
 	.tagline {
 		font-size: 1.25em;
 	}
-
 }
 @media only screen and (max-width: 70em) {
 	header.main {
@@ -63,24 +93,30 @@
 	.post, .post-header, .posts {
 		font-size: @bump * .85;
 	}
-	header.main, .overlay {
+	header.main {
 		min-height: 30em;
 	}
 }
+
+@media only screen and (max-width: 50em) {
+	.container > section.details {
+		background-position: center right;
+	}
+}
+
 @media only screen and (min-width:40em) and (max-width: 50em) {
 	.site {
 		width: 90%;
 		max-width: 45em;
 		font-size: .85em;
 	}
-	header.main, .overlay {
+	header.main {
 		min-height: 25em;
 	}
 }
-
 @media only screen and (max-width: 40em) {
 	
-	header.main, .overlay {
+	header.main {
 		background-position: center bottom;
 		min-height: 40em;
 	}
@@ -89,7 +125,6 @@
 		width: 100%;
 		font-size: .85em;
 	}
-	
 	header.main {
 		font-size: .75em;
 		.info {
@@ -116,7 +151,5 @@
 				font-size: 0;
 			}
 		}
-	}
-
-
+	}	
 }

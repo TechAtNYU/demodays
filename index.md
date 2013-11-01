@@ -8,18 +8,33 @@ title: DemoDays, presented by tech@NYU
   {% include intro.markdown %}
 {% endcapture %}
 {{ intro | unindent | markdownify }}
+
+
 </div>
 </section>
 
-<section class="setting-details">
+<section class="details">
+<div class="overlay">
 <div class="site">
 {% capture details %}
   {% include details.markdown %}
 {% endcapture %}
 {{ details | unindent | markdownify }}
 </div>
+</div>
 </section>
 
+
+<section class="speaker">
+<div class="site">
+{% capture speaker %}
+  {% include speaker.markdown %}
+{% endcapture %}
+{{ speaker | unindent | markdownify }}
+</div>
+</section>
+
+<!--
 <section class="main-copy">
 <div class="site">
 {% capture copy %}
@@ -28,6 +43,7 @@ title: DemoDays, presented by tech@NYU
 {{ copy | unindent | markdownify }}
 </div>
 </section>
+-->
 
 
 <section class="clubs-sponsors">
@@ -38,5 +54,6 @@ title: DemoDays, presented by tech@NYU
 {{ sponsors | unindent | markdownify }}
 </div>
 </section>
+
 
 {% include footer.html %}

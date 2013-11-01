@@ -59,47 +59,20 @@
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/28e32e");
+@import url("//hello.myfonts.net/count/28e384");
 
   
-@font-face {font-family: 'Radikal-LightItalic';src: url('/lib/fonts/webfonts/28E32E_0_0.eot');src: url('/lib/fonts/webfonts/28E32E_0_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_0_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Radikal';font-weight: normal;font-style: italic;src: url('/lib/fonts/webfonts/28E384_0_0.eot');src: url('/lib/fonts/webfonts/28E384_0_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E384_0_0.woff') format('woff'),url('/lib/fonts/webfonts/28E384_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Radikal-Light';src: url('/lib/fonts/webfonts/28E32E_1_0.eot');src: url('/lib/fonts/webfonts/28E32E_1_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_1_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Radikal';font-weight: normal;font-style: normal;src: url('/lib/fonts/webfonts/28E384_1_0.eot');src: url('/lib/fonts/webfonts/28E384_1_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E384_1_0.woff') format('woff'),url('/lib/fonts/webfonts/28E384_1_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Radikal-Medium';src: url('/lib/fonts/webfonts/28E32E_2_0.eot');src: url('/lib/fonts/webfonts/28E32E_2_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_2_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_2_0.ttf') format('truetype');}
+@font-face {font-family: 'Radikal-Black';src: url('/lib/fonts/webfonts/28E384_2_0.eot');src: url('/lib/fonts/webfonts/28E384_2_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E384_2_0.woff') format('woff'),url('/lib/fonts/webfonts/28E384_2_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Radikal-MediumItalic';src: url('/lib/fonts/webfonts/28E32E_3_0.eot');src: url('/lib/fonts/webfonts/28E32E_3_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_3_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_3_0.ttf') format('truetype');}
+@font-face {font-family: 'Radikal-Bold';font-weight: bold;font-style: normal;src: url('/lib/fonts/webfonts/28E384_3_0.eot');src: url('/lib/fonts/webfonts/28E384_3_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E384_3_0.woff') format('woff'),url('/lib/fonts/webfonts/28E384_3_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Radikal-Black';src: url('/lib/fonts/webfonts/28E32E_4_0.eot');src: url('/lib/fonts/webfonts/28E32E_4_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_4_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_4_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Radikal-BlackItalic';src: url('/lib/fonts/webfonts/28E32E_5_0.eot');src: url('/lib/fonts/webfonts/28E32E_5_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_5_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_5_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Radikal-Bold';src: url('/lib/fonts/webfonts/28E32E_6_0.eot');src: url('/lib/fonts/webfonts/28E32E_6_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_6_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_6_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Radikal';src: url('/lib/fonts/webfonts/28E32E_7_0.eot');src: url('/lib/fonts/webfonts/28E32E_7_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_7_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_7_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Radikal-Italic';src: url('/lib/fonts/webfonts/28E32E_8_0.eot');src: url('/lib/fonts/webfonts/28E32E_8_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_8_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_8_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Radikal-BoldItalic';src: url('/lib/fonts/webfonts/28E32E_9_0.eot');src: url('/lib/fonts/webfonts/28E32E_9_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_9_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_9_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Radikal-Thin';src: url('/lib/fonts/webfonts/28E32E_A_0.eot');src: url('/lib/fonts/webfonts/28E32E_A_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_A_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_A_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Radikal-ThinItalic';src: url('/lib/fonts/webfonts/28E32E_B_0.eot');src: url('/lib/fonts/webfonts/28E32E_B_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_B_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_B_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Radikal-UltraThin';src: url('/lib/fonts/webfonts/28E32E_C_0.eot');src: url('/lib/fonts/webfonts/28E32E_C_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_C_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_C_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Radikal-UltraThinItalic';src: url('/lib/fonts/webfonts/28E32E_D_0.eot');src: url('/lib/fonts/webfonts/28E32E_D_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E32E_D_0.woff') format('woff'),url('/lib/fonts/webfonts/28E32E_D_0.ttf') format('truetype');}
+@font-face {font-family: 'Radikal-UltraThin';src: url('/lib/fonts/webfonts/28E384_4_0.eot');src: url('/lib/fonts/webfonts/28E384_4_0.eot?#iefix') format('embedded-opentype'),url('/lib/fonts/webfonts/28E384_4_0.woff') format('woff'),url('/lib/fonts/webfonts/28E384_4_0.ttf') format('truetype');}
  

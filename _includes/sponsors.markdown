@@ -6,19 +6,36 @@
 *	Parsons Code Club
 *	Columbia ADI
 
-![sponsor](http://placekitten.com/g/200/200)
-![sponsor](http://placekitten.com/g/200/200)
-![sponsor](http://placekitten.com/g/200/200)
-![sponsor](http://placekitten.com/g/200/200)
+<ul class="grid">
+  <li><img src="http://placekitten.com/g/200/200"></li>
+  <li><img src="http://placekitten.com/g/200/200"></li>
+  <li><img src="http://placekitten.com/g/200/200"></li>
+  <li><img src="http://placekitten.com/g/200/200"></li>
+  <li></li>
+  <li class="placeholder"></li>
+</ul>
+
+
+
+
+
+
 
 #Sponsors
 
-![sponsor](http://placekitten.com/g/270/270)
-![sponsor](http://placekitten.com/g/270/270)
-![sponsor](http://placekitten.com/g/270/270)
-![sponsor](http://placekitten.com/g/270/270)
-![sponsor](http://placekitten.com/g/270/270)
-![sponsor](http://placekitten.com/g/270/270)
-![sponsor](http://placekitten.com/g/270/270)
-![sponsor](http://placekitten.com/g/270/270)
-![sponsor](http://placekitten.com/g/270/270)
+<ul class="grid">
+  <li><img src="http://placekitten.com/g/400/400"></li>
+  <li><img src="http://placekitten.com/g/400/400"></li>
+  <li><img src="http://placekitten.com/g/400/400"></li>
+  <li><img src="http://placekitten.com/g/200/200"></li>
+  <li><img src="http://placekitten.com/g/400/400"></li>
+  <li><img src="http://placekitten.com/g/400/400"></li>
+  <li><img src="http://placekitten.com/g/400/400"></li>
+  <li><img src="http://placekitten.com/g/200/200"></li>
+  <li><img src="http://placekitten.com/g/400/400"></li>
+  <li><img src="http://placekitten.com/g/400/400"></li>
+  <li><img src="http://placekitten.com/g/400/400"></li>
+  <li><img src="http://placekitten.com/g/200/200"></li>
+  <li></li>
+  <li class="placeholder"></li>
+</ul>
