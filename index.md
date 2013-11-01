@@ -1,6 +1,6 @@
 ---
 layout: default
-title: demodays
+title: DemoDays, presented by tech@NYU
 ---
 <section class="intro">
 <div class="site">

@@ -2,13 +2,15 @@
 #some ultracool deets
 
 ###Schedule
-*	Students present their projects
-*	Handful of 2-minute demos
-*	Guest speaker rocks the house 
-*	A few 5-minute demos
-*	Hang out and eat PIZZZZAAA
+*	People arrive and hang out
+*	2-min demos
+*	Guest speaker
+*	5-min demos
+*	Eat
 
 ###Speaker
+
+![Joe Lallouz](/lib/img/joe-lallouz.png)
 
 [Joe Lallouz](https://twitter.com/JoeLallouz)
 

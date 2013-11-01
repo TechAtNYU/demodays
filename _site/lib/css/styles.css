@@ -131,7 +131,14 @@ body {
   padding: 0 0 2em;
 }
 .container > section:nth-child(2n) {
-  background: #cccccc;
+  background: #eeeeee;
+}
+.container > section.setting-details img {
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
 }
 .container > section li {
   margin-left: 1em;

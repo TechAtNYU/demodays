@@ -1,10 +1,15 @@
 
-#Clubs
+#Hosted by
 
-![sponsor](http://placekitten.com/g/420/420)
-![sponsor](http://placekitten.com/g/420/420)
-![sponsor](http://placekitten.com/g/420/420)
-![sponsor](http://placekitten.com/g/420/420)
+*	tech@NYU
+*	create@cooper
+*	Parsons Code Club
+*	Columbia ADI
+
+![sponsor](http://placekitten.com/g/200/200)
+![sponsor](http://placekitten.com/g/200/200)
+![sponsor](http://placekitten.com/g/200/200)
+![sponsor](http://placekitten.com/g/200/200)
 
 #Sponsors
 

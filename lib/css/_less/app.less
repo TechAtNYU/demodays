@@ -28,14 +28,16 @@ body {
 }
 .container > section {
 	&:nth-child(2n) {
-		background: @grayLight;
+		background: @grayLightest;
 	}
 	//&.intro {
 	//	background: white;
 	//}
-	//&.setting-details {
-	//	background: @grayLight;
-	//}
+	&.setting-details {
+		img {
+			.rounded-corners (@radius: 1000px) 
+		}
+	}
 	li {
 		margin-left: 1em;
 	}
