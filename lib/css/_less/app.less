@@ -5,16 +5,15 @@
 }
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
- }
- body {
-	 padding-bottom: 2em;
- }
-
+}
+body {
+  padding-bottom: 2em;
+}
 ::selection {
-	background: @pink; /* Safari */
+	background: @accent; /* Safari */
 	}
 ::-moz-selection {
-	background: @pink; /* Firefox */
+	background: @accent; /* Firefox */
 }
 .container {
 	width: 100%;
@@ -38,6 +37,10 @@ hr {
 }
 .intro {
 	padding: 3em 0;
+}
+.placeholder {
+	width: 1em;
+	display: inline-block;
 }
 header.main {
 	background-image: url(/lib/img/sample.jpg);
@@ -64,23 +67,64 @@ header.main {
 				text-shadow: 0px 0px 20px @bshadow;
 			}
 		}
+		.info {
+			> ul {
+				float: left;
+				display: inline-block;
+				&.icons {
+					width: 10%;
+				}
+				&.logistics {
+					width: 80%;
+					float: right;
+					.further-detail h3 {
+						text-decoration: underline;
+						cursor: help;
+					}
+				}
+			}
+			.micro {
+				background: @grayMed;
+				font-weight: 100;
+				letter-spacing: 0px;
+				font-size: .85em;
+				padding: .05em;
+				display: none;
+				position: absolute;
+				width: 12em;
+				margin-top: -.5em;
+			}
+		}
 		.tagline {
-			margin: 1.5em auto;
-			text-shadow: 0px 0px 20px rgba(255,255,255, .7);
+			margin: 1.5em auto 0;
+			text-shadow: 0px 0px 20px rgba(255,255,255, .8);
 			position: relative;
+			text-align: center;
 			h1 {
 				color: white;
 				font-weight: 100;
 			}
-			button {
-				background: @pink;
+			.action {
+				background-color: @accent;
 				border: none;
 				font: 1em @font;
 				margin-top: 2em;
-				padding: .35em 1em .5em;
+				padding: .6em .25em .5em;
 				color: white;
-				box-shadow: @bshadow;
+				display: inline-block;
+				text-shadow: none;
 				font-weight: bold;
+				text-decoration: none;
+				transition: background-color 1s ease;
+				&:hover {
+					background-color: @accentBold;
+					cursor: pointer;
+				}
+				> span {
+					border: 1px dotted white;
+					padding: .25em .95em .2em;
+				}
+				
 			}
 		}
 	}
@@ -107,11 +151,9 @@ header.main {
 	bottom: 0;
 	right: 0;
 	height: 2em;
-	background: @pink;
+	background: @accent;
 	text-align: right;
-	-webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 0px 5px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 0px 5px rgba(50, 50, 50, 0.75);
+	.box-shadow();
 	.fb, .twitter {
 		float: right;
 		padding: .25em 0;

@@ -5,7 +5,8 @@
 @grayMed: #666;
 @grayMedDark: #444;
 
-@pink: #EE70A5;
+@accent: #EE70A5;
+@accentBold: #2707AA;
 
 //sizes
 
@@ -15,6 +16,22 @@
 @font: "Helvetica Neue", helvetica, arial, sans-serif;
 
 @bshadow: rgba(0,0,0,.3);
+@boxshadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.box-shadow (@shadow: 0px 0px 5px rgba(50, 50, 50, 0.75)) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow:    @shadow;
+	box-shadow:         @shadow;
+}
+
+
 
 @sparse: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
 @dense: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAE0lEQVQIW2NkYGD4D8SMjEACDAAOKQEDKKNmJgAAAABJRU5ErkJggg==);

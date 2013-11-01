@@ -141,6 +141,10 @@ hr {
 .intro {
   padding: 3em 0;
 }
+.placeholder {
+  width: 1em;
+  display: inline-block;
+}
 header.main {
   background-image: url(/lib/img/sample.jpg);
   background-repeat: no-repeat;
@@ -168,24 +172,62 @@ header.main .site .logo h1 {
   letter-spacing: -3px;
   text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
+header.main .site .info > ul {
+  float: left;
+  display: inline-block;
+}
+header.main .site .info > ul.icons {
+  width: 10%;
+}
+header.main .site .info > ul.logistics {
+  width: 80%;
+  float: right;
+}
+header.main .site .info > ul.logistics .further-detail h3 {
+  text-decoration: underline;
+  cursor: help;
+}
+header.main .site .info .micro {
+  background: #666666;
+  font-weight: 100;
+  letter-spacing: 0px;
+  font-size: .85em;
+  padding: .05em;
+  display: none;
+  position: absolute;
+  width: 12em;
+  margin-top: -0.5em;
+}
 header.main .site .tagline {
-  margin: 1.5em auto;
-  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+  margin: 1.5em auto 0;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
   position: relative;
+  text-align: center;
 }
 header.main .site .tagline h1 {
   color: white;
   font-weight: 100;
 }
-header.main .site .tagline button {
-  background: #ee70a5;
+header.main .site .tagline .action {
+  background-color: #ee70a5;
   border: none;
   font: 1em "Helvetica Neue", helvetica, arial, sans-serif;
   margin-top: 2em;
-  padding: .35em 1em .5em;
+  padding: .6em .25em .5em;
   color: white;
-  box-shadow: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  text-shadow: none;
   font-weight: bold;
+  text-decoration: none;
+  transition: background-color 1s ease;
+}
+header.main .site .tagline .action:hover {
+  background-color: #2707aa;
+  cursor: pointer;
+}
+header.main .site .tagline .action > span {
+  border: 1px dotted white;
+  padding: .25em .95em .2em;
 }
 .footer {
   margin: 0 auto;
@@ -221,6 +263,25 @@ header.main .site .tagline button {
 .like .twitter {
   padding-right: 1em;
 }
+@media only screen and (min-width: 40em) {
+  .info {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ee70a5;
+    color: white;
+    padding: 1em;
+    width: 12em;
+    height: 12em;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  }
+  .info h3 {
+    line-height: 1;
+    margin-bottom: .5em;
+  }
+}
 @media only screen and (min-width: 70em) {
   .site {
     max-width: 50em;
@@ -235,23 +296,14 @@ header.main .site .tagline button {
   }
   .tagline {
     font-size: 1.25em;
-    text-align: center;
-  }
-  .info {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #ee70a5;
-    color: white;
-    padding: 1em;
-    width: 10em;
-    height: 10em;
-    box-shadow: rgba(0, 0, 0, 0.3);
   }
 }
 @media only screen and (max-width: 70em) {
   header.main {
     background-position: center center;
+  }
+  header.main .overlay {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAE0lEQVQIW2NkYGD4D8SMjEACDAAOKQEDKKNmJgAAAABJRU5ErkJggg==);
   }
 }
 @media only screen and (min-width: 50em) and (max-width: 70em) {
