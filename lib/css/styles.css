@@ -1,3 +1,6 @@
+@import "ionicons.css";
+
+@import "webfonts.css";
 /* -- FLUID GRID STYLES -- */
 .grid {
   margin-bottom: 40px;
@@ -152,7 +155,6 @@ hr {
   height: 100%;
 }
 header.main {
-  background-image: url(/lib/img/sample2.jpg);
   background-repeat: no-repeat;
   background-color: #666666;
   color: white;
@@ -168,7 +170,6 @@ header.main a:hover {
 }
 header.main .logo {
   margin: auto;
-  padding: 3em 0 0;
   text-align: center;
 }
 header.main .logo h1 {
@@ -249,7 +250,7 @@ header.main .tagline .action > span {
   text-align: center;
 }
 .container > section.details {
-  background-image: url(/lib/img/sample4.jpg);
+  background-color: #666666;
   background-position: center center;
   color: white;
   text-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
@@ -278,7 +279,14 @@ footer .colophon {
 }
 @media only screen and (min-width: 40em) {
   header.main {
+    background-image: url(/lib/img/sample2.jpg);
     background-position: center center;
+  }
+  header.main .logo {
+    padding: 3em 0 0;
+  }
+  .container > section.details {
+    background-image: url(/lib/img/sample4.jpg);
   }
   .info {
     position: fixed;
@@ -373,7 +381,7 @@ footer .colophon {
     font-size: .75em;
   }
   header.main .info {
-    margin-top: 2em;
+    margin: 2em 0;
     display: static;
     text-align: center;
   }
@@ -393,5 +401,9 @@ footer .colophon {
   header.main .info .micro {
     display: none;
     font-size: 0;
+  }
+  .container > section.speaker h1 + p {
+    text-align: center;
+    margin: 0 auto;
   }
 }

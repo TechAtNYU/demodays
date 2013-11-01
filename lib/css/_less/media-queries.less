@@ -26,10 +26,16 @@
 //	    margin-bottom: 5%;
 //	  }
 //	}
-
 @media only screen and(min-width: 40em) {
 	header.main {
+		background-image: url(/lib/img/sample2.jpg);
 		background-position: center center;
+		.logo {
+			padding: 3em 0 0;
+		}
+	}
+	.container > section.details {
+		background-image: url(/lib/img/sample4.jpg);
 	}
 	.info {
 		position: fixed;
@@ -114,8 +120,8 @@
 		min-height: 25em;
 	}
 }
+
 @media only screen and (max-width: 40em) {
-	
 	header.main {
 		background-position: center bottom;
 		min-height: 40em;
@@ -128,7 +134,7 @@
 	header.main {
 		font-size: .75em;
 		.info {
-			margin-top: 2em;
+			margin: 2em 0;
 			display: static;
 			text-align: center;
 			> ul {
@@ -152,4 +158,12 @@
 			}
 		}
 	}	
+	.container > section {
+		&.speaker {
+			h1 + p {
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+	}
 }
