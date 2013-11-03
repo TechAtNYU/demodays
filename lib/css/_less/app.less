@@ -15,11 +15,6 @@
 .cf:after {
     clear: both;
 }
-
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
 .cf {
     *zoom: 1;
 }
@@ -53,7 +48,8 @@ hr {
 	max-width: 100%;
 }
 .overlay {
-	background: @sparse;
+	background-color: rgba(0,0,0,.25);
+	background-image: @sparse;
 	padding: 50px 0;
 	height: 100%;
 }
@@ -142,7 +138,6 @@ header.main {
 		}
 	}
 }
-
 .container > section {
 	font-size: @miniBump;
 	&:nth-child(2n) {
@@ -150,8 +145,20 @@ header.main {
 	}
 	&.intro {	
 		li {
-			background: @accentBold;
-			text-align: center;
+			border: 2px dotted @grayLight;
+			margin: 2em 0 0 0;
+			.rounded-corners(1000px);
+			padding-top: .75em;
+			&:hover {
+				border: 2px solid @accent;
+			}
+			a {
+				text-align: center;
+				text-decoration: none;
+				&:hover {
+					color: @accent;
+				}
+			}
 		}
 	}
 	&.details {
@@ -160,10 +167,6 @@ header.main {
 		color: white;
 		text-shadow: @boxshadow;
 		padding: 0;
-		.site {
-			width: 47%;
-			margin: auto;
-		}
 	}
 	&.speaker {
 		img {
@@ -174,8 +177,6 @@ header.main {
 		margin-left: 1em;
 	}
 }
-
-
 footer {
 	background: @accent;
 	.colophon {

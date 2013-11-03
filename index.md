@@ -8,10 +8,10 @@ title: DemoDays, presented by tech@NYU
   {% include intro.markdown %}
 {% endcapture %}
 {{ intro | unindent | markdownify }}
-
-
 </div>
 </section>
+
+
 
 <section class="details">
 <div class="overlay">
@@ -25,6 +25,8 @@ title: DemoDays, presented by tech@NYU
 </section>
 
 
+
+
 <section class="speaker">
 <div class="site">
 {% capture speaker %}
@@ -34,16 +36,7 @@ title: DemoDays, presented by tech@NYU
 </div>
 </section>
 
-<!--
-<section class="main-copy">
-<div class="site">
-{% capture copy %}
-  {% include copy.markdown %}
-{% endcapture %}
-{{ copy | unindent | markdownify }}
-</div>
-</section>
--->
+
 
 
 <section class="clubs-sponsors">
@@ -54,6 +47,17 @@ title: DemoDays, presented by tech@NYU
 {{ sponsors | unindent | markdownify }}
 </div>
 </section>
+
+
+<section class="main-copy">
+<div class="site">
+{% capture copy %}
+  {% include copy.markdown %}
+{% endcapture %}
+{{ copy | unindent | markdownify }}
+</div>
+</section>
+
 
 
 {% include footer.html %}

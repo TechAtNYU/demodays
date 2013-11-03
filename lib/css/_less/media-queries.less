@@ -28,14 +28,15 @@
 //	}
 @media only screen and(min-width: 40em) {
 	header.main {
-		background-image: url(/lib/img/sample2.jpg);
-		background-position: center center;
+		background-image: url(/lib/img/sample.jpg);
+		background-position: center bottom;
 		.logo {
 			padding: 3em 0 0;
 		}
 	}
 	.container > section.details {
-		background-image: url(/lib/img/sample4.jpg);
+		background-image: url(/lib/img/sample5.jpg);
+		background-position: center bottom;
 	}
 	.info {
 		position: fixed;
@@ -80,9 +81,6 @@
 @media only screen and (max-width: 70em) {
 	header.main {
 		background-position: center center;
-		.overlay {
-			background: @dense;
-		}
 		.tagline {
 			.action {
 				font-size: 2em;
@@ -104,11 +102,11 @@
 	}
 }
 
-@media only screen and (max-width: 50em) {
-	.container > section.details {
-		background-position: center right;
-	}
-}
+//@media only screen and (max-width: 50em) {
+//	.container > section.details {
+//		background-position: center right;
+//	}
+//}
 
 @media only screen and (min-width:40em) and (max-width: 50em) {
 	.site {
@@ -120,12 +118,26 @@
 		min-height: 25em;
 	}
 }
-
+@media only screen and (min-width: 30em) and (max-width: 70em) {
+	.grid li{
+	  width: 45%;
+	  margin-bottom: 4%;
+	}
+	
+} 
+@media only screen and (max-width: 30em) {
+    .grid li{
+	  width: 100%;
+	  padding: 1em;
+	  margin-bottom: 5%;
+	}
+}
 @media only screen and (max-width: 40em) {
 	header.main {
 		background-position: center bottom;
 		min-height: 40em;
 	}
+
 	.site {
 		padding: 1em;
 		width: 100%;
