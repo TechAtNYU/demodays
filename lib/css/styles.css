@@ -12,7 +12,7 @@
   margin-bottom: 2.5%;
 }
 .grid li.half {
-  width: 40%;
+  width: 45%;
 }
 .grid:after {
   content: '';
@@ -110,10 +110,6 @@ h3 + ul {
 .cf:after {
   clear: both;
 }
-/**
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
 .cf {
   *zoom: 1;
 }
@@ -150,7 +146,8 @@ hr {
   max-width: 100%;
 }
 .overlay {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
   padding: 50px 0;
   height: 100%;
 }
@@ -246,8 +243,24 @@ header.main .tagline .action > span {
   background: #eeeeee;
 }
 .container > section.intro li {
-  background: #2707aa;
+  border: 2px dotted #cccccc;
+  margin: 2em 0 0 0;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+  padding-top: .75em;
+}
+.container > section.intro li:hover {
+  border: 2px solid #ee70a5;
+}
+.container > section.intro li a {
   text-align: center;
+  text-decoration: none;
+}
+.container > section.intro li a:hover {
+  color: #ee70a5;
 }
 .container > section.details {
   background-color: #666666;
@@ -255,10 +268,6 @@ header.main .tagline .action > span {
   color: white;
   text-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
   padding: 0;
-}
-.container > section.details .site {
-  width: 47%;
-  margin: auto;
 }
 .container > section.speaker img {
   -webkit-border-radius: 1000px;
@@ -279,14 +288,15 @@ footer .colophon {
 }
 @media only screen and (min-width: 40em) {
   header.main {
-    background-image: url(/lib/img/sample2.jpg);
-    background-position: center center;
+    background-image: url(/lib/img/sample.jpg);
+    background-position: center bottom;
   }
   header.main .logo {
     padding: 3em 0 0;
   }
   .container > section.details {
-    background-image: url(/lib/img/sample4.jpg);
+    background-image: url(/lib/img/sample5.jpg);
+    background-position: center bottom;
   }
   .info {
     position: fixed;
@@ -331,9 +341,6 @@ footer .colophon {
   header.main {
     background-position: center center;
   }
-  header.main .overlay {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAE0lEQVQIW2NkYGD4D8SMjEACDAAOKQEDKKNmJgAAAABJRU5ErkJggg==);
-  }
   header.main .tagline .action {
     font-size: 2em;
   }
@@ -352,11 +359,6 @@ footer .colophon {
     min-height: 30em;
   }
 }
-@media only screen and (max-width: 50em) {
-  .container > section.details {
-    background-position: center right;
-  }
-}
 @media only screen and (min-width: 40em) and (max-width: 50em) {
   .site {
     width: 90%;
@@ -365,6 +367,19 @@ footer .colophon {
   }
   header.main {
     min-height: 25em;
+  }
+}
+@media only screen and (min-width: 30em) and (max-width: 70em) {
+  .grid li {
+    width: 45%;
+    margin-bottom: 4%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .grid li {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 5%;
   }
 }
 @media only screen and (max-width: 40em) {
