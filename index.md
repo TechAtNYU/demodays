@@ -10,9 +10,6 @@ title: DemoDays, presented by tech@NYU
 {{ intro | unindent | markdownify }}
 </div>
 </section>
-
-
-
 <section class="details">
 <div class="overlay">
 <div class="site">
@@ -23,10 +20,6 @@ title: DemoDays, presented by tech@NYU
 </div>
 </div>
 </section>
-
-
-
-
 <section class="speaker">
 <div class="site">
 {% capture speaker %}
@@ -35,10 +28,6 @@ title: DemoDays, presented by tech@NYU
 {{ speaker | unindent | markdownify }}
 </div>
 </section>
-
-
-
-
 <section class="clubs-sponsors">
 <div class="site">
 {% capture sponsors %}
@@ -47,8 +36,6 @@ title: DemoDays, presented by tech@NYU
 {{ sponsors | unindent | markdownify }}
 </div>
 </section>
-
-
 <section class="main-copy">
 <div class="site">
 {% capture copy %}
@@ -57,7 +44,4 @@ title: DemoDays, presented by tech@NYU
 {{ copy | unindent | markdownify }}
 </div>
 </section>
-
-
-
 {% include footer.html %}

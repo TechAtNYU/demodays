@@ -145,6 +145,7 @@ header.main {
 	}
 	&.intro {	
 		li {
+			transition: border 2s ease;
 			border: 2px dotted @grayLight;
 			margin: 2em 0 0 0;
 			.rounded-corners(1000px);
@@ -173,12 +174,34 @@ header.main {
 			.rounded-corners (@radius: 1000px) 
 		}
 	}
-	li {
-		margin-left: 1em;
-	}
 }
 footer {
 	background: @accent;
+	padding: .5em 0;
+	a:link, a:visited, a:active {
+		color: black;
+		font-weight: bold;
+		font-family: @bold;
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	i span {
+		display: none;
+	}
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				padding: .5em .4em .25em;
+				text-decoration: none;
+				background: white;
+				.rounded-corners(50px);
+			}
+		}
+	}
 	.colophon {
 		clear: both;
 		text-align: right;

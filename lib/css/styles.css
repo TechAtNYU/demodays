@@ -229,7 +229,7 @@ header.main .tagline .action {
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
 }
 header.main .tagline .action:hover {
-  background-color: #2707aa;
+  background-color: #b2145c;
   cursor: pointer;
 }
 header.main .tagline .action > span {
@@ -243,6 +243,7 @@ header.main .tagline .action > span {
   background: #eeeeee;
 }
 .container > section.intro li {
+  transition: border 2s ease;
   border: 2px dotted #cccccc;
   margin: 2em 0 0 0;
   -webkit-border-radius: 1000px;
@@ -276,11 +277,39 @@ header.main .tagline .action > span {
   -o-border-radius: 1000px;
   border-radius: 1000px;
 }
-.container > section li {
-  margin-left: 1em;
-}
 footer {
   background: #ee70a5;
+  padding: .5em 0;
+}
+footer a:link,
+footer a:visited,
+footer a:active {
+  color: black;
+  font-weight: bold;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer i span {
+  display: none;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul li a {
+  padding: .5em .4em .25em;
+  text-decoration: none;
+  background: white;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
 }
 footer .colophon {
   clear: both;
@@ -321,6 +350,9 @@ footer .colophon {
   }
   .container > section {
     padding: 2em 0;
+  }
+  footer p {
+    font-size: 75%;
   }
 }
 @media only screen and (min-width: 70em) {

@@ -1,9 +1,9 @@
 
-#DemoDays is gonna be huge!
+#DemoDays will rock your world!
 
-We've teamed up with Parsons, Cooper Union, and Columbia University to bring you the absolute best student demos NYC has to offer. Be prepared for an explosion of student innovation and ingenuity. As if the mind-blowing demos are not enough, we're giving you a chance to mingle with the top creative students of NYC and some amazing food. At Spotify. Sick? Sick.
+This time, we've teamed up with Parsons Code Club, Create@Cooper and Columbia ADI to serve up some mouth-watering demos. Join us at Spotify's sick new office to watch some really cool student demos, meet interesting people, and eat some great food.
 
-[[UPDATED COPY FOR THIS PART!]]
+Doors open at 2:30pm, the show starts at 3:00pm.
 
 <ul class="grid">	
 	<li class="half demo">
