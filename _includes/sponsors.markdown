@@ -11,29 +11,10 @@
 </ul>
 
 
-
-
-
-*	quirky
-*	spotify
-*	squarespace
-
-
 #Sponsors
 
-<ul class="grid">
-  <li><img src="http://placekitten.com/g/400/400"></li>
-  <li><img src="http://placekitten.com/g/400/400"></li>
-  <li><img src="http://placekitten.com/g/400/400"></li>
-  <li><img src="http://placekitten.com/g/200/200"></li>
-  <li><img src="http://placekitten.com/g/400/400"></li>
-  <li><img src="http://placekitten.com/g/400/400"></li>
-  <li><img src="http://placekitten.com/g/400/400"></li>
-  <li><img src="http://placekitten.com/g/200/200"></li>
-  <li><img src="http://placekitten.com/g/400/400"></li>
-  <li><img src="http://placekitten.com/g/400/400"></li>
-  <li><img src="http://placekitten.com/g/400/400"></li>
-  <li><img src="http://placekitten.com/g/200/200"></li>
-  <li></li>
-  <li class="placeholder"></li>
+<ul class="grid sponsors">
+  <li><a href="http://spotify.com" title="Spotify"><img src="/lib/logos/spotify.png"></a></li>
+  <li><a href="http://quirky.com" title="Quirky"><img src="/lib/logos/quirky.png"></a></li>
+  <li><a href="http://squarespace.com" title="Squarespace"><img src="/lib/logos/squarespace.png"></a></li>
 </ul>
