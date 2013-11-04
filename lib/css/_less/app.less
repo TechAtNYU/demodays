@@ -184,6 +184,17 @@ header.main {
 		ul {
 			margin-left: 1em;
 		}
+		li {
+			a:first-child {
+				color: black;
+				font-weight: bold;
+				font-family: @bold;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 }
 footer {	
@@ -201,6 +212,9 @@ footer {
 	}
 	i span {
 		display: none;
+	}
+	p {
+		line-height: 1.25;
 	}
 	ul {
 		list-style: none;

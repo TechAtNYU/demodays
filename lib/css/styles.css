@@ -292,6 +292,17 @@ header.main .tagline .action > span {
 .container > section.details ul {
   margin-left: 1em;
 }
+.container > section.main-copy li a:first-child,
+.container > section.details li a:first-child {
+  color: black;
+  font-weight: bold;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+  text-decoration: none;
+}
+.container > section.main-copy li a:hover,
+.container > section.details li a:hover {
+  text-decoration: underline;
+}
 footer {
   font-size: 110%;
   background: #ee70a5;
@@ -310,6 +321,9 @@ footer a:hover {
 }
 footer i span {
   display: none;
+}
+footer p {
+  line-height: 1.25;
 }
 footer ul {
   list-style: none;

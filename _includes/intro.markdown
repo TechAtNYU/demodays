@@ -1,7 +1,7 @@
 
 #DemoDays will rock your world!
 
-This time, we've teamed up with Parsons Code Club, Create@Cooper and Columbia ADI to serve up some mouth-watering demos. Join us at Spotify's sick new office to watch some really cool student demos, meet interesting people, and eat some great food.
+tech@NYU has teamed up with Parsons Code Club, Create@Cooper and Columbia ADI to serve up some mouth-watering demos. Join us at Spotify's sick new office to watch some really cool student demos, meet interesting people, and eat some great food.
 
 Doors open at 2:30pm, the show starts at 3:00pm.
 
@@ -23,5 +23,5 @@ Doors open at 2:30pm, the show starts at 3:00pm.
 	</li>
 </ul>
 
-
-
+#What is DemoDays?
+DemoDays is all about fostering a community of students who create things. We invite students from all over NYC to show off a hack or a project that they’ve been working on. Many students are working on incredible projects but often lack a platform to show them off. We want to provide a platform for student builders to present their work, to celebrate their creations, and let that inspire other students to build projects they care about.
