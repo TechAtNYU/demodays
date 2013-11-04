@@ -1,13 +1,14 @@
 @media only screen and(min-width: 40em) {
 	header.main {
-		background-image: url(/lib/img/sample.jpg);
+		background-image: url(/lib/img/splash.jpg);
 		background-position: center bottom;
 		.logo {
 			padding: 3em 0 0;
 		}
 	}
 	.container > section.details {
-		background-image: url(/lib/img/sample5.jpg);
+		background-image: url(/lib/img/schedule.jpg);
+		background-repeat: no-repeat;
 		background-position: center bottom;
 	}
 	.info {
@@ -134,7 +135,7 @@
 					width: 100%;
 					li {
 						display: inline-block;
-						padding: 1em;
+						padding: .5em 1em;
 						&:last-child {
 							display: none;
 						}
@@ -154,5 +155,16 @@
 				margin: 0 auto;
 			}
 		}
+	}
+}
+@media print {
+	body {
+		padding: 3em;
+	}
+	.clubs-sponsors, .intro ul, .info .icons, .tagline a {
+		display: none;
+	}
+	.micro {
+		display: block;
 	}
 }

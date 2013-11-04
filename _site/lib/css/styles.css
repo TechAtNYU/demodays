@@ -13,7 +13,6 @@
 .grid li {
   display: inline-block;
   width: 20%;
-  margin-bottom: 2.5%;
 }
 .grid li.half {
   width: 45%;
@@ -294,6 +293,7 @@ header.main .tagline .action > span {
   margin-left: 1em;
 }
 footer {
+  font-size: 110%;
   background: #ee70a5;
   padding: .5em 0;
 }
@@ -333,14 +333,15 @@ footer .colophon {
 }
 @media only screen and (min-width: 40em) {
   header.main {
-    background-image: url(/lib/img/sample.jpg);
+    background-image: url(/lib/img/splash.jpg);
     background-position: center bottom;
   }
   header.main .logo {
     padding: 3em 0 0;
   }
   .container > section.details {
-    background-image: url(/lib/img/sample5.jpg);
+    background-image: url(/lib/img/schedule.jpg);
+    background-repeat: no-repeat;
     background-position: center bottom;
   }
   .info {
@@ -457,7 +458,7 @@ footer .colophon {
   }
   header.main .info > ul.logistics li {
     display: inline-block;
-    padding: 1em;
+    padding: .5em 1em;
   }
   header.main .info > ul.logistics li:last-child {
     display: none;
@@ -469,5 +470,19 @@ footer .colophon {
   .container > section.speaker h1 + p {
     text-align: center;
     margin: 0 auto;
+  }
+}
+@media print {
+  body {
+    padding: 3em;
+  }
+  .clubs-sponsors,
+  .intro ul,
+  .info .icons,
+  .tagline a {
+    display: none;
+  }
+  .micro {
+    display: block;
   }
 }
