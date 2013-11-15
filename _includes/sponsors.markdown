@@ -11,8 +11,9 @@
 
 #Sponsors
 
-<ul class="grid sponsors">
+<ul class="grid">
   <li><a href="http://spotify.com" title="Spotify"><img src="/lib/logos/spotify.png" alt="Spotify"></a></li>
   <li><a href="http://quirky.com" title="Quirky"><img src="/lib/logos/quirky.png" alt="Quirky"></a></li>
   <li><a href="http://squarespace.com" title="Squarespace"><img src="/lib/logos/squarespace.png" alt="Squarespace"></a></li>
+  <li><a href="https://www.catercow.com/" title="CaterCow"><img src="/lib/logos/catercow.png" alt="CaterCow"></a></li>
 </ul>
