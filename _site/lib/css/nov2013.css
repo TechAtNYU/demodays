@@ -1,0 +1,505 @@
+@import "nov-ionicons.css";
+
+@import "webfonts.css";
+/* -- FLUID GRID STYLES -- */
+.grid {
+  margin-bottom: 40px;
+  text-align: justify;
+}
+.grid.sponsors li {
+  display: inline-block;
+  width: 31%;
+}
+.grid li {
+  display: inline-block;
+  width: 20%;
+}
+.grid li.half {
+  width: 45%;
+}
+.grid:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.grid .placeholder {
+  padding: 0;
+}
+.placeholder {
+  width: 1em;
+  display: inline-block;
+}
+body {
+  font: 1em "Radikal", helvetica, arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1.25;
+  margin-bottom: .1em;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+}
+h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.25em;
+}
+h5 {
+  font-size: 1em;
+  font-style: italic;
+}
+.header {
+  font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
+}
+.header h1 {
+  line-height: 1;
+}
+hr {
+  clear: both;
+}
+p {
+  font-size: 100%;
+  line-height: 1.75;
+  margin-bottom: .75em;
+}
+a:link,
+a:visited,
+a:active {
+  color: #ee70a5;
+}
+a:hover {
+  color: #f9cbde;
+}
+h3 + ul {
+  margin-bottom: 1em;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+body {
+  padding-bottom: 2em;
+}
+::selection {
+  background: #ee70a5;
+  /* Safari */
+
+}
+::-moz-selection {
+  background: #ee70a5;
+  /* Firefox */
+
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.site {
+  margin: 0 auto;
+}
+.content {
+  min-height: 30em;
+  padding: 0 0 2em;
+}
+hr {
+  height: .05em;
+  border: none;
+  background: #ccc;
+}
+.grid img {
+  max-width: 100%;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.25);
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  padding: 1.5em 0 3em;
+  height: 100%;
+}
+header.main {
+  background-repeat: no-repeat;
+  background-color: #666666;
+  color: white;
+}
+header.main li {
+  list-style: none;
+}
+header.main a {
+  color: white;
+}
+header.main a:hover {
+  text-decoration: none;
+}
+header.main .logo {
+  margin: auto;
+  text-align: center;
+}
+header.main .logo h1 {
+  font-size: 4em;
+  letter-spacing: -3px;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+header.main .info > ul {
+  float: left;
+  display: inline-block;
+}
+header.main .info > ul.icons {
+  width: 10%;
+}
+header.main .info > ul.logistics {
+  width: 80%;
+  float: right;
+}
+header.main .info > ul.logistics > li:last-child {
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+  font-weight: bold;
+}
+header.main .info .micro {
+  background: #666666;
+  font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
+  letter-spacing: 0px;
+  font-size: .85em;
+  padding: .05em;
+  display: none;
+  position: absolute;
+  width: 12em;
+  margin-top: -0.5em;
+}
+header.main .tagline {
+  margin: 1.5em auto 0;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+  position: relative;
+  text-align: center;
+}
+header.main .tagline h1 {
+  color: white;
+  font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
+  font-weight: 100;
+}
+header.main .tagline .action {
+  background-color: #ee70a5;
+  border: none;
+  font: 1em "Radikal", helvetica, arial, sans-serif;
+  margin-top: 2em;
+  color: white;
+  display: inline-block;
+  padding: .6em .25em .35em;
+  text-shadow: none;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 1s ease;
+  -webkit-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+}
+header.main .tagline .action:hover {
+  background-color: #b2145c;
+  cursor: pointer;
+}
+header.main .tagline .action > span {
+  border: 1px dotted white;
+  padding: .5em .95em .25em;
+}
+.container > section {
+  font-size: 110%;
+}
+.container > section:nth-child(2n) {
+  background: #eeeeee;
+}
+.container > section.intro li {
+  transition: border 2s ease;
+  border: 2px dotted #cccccc;
+  margin: 2em 0 0 0;
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+  padding-top: .75em;
+}
+.container > section.intro li:hover {
+  border: 2px solid #ee70a5;
+}
+.container > section.intro li a {
+  text-align: center;
+  text-decoration: none;
+}
+.container > section.intro li a:hover {
+  color: #ee70a5;
+}
+.container > section.details {
+  background-color: #666666;
+  background-position: center center;
+  color: white;
+  text-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+  padding: 0;
+}
+.container > section.speaker img {
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+}
+.container > section.clubs-sponsors li a img:hover {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+}
+.container > section.main-copy ul,
+.container > section.details ul {
+  margin-left: 1em;
+}
+.container > section.main-copy li a:first-child,
+.container > section.details li a:first-child {
+  color: black;
+  font-weight: bold;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+  text-decoration: none;
+}
+.container > section.main-copy li a:hover,
+.container > section.details li a:hover {
+  text-decoration: underline;
+}
+footer {
+  font-size: 110%;
+  background: #ee70a5;
+  padding: .5em 0;
+}
+footer a:link,
+footer a:visited,
+footer a:active {
+  color: black;
+  font-weight: bold;
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer i span {
+  display: none;
+}
+footer p {
+  line-height: 1.25;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  display: inline-block;
+}
+footer ul li a {
+  padding: .5em .4em .25em;
+  text-decoration: none;
+  background: white;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
+footer .colophon {
+  clear: both;
+  text-align: right;
+}
+@media only screen and (min-width: 40em) {
+  header.main {
+    background-image: url(/lib/img/splash.jpg);
+    background-position: center bottom;
+  }
+  header.main .logo {
+    padding: 3em 0 0;
+  }
+  .container > section.details {
+    background-image: url(/lib/img/schedule.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  .info {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ee70a5;
+    color: white;
+    padding: 1em;
+    width: 12em;
+    height: 12em;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  }
+  .info h3 {
+    line-height: 1;
+    margin-bottom: .5em;
+  }
+  .info .further-detail h3 {
+    text-decoration: underline;
+    cursor: help;
+  }
+  .container > section {
+    padding: 2em 0;
+  }
+  footer p {
+    font-size: 75%;
+  }
+}
+@media only screen and (min-width: 70em) {
+  .site {
+    max-width: 50em;
+    width: 65%;
+    font-size: 125%;
+  }
+  header.main {
+    min-height: 40em;
+    height: 100%;
+  }
+  .tagline {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (max-width: 70em) {
+  header.main {
+    background-position: center center;
+  }
+  header.main .tagline .action {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 50em) and (max-width: 70em) {
+  .site {
+    max-width: 45em;
+    width: 75%;
+  }
+  .post,
+  .post-header,
+  .posts {
+    font-size: 106.25%;
+  }
+  header.main {
+    min-height: 30em;
+  }
+}
+@media only screen and (min-width: 40em) and (max-width: 50em) {
+  .site {
+    width: 90%;
+    max-width: 45em;
+    font-size: .85em;
+  }
+  header.main {
+    min-height: 25em;
+  }
+}
+@media only screen and (min-width: 30em) and (max-width: 70em) {
+  .grid li {
+    width: 45%;
+    margin-bottom: 4%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .grid li,
+  .grid.sponsors li {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 5%;
+  }
+}
+@media only screen and (max-width: 40em) {
+  header.main {
+    background-position: center bottom;
+    min-height: 30em;
+  }
+  .site {
+    padding: 1em;
+    width: 100%;
+    font-size: .85em;
+  }
+  header.main {
+    font-size: .75em;
+  }
+  header.main .overlay {
+    padding: 1.5em 0 4em;
+  }
+  header.main .info {
+    margin: 2em 0;
+    display: static;
+    text-align: center;
+  }
+  header.main .info > ul.icons {
+    display: none;
+  }
+  header.main .info > ul.logistics {
+    width: 100%;
+  }
+  header.main .info > ul.logistics li {
+    display: inline-block;
+    padding: .5em 1em;
+  }
+  header.main .info > ul.logistics li:last-child {
+    display: none;
+  }
+  header.main .info .micro {
+    display: none;
+    font-size: 0;
+  }
+  .container > section.speaker h1 + p {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media print {
+  body {
+    padding: 3em;
+  }
+  .clubs-sponsors,
+  .intro ul,
+  .info .icons,
+  .tagline a {
+    display: none;
+  }
+  .micro {
+    display: block;
+  }
+}

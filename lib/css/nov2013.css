@@ -1,4 +1,5 @@
-@import "ionicons.css";
+@import "nov-ionicons.css";
+
 @import "webfonts.css";
 /* -- FLUID GRID STYLES -- */
 .grid {
@@ -104,8 +105,10 @@ h3 + ul {
 .cf:after {
   content: " ";
   /* 1 */
+
   display: table;
   /* 2 */
+
 }
 .cf:after {
   clear: both;
@@ -119,10 +122,12 @@ body {
 ::selection {
   background: #ee70a5;
   /* Safari */
+
 }
 ::-moz-selection {
   background: #ee70a5;
   /* Firefox */
+
 }
 .container {
   width: 100%;

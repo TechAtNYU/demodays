@@ -5,6 +5,10 @@ tech@NYU, Parsons Code Club, Create@Cooper and Columbia ADI are serving up some 
 
 Doors open at 2:30pm, the show starts at 3:00pm.
 
+{% for post in site.posts %}
+<h2><a href="{{post.url}}">{{post.title}}</a></h2>
+{% endfor %}
+
 <ul class="grid">	
 	<li class="half demo">
 		<a href="https://docs.google.com/forms/d/1ricnx8Kdt41su_g1F3Lq4Fw4B489AdQCynAMI7YbZGM/viewform">
@@ -15,7 +19,7 @@ Doors open at 2:30pm, the show starts at 3:00pm.
 	</li>
 	
 	<li class="half attend">
-		<a href="http://www.meetup.com/DemoDays/">
+		<a href="http://www.meetup.com/DemoDays/events/166086912/">
 			<h1 class="ion-ios7-glasses"></h1>
 			<h2>Wanna hang out?</h2>
 			<p>RSVP</p>
