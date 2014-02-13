@@ -1,10 +1,8 @@
 
 #Speaker
 
-![Joe Lallouz](/lib/img/joe-lallouz.png)
+![Seth Bannon](https://pbs.twimg.com/profile_images/378800000605217763/2509cc0488b0325a5c37821a5cbc9d88.jpeg)
 
-##[Joe Lallouz](https://twitter.com/JoeLallouz)
+##[Seth Bannon](https://twitter.com/sethbannon)
 
-Co-Founder and application engineer at Grand St., a curated shop for creative technology. He works across the stack building well-designed, thoughtfully crafted software. When he's not coding away at Grand St. you'll find him kicking ass and taking names on the ice at Chelsea Piers or taking his sweet pups Rocky and Onyx for walks. 
-
-Joe loves beautiful design and is addicted to sneakers. He is excited to discuss "Social Design", centered around creating compelling engaged communities and how to incentivize participation. 
+Social entrepreneur. Founder of @AmicusHQ. @YCombinator alum. Forbes 30 Under 30. Vegetarian. NYC through and through.

@@ -9,7 +9,7 @@
 </ul>
 
 
-#Sponsors
+#Previous Sponsors
 
 <ul class="grid">
   <li><a href="http://spotify.com" title="Spotify"><img src="/lib/logos/spotify.png" alt="Spotify"></a></li>
