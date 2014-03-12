@@ -1,13 +1,9 @@
 
-#DemoDays is back!
+#March 2014
 
 tech@NYU, Parsons Code Club, Create@Cooper and Columbia ADI are serving up some mouth-watering demos. Join us at Cooper Union's Rose Audtiorium to watch some really cool student demos, meet interesting people, and eat some great food.
 
 Doors open at 2:30pm, the show starts at 3:00pm.
-
-{% for post in site.posts %}
-<h2><a href="{{post.url}}">{{post.title}}</a></h2>
-{% endfor %}
 
 <ul class="grid">	
 	<li class="half demo">
@@ -19,7 +15,7 @@ Doors open at 2:30pm, the show starts at 3:00pm.
 	</li>
 	
 	<li class="half attend">
-		<a href="http://www.meetup.com/DemoDays/events/166086912/">
+		<a href="http://www.meetup.com/DemoDays/events/170862782/">
 			<h1 class="ion-ios7-glasses"></h1>
 			<h2>Wanna hang out?</h2>
 			<p>RSVP</p>

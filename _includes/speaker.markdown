@@ -1,8 +1,8 @@
 
 #Speaker
 
-![Seth Bannon](https://pbs.twimg.com/profile_images/378800000605217763/2509cc0488b0325a5c37821a5cbc9d88.jpeg)
+![Dan Shipper](https://s3.amazonaws.com/dan-misc/head-shot.png)
 
-##[Seth Bannon](https://twitter.com/sethbannon)
+##[Dan Shipper](http://danshipper.com/)
 
-Social entrepreneur. Founder of @AmicusHQ. @YCombinator alum. Forbes 30 Under 30. Vegetarian. NYC through and through.
+My name is Dan Shipper. I'm 22 and I'm a senior at UPenn majoring in philosophy. I run a company called Firefly. We've been around for about year, and in that time we've bootstrapped our way to well into the 6-figures in revenue, with over 5,000 customers.

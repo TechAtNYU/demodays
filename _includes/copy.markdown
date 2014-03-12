@@ -1,9 +1,7 @@
 
 #Program
 
-Check back on 2/22 for the full program.
-
-Teaser: [Kipin Hall](http://kipinhall.com/)
+Check back on 3/29 for the full program.
 
 #Past DemoDays
 

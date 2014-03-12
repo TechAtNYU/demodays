@@ -80,10 +80,10 @@ p {
 a:link,
 a:visited,
 a:active {
-  color: #127a30;
+  color: #263855;
 }
 a:hover {
-  color: #1fd353;
+  color: #46669b;
 }
 h3 + ul {
   margin-bottom: 1em;
@@ -117,11 +117,11 @@ body {
   padding-bottom: 2em;
 }
 ::selection {
-  background: #127a30;
+  background: #263855;
   /* Safari */
 }
 ::-moz-selection {
-  background: #127a30;
+  background: #263855;
   /* Firefox */
 }
 .container {
@@ -210,7 +210,7 @@ header.main .tagline h1 {
   font-weight: 100;
 }
 header.main .tagline .action {
-  background-color: #127a30;
+  background-color: #263855;
   border: none;
   font: 1em "Radikal", helvetica, arial, sans-serif;
   margin-top: 2em;
@@ -227,7 +227,7 @@ header.main .tagline .action {
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
 }
 header.main .tagline .action:hover {
-  background-color: #5fe887;
+  background-color: #8ca4cc;
   cursor: pointer;
 }
 header.main .tagline .action > span {
@@ -253,14 +253,14 @@ header.main .tagline .action > span {
   text-align: center;
 }
 .container > section.intro li:hover {
-  border: 2px solid #127a30;
+  border: 2px solid #263855;
 }
 .container > section.intro li a {
   text-align: center;
   text-decoration: none;
 }
 .container > section.intro li a:hover {
-  color: #127a30;
+  color: #263855;
 }
 .container > section.details {
   background-color: #666666;
@@ -301,7 +301,7 @@ header.main .tagline .action > span {
 }
 footer {
   font-size: 110%;
-  background: #127a30;
+  background: #263855;
   padding: .5em 0;
 }
 footer a:link,
@@ -343,7 +343,7 @@ footer .colophon {
 }
 @media only screen and (min-width: 40em) {
   header.main {
-    background-image: url(http://i.imgur.com/uweMHzw.jpg);
+    background-image: url(/lib/img/march-2014.jpg);
     background-position: center bottom;
   }
   header.main .logo {
@@ -358,7 +358,7 @@ footer .colophon {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #127a30;
+    background-color: #263855;
     color: white;
     padding: 1em;
     width: 12em;
