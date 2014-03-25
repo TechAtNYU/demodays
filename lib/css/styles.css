@@ -344,7 +344,8 @@ footer .colophon {
 @media only screen and (min-width: 40em) {
   header.main {
     background-image: url(/lib/img/march-2014.jpg);
-    background-position: center bottom;
+    background-position: center center;
+    background-size: cover;
   }
   header.main .logo {
     padding: 3em 0 0;
