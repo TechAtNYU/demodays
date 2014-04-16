@@ -80,10 +80,10 @@ p {
 a:link,
 a:visited,
 a:active {
-  color: #263855;
+  color: #ec0712;
 }
 a:hover {
-  color: #46669b;
+  color: #fa5f66;
 }
 h3 + ul {
   margin-bottom: 1em;
@@ -117,11 +117,11 @@ body {
   padding-bottom: 2em;
 }
 ::selection {
-  background: #263855;
+  background: #ec0712;
   /* Safari */
 }
 ::-moz-selection {
-  background: #263855;
+  background: #ec0712;
   /* Firefox */
 }
 .container {
@@ -210,7 +210,7 @@ header.main .tagline h1 {
   font-weight: 100;
 }
 header.main .tagline .action {
-  background-color: #263855;
+  background-color: #ec0712;
   border: none;
   font: 1em "Radikal", helvetica, arial, sans-serif;
   margin-top: 2em;
@@ -227,7 +227,7 @@ header.main .tagline .action {
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
 }
 header.main .tagline .action:hover {
-  background-color: #8ca4cc;
+  background-color: #99050c;
   cursor: pointer;
 }
 header.main .tagline .action > span {
@@ -253,14 +253,14 @@ header.main .tagline .action > span {
   text-align: center;
 }
 .container > section.intro li:hover {
-  border: 2px solid #263855;
+  border: 2px solid #ec0712;
 }
 .container > section.intro li a {
   text-align: center;
   text-decoration: none;
 }
 .container > section.intro li a:hover {
-  color: #263855;
+  color: #ec0712;
 }
 .container > section.details {
   background-color: #666666;
@@ -301,7 +301,7 @@ header.main .tagline .action > span {
 }
 footer {
   font-size: 110%;
-  background: #263855;
+  background: #ec0712;
   padding: .5em 0;
 }
 footer a:link,
@@ -456,7 +456,7 @@ li[class^='past']:hover div:last-child {
 }
 @media only screen and (min-width: 40em) {
   header.main {
-    background-image: url(/lib/img/march-2014.jpg);
+    background-image: url(/lib/img/april-2014.jpg);
     background-position: center center;
     background-size: cover;
   }
@@ -472,7 +472,7 @@ li[class^='past']:hover div:last-child {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #263855;
+    background-color: #ec0712;
     color: white;
     padding: 1em;
     width: 12em;

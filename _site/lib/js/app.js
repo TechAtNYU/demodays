@@ -3,6 +3,7 @@ $( ".further-detail" ).hover( function() {
 });
 
 
+/*
 $(document).ready(function() {
     var windowTest = $(window).width();
     var boxWidth = $(".archive__wrap").outerWidth();
@@ -54,7 +55,6 @@ $(document).ready(function() {
 });
 
 
-
     $(document).scroll(function() {
         var top = $(document).scrollTop();
 		
@@ -87,7 +87,7 @@ $(document).ready(function() {
              return;
         }        
     });
-
+	
     $(".archive li").hover( function() {
         if ($(document).scrollTop() > 380) {
             $(this).find(".past__date").fadeIn();
@@ -96,4 +96,4 @@ $(document).ready(function() {
         if ($(document).scrollTop() > 380) {
             $(this).find(".past__date").fadeOut();
         }
-    });
+    });*/
