@@ -2,7 +2,7 @@ $( ".further-detail" ).hover( function() {
 	$(this).children(".micro").toggle();
 });
 
-/*
+
 $(document).ready(function() {
     var windowTest = $(window).width();
     var boxWidth = $(".archive__wrap").outerWidth();
@@ -97,5 +97,3 @@ $(document).ready(function() {
             $(this).find(".past__date").fadeOut();
         }
     });
-
-*/

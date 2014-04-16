@@ -1,7 +1,7 @@
 
 #Speaker
 
-![Abe Geiger](https://pbs.twimg.com/profile_images/2634009207/0d31e476b4454d0df407fa248823c6d1.png)
+![Abe Geiger](/lib/img/abe-geiger.png)
 
 ##[Abe Geiger](https://twitter.com/ageiger)
 
