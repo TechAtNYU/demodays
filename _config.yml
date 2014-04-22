@@ -1,3 +1,4 @@
 name: demodays
 markdown: redcarpet
 pygments: true
+permalink: /archive/:month/:year
