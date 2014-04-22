@@ -52,4 +52,4 @@ title: DemoDays, presented by tech@NYU
 
 {% endfor %}
 
-<!--{% include archive.html %}-->
+{% include archive.html %}
