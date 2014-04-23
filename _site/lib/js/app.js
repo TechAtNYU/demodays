@@ -12,30 +12,37 @@
 			var ar = DD.archive();
 			ar.setup();
 
-		    $(document).scroll(function() {
-				ar.navigate();
-		    });
+		    //$(document).scroll(function() {
+			//	ar.navigate();
+		    //});
 			
 		    $(".archive li").on( "click mouseover mouseout", function() {
 				var arSpecial = DD.archive($(this));
 				
 				if (event.type === "click") {
 					arSpecial.past();
-				} else if (event.type === "mouseover") {
-					 arSpecial.showMonth();
-				} else if (event.type === "mouseout") {
-					arSpecial.hideMonth();
-				}
+				} 
+				
+				//else if (event.type === "mouseover") {
+				//	 arSpecial.showMonth();
+				//} else if (event.type === "mouseout") {
+				//	arSpecial.hideMonth();
+				//}
 			});
 		},
 		'archive' : function (element) {
 		    var windowTest = $(window).width();
 		    var boxWidth = $(".archive__wrap").outerWidth();
-
 		    var arcWidth = windowTest - boxWidth;
-
 		    var $archive = $(".archive");
 			var numEntries = $archive.find("li").length;
+			
+	        var top = $(document).scrollTop();
+			var page = $(window).height();
+			var doc = $("body").outerHeight();
+	        var $month = $(".archive li");
+	        var headerHeight = $("header").height() / 2;
+			var bottom = top+page;
 			
 			function archiveWidth() {
 				$archive.width(windowTest);
@@ -80,22 +87,21 @@
 			}
 			
 			function fadeArchive() {
-				// TO DO: throttle this
-				
-		        var top = $(document).scrollTop();
-				var page = $(window).height();
-				var doc = $("body").outerHeight();
-		        var $archive = $(".archive li");
-		        var headerHeight = $("header").height() / 2;
-				var bottom = top+page;
+				// TO DO: finish/throttle this
     			
-				if (bottom >= doc) {
-					$archive.find(".past__date").fadeIn();
-				} else if (top > headerHeight) {
-					$archive.find(".past__date").fadeOut();     
-				} else if (top < headerHeight) {
-		             $archive.find(".past__date").fadeIn();
-		        }        
+				console.log("is this on")
+				
+				if (bottom >= doc || top < headerHeight) {
+					$month.find(".past__date").fadeIn();
+				} else {
+					$month.find(".past__date").fadeOut();    
+				}
+				
+				//$(".archive li").hover( function() {
+				//	return;
+				//}, function() {
+				//	return;
+				//})   
 			}
 			
 			function showMonth() {
