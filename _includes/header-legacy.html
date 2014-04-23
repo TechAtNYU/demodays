@@ -1,0 +1,49 @@
+<header class="main">
+	<div class="overlay">
+		<div class="site">
+			<div class="logo">
+				<img src="/lib/img/demodays.png">
+				<h1>DemoDays</h1>
+			</div>
+			<div class="tagline">
+				<h1>Student demos at the intersection of art, design and code.</h1>
+				
+				<a href="{{page.eventLink}}" class="action"><span><span class="ion-ios7-heart" data-pack="ios7" data-tags="love"></span> Archive</span></a>
+			</div>
+			<div class="info">
+				<ul class="icons">
+					<li><h3 class="ion-ios7-calendar" data-pack="ios7" data-tags="date, time, month, year"></h3></li>
+					<li><h3 class="ion-ios7-clock" data-pack="ios7" data-tags="time, date, hours, minutes, seconds, watch"></h3></li>
+					<li><h3 class="ion-ios7-world" data-pack="ios7" data-tags="globe, earth"></h3><br><br></li>
+					<li><h3 class="ion-ios7-heart" data-pack="ios7" data-tags="love"></h3></li>
+				</ul>
+				<ul class="logistics">	
+					<li class="further-detail"><h3> {{ page.date | date: "%m/%d/%Y" }}</h3> 
+						<div class="micro">
+							<ul>
+								<li>Saturday</li>
+							</ul>
+						</div>
+					</li>
+					<li class="further-detail"><h3> 2:30-5:00</h3> 
+						<div class="micro">
+							<ul>
+								<li>Demos</li>
+								<li>Guest speaker</li>
+								<li>PIZZAAAAAA</li>
+							</ul>
+						</div>
+					</li>
+					<li class="further-detail"><h3><a href="#"> {{page.location}}</a></h3> 
+						<div class="micro">
+							<ul>
+								<li>:)</li>
+							</ul>
+						</div>
+					</li>
+					<li><h3><a href="{{page.eventLink}}"> Archive</a></h3></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>

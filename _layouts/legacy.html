@@ -27,29 +27,29 @@
 		<!-- overwrite -->
 		<style>
 		::selection {
-			background: {{ page.legColor }} !important; /* Safari */
+			background: {{ page.accent }} !important; /* Safari */
 			}
 		::-moz-selection {
-			background: {{ page.legColor }} !important; /* Firefox */
+			background: {{ page.accent }} !important; /* Firefox */
 		}
 		.action {
-			background-color: {{ page.legColor }} !important;
+			background-color: {{ page.accent }} !important;
 		}
 		.action:hover {
-			background-color: {{ page.legColorBold }} !important;
+			background-color: {{ page.accentBold }} !important;
 		}
 		.container > section.intro li:hover {
-			border: 2px solid {{ page.legColor }} !important;
+			border: 2px solid {{ page.accent }} !important;
 		}
 		.container > section.intro a:hover {
-			color: {{ page.legColor }} !important;
+			color: {{ page.accent }} !important;
 		}
 		footer {
-			background-color: {{ page.legColor }} !important;
+			background-color: {{ page.accent }} !important;
 		}
 		@media only screen and (min-width: 40em) {
 			.info {
-				background-color: {{ page.legColor }} !important;
+				background-color: {{ page.accent }} !important;
 			}
 			header.main {
 				background-image: url('/lib/img/archive/{{page.date | date: '%b-%Y' }}.jpg');
@@ -59,16 +59,30 @@
     </head>
     <body>
         <div class="container">
-			{% include header.html %}
+			{% include header-legacy.html %}
 	
 			<section class="intro">
 			<div class="site">
 			
 			<h1>{{ page.title }}</h1>
 			
-			<h3>This is archived.</h3>
-			<p></p>
+			<h3>Archival Content</h3>
 			
+			<p>The {{page.date | date: '%B %Y' }} DemoDays was held on {{ page.date | date: "%m/%d/%Y" }} at {{ page.location }} in New York City.</p>
+			
+			
+			
+			
+			<!--{% capture whatisdemodays %}
+			  {% include whatisdemodays.markdown %}
+			{% endcapture %}
+			{{ whatisdemodays | unindent | markdownify }}-->
+			
+			<h1>Join us next time!</h1>
+			
+			{% include legacy-intro.html %}
+			
+			{% include cta.html %}
 			
 			</div>
 			</section>
@@ -80,6 +94,7 @@
 			
 			<section class="legacy-demos">
 			<div class="site">
+				<h1>Demos</h1>
 				
 				{{ content }}
 				
