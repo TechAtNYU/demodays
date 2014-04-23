@@ -623,11 +623,11 @@ li[class^='past']:hover div:last-child {
 }
 .past__May-2013:hover,
 .past__May-2013.active {
-  border-color: yellow !important;
+  border-color: #487ae3 !important;
 }
 .past__Oct-2013:hover,
 .past__Oct-2013.active {
-  border-color: magenta !important;
+  border-color: #64561c !important;
 }
 .past__Nov-2013:hover,
 .past__Nov-2013.active {

@@ -112,7 +112,7 @@
 			<div class="site">
 				<h1>Speaker</h1>
 				{% for legSpeakers in page.legSpeakers %}
-				<img src="{{legSpeakers.image}}" title="{{legSpeakers.name}}">
+				{% if legSpeakers.image %}<img src="{{legSpeakers.image}}" title="{{legSpeakers.name}}">{% endif %}
 				
 				<h2><a href="{{legSpeakers.link}}">{{legSpeakers.name}}</a></h2>
 				
