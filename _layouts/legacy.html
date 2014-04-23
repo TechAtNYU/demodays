@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/lib/css/styles.css">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-45437819-1', 'demodays.co');
+		  ga('send', 'pageview');
+
+		</script>
+		
+		<!-- overwrite -->
+		<style>
+		::selection {
+			background: {{ page.legColor }} !important; /* Safari */
+			}
+		::-moz-selection {
+			background: {{ page.legColor }} !important; /* Firefox */
+		}
+		.action {
+			background-color: {{ page.legColor }} !important;
+		}
+		.action:hover {
+			background-color: {{ page.legColorBold }} !important;
+		}
+		.container > section.intro li:hover {
+			border: 2px solid {{ page.legColor }} !important;
+		}
+		.container > section.intro a:hover {
+			color: {{ page.legColor }} !important;
+		}
+		footer {
+			background-color: {{ page.legColor }} !important;
+		}
+		@media only screen and (min-width: 40em) {
+			.info {
+				background-color: {{ page.legColor }} !important;
+			}
+		}
+		</style>
+    </head>
+    <body>
+        <div class="container">
+			{% include header.html %}
+	
+		<h1>LEGACY</h1>
+			
+			   {{ content }}
+			   
+			   
+		
+        </div> <!-- /container -->
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="/lib/js/app.js"></script>
+    </body>
+</html>
