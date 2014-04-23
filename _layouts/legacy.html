@@ -32,6 +32,12 @@
 		::-moz-selection {
 			background: {{ page.accent }} !important; /* Firefox */
 		}
+		a:link, a:visited, a:active {
+			color: {{ page.accent }};
+		}
+		a:hover {
+			color: {{ page.accentBold }}; 
+		}
 		.action {
 			background-color: {{ page.accent }} !important;
 		}
