@@ -330,7 +330,11 @@ footer ul li {
   display: inline-block;
 }
 footer ul li a {
-  padding: .5em .4em .25em;
+  text-align: center;
+  display: block;
+  padding-top: 0.15rem;
+  width: 2rem;
+  height: 2rem;
   text-decoration: none;
   background: white;
   -webkit-border-radius: 50px;
