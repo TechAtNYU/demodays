@@ -367,7 +367,7 @@ li[class^='past'] {
   width: 50px;
   height: 20px;
   position: relative;
-  float: left;
+  float: right;
   border-bottom: 10px solid #eee;
   text-align: center;
   text-transform: uppercase;
@@ -414,44 +414,52 @@ li[class^='past']:hover div:last-child {
   left: 50%;
   margin-left: -3px;
 }
-.past__mar-2012:hover,
-.past__mar-2012.active {
+.past__Mar-2012:hover,
+.past__Mar-2012.active {
   border-color: brown !important;
 }
-.past__apr-2012:hover,
-.past__apr-2012.active {
+.past__Apr-2012:hover,
+.past__Apr-2012.active {
   border-color: aliceblue !important;
 }
-.past__oct-2012:hover,
-.past__oct-2012.active {
+.past__Jul-2012:hover,
+.past__Jul-2012.active {
+  border-color: gray !important;
+}
+.past__Oct-2012:hover,
+.past__Oct-2012.active {
   border-color: limegreen !important;
 }
-.past__nov-2012:hover,
-.past__nov-2012.active {
+.past__Nov-2012:hover,
+.past__Nov-2012.active {
   border-color: purple !important;
 }
-.past__dec-2012:hover,
-.past__dec-2012.active {
+.past__Dec-2012:hover,
+.past__Dec-2012.active {
   border-color: red !important;
 }
-.past__mar-2013:hover,
-.past__mar-2013.active {
+.past__Mar-2013:hover,
+.past__Mar-2013.active {
   border-color: navy !important;
 }
-.past__apr-2013:hover,
-.past__apr-2013.active {
+.past__Apr-2013:hover,
+.past__Apr-2013.active {
   border-color: blue !important;
 }
-.past__may-2013:hover,
-.past__may-2013.active {
+.past__May-2013:hover,
+.past__May-2013.active {
   border-color: yellow !important;
+}
+.past__Oct-2013:hover,
+.past__Oct-2013.active {
+  border-color: magenta !important;
 }
 .past__Nov-2013:hover,
 .past__Nov-2013.active {
   border-color: #facade !important;
 }
-.past__feb-2014:hover,
-.past__feb-2014.active {
+.past__Feb-2014:hover,
+.past__Feb-2014.active {
   border-color: #127a30  !important;
 }
 @media only screen and (min-width: 40em) {
