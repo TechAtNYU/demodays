@@ -51,7 +51,12 @@
 			.info {
 				background-color: {{ page.legColor }} !important;
 			}
+			header.main {
+				background-image: url('/lib/img/archive/{{page.date | date: '%b-%Y' }}.jpg');
+			}
 		}
+		
+		
 		</style>
     </head>
     <body>
