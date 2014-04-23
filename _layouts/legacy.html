@@ -61,6 +61,9 @@
 				background-image: url('/lib/img/archive/{{page.date | date: '%b-%Y' }}.jpg');
 			}
 		}
+		.demo-image {
+			width: 200px;
+		}
 		</style>
     </head>
     <body>
@@ -105,10 +108,16 @@
 				{% for post in site.posts %}
 					{% if post.category == "demo" %}
 						{% if post.whichdd == page.title %}
-							<li><a href="{{post.site}}">{{post.title}}</a> by 
+							<li><img src="{{post.image}}" class="demo-image">
+								<a href="{{post.site}}">{{post.title}}</a> by 
 								
-								{{post.creator}}
-							{{post.school}} {{post.twitter}}</li>
+								{% if post.maker %}
+								{% for maker in post.maker %}
+									{{ maker.name }} {{ maker.school }} {{ maker.twitter }}
+								{% endfor %}
+								{% endif %}
+							</li>
+							
 						{% endif %}
 					{% endif %}
 				{% endfor %}
