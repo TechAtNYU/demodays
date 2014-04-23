@@ -15,7 +15,7 @@ Doors open at 2:30pm, the show starts at 3:00pm.
 	</li>
 	
 	<li class="half attend">
-		<a href="http://www.meetup.com/DemoDays/events/176102932/">
+		<a href="https://www.facebook.com/events/838072456207753/">
 			<h1 class="ion-ios7-glasses"></h1>
 			<h2>Wanna hang out?</h2>
 			<p>RSVP</p>
