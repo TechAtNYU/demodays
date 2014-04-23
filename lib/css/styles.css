@@ -591,35 +591,35 @@ li[class^='past']:hover div:last-child {
 }
 .past__Mar-2012:hover,
 .past__Mar-2012.active {
-  border-color: brown !important;
+  border-color: #adf9e5 !important;
 }
 .past__Apr-2012:hover,
 .past__Apr-2012.active {
-  border-color: aliceblue !important;
+  border-color: #4a419e !important;
 }
 .past__Jul-2012:hover,
 .past__Jul-2012.active {
-  border-color: gray !important;
+  border-color: #fddf28 !important;
 }
 .past__Oct-2012:hover,
 .past__Oct-2012.active {
-  border-color: limegreen !important;
+  border-color: #36f254 !important;
 }
 .past__Nov-2012:hover,
 .past__Nov-2012.active {
-  border-color: purple !important;
+  border-color: #370701 !important;
 }
 .past__Dec-2012:hover,
 .past__Dec-2012.active {
-  border-color: red !important;
+  border-color: #855fa9 !important;
 }
 .past__Mar-2013:hover,
 .past__Mar-2013.active {
-  border-color: navy !important;
+  border-color: #2b3331 !important;
 }
 .past__Apr-2013:hover,
 .past__Apr-2013.active {
-  border-color: blue !important;
+  border-color: #57068C !important;
 }
 .past__May-2013:hover,
 .past__May-2013.active {
