@@ -55,20 +55,67 @@
 				background-image: url('/lib/img/archive/{{page.date | date: '%b-%Y' }}.jpg');
 			}
 		}
-		
-		
 		</style>
     </head>
     <body>
         <div class="container">
 			{% include header.html %}
 	
-		<h1>LEGACY</h1>
+			<section class="intro">
+			<div class="site">
 			
-			   {{ content }}
+			<h1>{{ page.title }}</h1>
+			
+			<h3>This is archived.</h3>
+			<p></p>
+			
+			
+			</div>
+			</section>
+			
+			
+			
+			
+			
+			
+			<section class="legacy-demos">
+			<div class="site">
+				
+				{{ content }}
+				
+			</div>
+			</section>
+			
+
+			<section class="speaker">
+			<div class="site">
+				<h1>Speaker</h1>
+				{% for legSpeakers in page.legSpeakers %}
+				<img src="{{legSpeakers.image}}" title="{{legSpeakers.name}}">
+				
+				<h2><a href="{{legSpeakers.link}}">{{legSpeakers.name}}</a></h2>
+				
+				{% if legSpeakers.bioTitle %}<h4>{{legSpeakers.bioTitle }}</h4>{% endif %}
+				
+				<p>{{legSpeakers.bioDescription}}</p>
+				
+				{% if legSpeakers.companyTitle %}<h4>{{legSpeakers.companyTitle }}</h4>{% endif %}
+				{% if legSpeakers.companyDescription %}<p>{{legSpeakers.companyDescription }}</p>{% endif %}
+				
+				{% endfor %}
+				
+			</div>
+			</section>
+			
+			
+			
 			   
 			   
-		
+			   
+		{% include footer.html %}
+
+
+		{% include archive.html %}
         </div> <!-- /container -->
 
 

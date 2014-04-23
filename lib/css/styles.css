@@ -275,6 +275,8 @@ header.main .tagline .action > span {
   -ms-border-radius: 1000px;
   -o-border-radius: 1000px;
   border-radius: 1000px;
+  width: 200px;
+  height: 200px;
 }
 .container > section.clubs-sponsors li a img:hover {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);

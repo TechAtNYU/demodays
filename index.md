@@ -44,7 +44,3 @@ title: DemoDays, presented by tech@NYU
 {{ copy | unindent | markdownify }}
 </div>
 </section>
-{% include footer.html %}
-
-
-{% include archive.html %}
