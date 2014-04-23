@@ -3,7 +3,9 @@
     <div class="archive__control--right"><a href="#">&raquo;</a></div>-->
 <ul class="archive">
 	{% for post in site.posts %}
+		{% unless post.category == "demo" %}
 	<a href="{{post.url}}"><li class="past__{{post.date | date: '%b-%Y' }} {% if  post.date == page.date %} active {% endif %}"><div class="past__arrow"></div><div class="past__date">{{ post.date | date: "%b %Y" }}</div></li></a>
+		{% endunless %}
 	{% endfor %}
 </ul>
 </div>

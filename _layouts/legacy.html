@@ -102,7 +102,16 @@
 			<div class="site">
 				<h1>Demos</h1>
 				
-				{{ content }}
+				{% for post in site.posts %}
+					{% if post.category == "demo" %}
+						{% if post.whichdd == page.title %}
+							<li><a href="{{post.site}}">{{post.title}}</a> by 
+								
+								{{post.creator}}
+							{{post.school}} {{post.twitter}}</li>
+						{% endif %}
+					{% endif %}
+				{% endfor %}
 				
 			</div>
 			</section>
