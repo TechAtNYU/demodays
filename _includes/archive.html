@@ -1,8 +1,17 @@
+	
+
+
+
 <div class="archive__wrap">
     <div class="archive__control--left"><a href="#">&laquo;</a></div>
     <div class="archive__control--right"><a href="#">&raquo;</a></div>
 <ul class="archive">
-        <li class="past__mar-2012"><div class="past__arrow"></div><div class="past__date">Mar 2012</div></li>
+	
+		
+	
+	
+	
+    <!--<li class="past__mar-2012"><div class="past__arrow"></div><div class="past__date">Mar 2012</div></li>
     <li class="past__apr-2012"><div class="past__arrow"></div><div class="past__date">Apr 2012</div></li>
     <li class="past__oct-2012"><div class="past__arrow"></div><div class="past__date">Oct 2012</div></li>
     <li class="past__nov-2012"><div class="past__arrow"></div><div class="past__date">Nov 2012</div></li>
@@ -11,6 +20,13 @@
     <li class="past__apr-2013"><div class="past__arrow"></div><div class="past__date">Apr 2013</div></li>
     <li class="past__may-2013"><div class="past__arrow"></div><div class="past__date">May 2013</div></li>
     <li class="past__nov-2013"><div class="past__arrow"></div><div class="past__date">Nov 2013</div></li>
-    <li class="past__feb-2014 active"><div class="past__arrow"></div><div class="past__date active">Feb 2014</div></li>
+    <li class="past__feb-2014 active"><div class="past__arrow"></div><div class="past__date active">Feb 2014</div></li>-->
+	
+	{% for post in site.posts %}
+	<li class="past__{{post.date | date: '%b-%Y' }}"><div class="past__arrow"></div><div class="past__date">{{ post.date | date: "%b %Y" }}</div></li>
+
+
+	{% endfor %}
+
 </ul>
 </div>

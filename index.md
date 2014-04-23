@@ -46,10 +46,5 @@ title: DemoDays, presented by tech@NYU
 </section>
 {% include footer.html %}
 
-{% for post in site.posts %}
-
-<a href="{{post.url}}">{{post.title}}</a>
-
-{% endfor %}
 
 {% include archive.html %}
