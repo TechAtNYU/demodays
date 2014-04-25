@@ -50,6 +50,12 @@
 		.container > section.intro a:hover {
 			color: {{ page.accent }} !important;
 		}
+		.maker__twitter {
+			 color: {{ page.accentBold }} !important;
+		}
+		.maker__twitter:hover {
+			 color: {{ page.accent }} !important;
+		}
 		footer {
 			background-color: {{ page.accent }} !important;
 		}
@@ -61,9 +67,6 @@
 			header.main {
 				background-image: url('/lib/img/archive/{{page.date | date: '%b-%Y' }}.jpg');
 			}
-		}
-		.demo-image {
-			width: 200px;
 		}
 		</style>
     </head>
@@ -106,22 +109,47 @@
 			<div class="site">
 				<h1>Demos</h1>
 				
+				<ul class="grid">
 				{% for post in site.posts %}
 					{% if post.category == "demo" %}
 						{% if post.whichdd == page.title %}
-							<li><img src="{{post.image}}" class="demo-image">
-								<a href="{{post.site}}">{{post.title}}</a> by 
-								
-								{% if post.maker %}
-								{% for maker in post.maker %}
-									{{ maker.name }} {{ maker.school }} {{ maker.twitter }}
-								{% endfor %}
+							<li class="half">
+								{% if post.site %}
+								<a href="{{post.site}}">
+								{% endif %}	
+								<img src="{{post.image}}" class="demo__image">
+								{% if post.site %}
+								</a>
 								{% endif %}
+								
+								
+								<h3 class="demo__name">
+									{% if post.site %}
+									<a href="{{post.site}}">{{post.title}}</a>
+									{% else %}
+									{{post.title}}
+									{% endif %}
+								</h3>
+								
+								
+								{% for maker in post.maker %}
+								<div class="demo__maker {% if post.maker.size > 1 %}multiple{% endif %}">
+									<h4 class="maker__name">{{ maker.name }} 
+										{% if maker.twitter %}<a href="http://twitter.com/{{ maker.twitter }}" class="maker__twitter"><i class="ion-social-twitter" data-pack="social" data-tags="follow, post, share"></i></a> {% endif %}
+									</h4>
+									
+									<p class="maker__school">{{ maker.school }}</p>
+								</div>
+								{% endfor %}
+								
+								<p>{{ post.content }}</p>
 							</li>
+							
 							
 						{% endif %}
 					{% endif %}
 				{% endfor %}
+				</ul>
 				
 			</div>
 			</section>

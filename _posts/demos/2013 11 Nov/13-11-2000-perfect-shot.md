@@ -10,3 +10,4 @@ maker:
   school: NYU Poly
   twitter: johnhmeyer123
 ---
+"Perfect Shot" uses new technologies in iOS 7 to detect each individual set of eyes and smiles in a group photo to take one single perfect shot! 

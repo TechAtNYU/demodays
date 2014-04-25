@@ -81,6 +81,7 @@ a:link,
 a:visited,
 a:active {
   color: #ec0712;
+  transition: color 0.25s ease-in-out;
 }
 a:hover {
   color: #fa5f66;
@@ -644,4 +645,28 @@ li[class^='past']:hover div:last-child {
 .past__Mar-2014:hover,
 .past__Mar-2014.active {
   border-color: #263855 !important;
+}
+.legacy-demos .grid li {
+  font-size: 75%;
+  text-align: left;
+}
+.demo__photo {
+  max-width: 100%;
+}
+.demo__name {
+  font-family: "Radikal-Bold", helvetica, arial, sans-serif;
+}
+.demo__maker .maker__name {
+  line-height: 1.25;
+}
+.demo__maker p {
+  line-height: 1;
+  margin-bottom: 1em;
+}
+.demo__maker.multiple {
+  width: 50%;
+  float: left;
+}
+.maker__school {
+  color: #777;
 }
