@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Beyonce Trader
-creator: Terri Burns & Cheryl Wu
-school: NYU
-twitter: false
 site: http://beyoncetrader.com
 image: /lib/img/projects/errorbeybey.png
 category: demo
