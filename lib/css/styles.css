@@ -249,7 +249,7 @@ header.alt:after {
   clear: both;
 }
 header.alt .logo img {
-  float: left;
+  display: inline;
 }
 header.alt .logo h1 {
   padding-top: 0.2em;

@@ -44,9 +44,16 @@
 	        var headerHeight = $("header").height() / 2;
 			var bottom = top+page;
 			
+		
+			
 			function archiveWidth() {
-				$archive.width(windowTest);
-				$archive.find("li").width((windowTest/numEntries));
+				if (windowTest < 650) {
+					$archive.remove();
+					return;
+				} else {
+					$archive.width(windowTest);
+					$archive.find("li").width((windowTest/numEntries));
+				}
 			}
 			
 			function pastFader() {
@@ -76,14 +83,6 @@
 		        stepsisters.removeClass("active");
 				stepsisters.find(".past__date").removeClass("active");
 				stepsisters.find(".past__arrow").hide();				
-			}
-			
-			function changePageToArchive() {
-				//$(".container").load("archive/nov-2013.html", function() {
-		        //
-				//	console.log("yay");
-				//});
-				//window.location.href = "archive";
 			}
 			
 			function fadeArchive() {
