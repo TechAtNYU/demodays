@@ -16,6 +16,9 @@
 .grid li.half {
   width: 45%;
 }
+.grid li.oops {
+  width: 100%;
+}
 .grid:after {
   content: '';
   display: inline-block;
@@ -424,6 +427,7 @@ li[class^='past'] {
   text-transform: uppercase;
   font-size: 9px;
   letter-spacing: 1px;
+  cursor: pointer;
   transition: border-color 0.25s linear;
   -moz-transition: border-color 0.25s linear;
   /* FF3.7+ */
@@ -524,6 +528,9 @@ li[class^='past']:hover div:last-child {
 .demo {
   border-bottom: 1px solid #eee;
   padding: 1em 0;
+}
+.demo a:hover {
+  text-decoration: none !important;
 }
 .demo__photo {
   max-width: 100%;
@@ -640,6 +647,9 @@ li[class^='past']:hover div:last-child {
 }
 .makers__thanks li {
   display: inline-block;
+}
+.oops p {
+  font-size: 150%;
 }
 @media only screen and (min-width: 40em) {
   header.main {
