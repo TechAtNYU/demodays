@@ -333,9 +333,9 @@ footer ul li {
 footer ul li a {
   text-align: center;
   display: block;
-  padding-top: 0.15rem;
-  width: 2rem;
-  height: 2rem;
+  padding-top: 0.35em;
+  width: 2em;
+  height: 2em;
   text-decoration: none;
   background: white;
   -webkit-border-radius: 50px;
