@@ -650,6 +650,10 @@ li[class^='past']:hover div:last-child {
   font-size: 75%;
   text-align: left;
 }
+.demo {
+  border-bottom: 1px solid #eee;
+  padding: 1em 0;
+}
 .demo__photo {
   max-width: 100%;
 }
