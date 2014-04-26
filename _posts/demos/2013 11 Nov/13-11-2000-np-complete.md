@@ -10,3 +10,4 @@ maker:
   school: Columbia
   twitter: poviro
 ---
+Get a meal from a random restaurant in your vicinity costing exactly what you would like. Inspired by XKCD #287
