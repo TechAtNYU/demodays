@@ -109,6 +109,8 @@
 			<div class="site">
 				<h1>Demos</h1>
 				
+				<!--{{ site.category.demo | size }}-->
+				
 				<ul class="grid">
 				{% for post in site.posts %}
 					{% if post.category == "demo" %}
@@ -117,7 +119,11 @@
 								{% if post.site %}
 								<a href="{{post.site}}">
 								{% endif %}	
+								{% if post.image %}
 								<img src="{{post.image}}" class="demo__image">
+								{% else %}
+								<img src="http://placekitten.com/400/250" class="demo__image">
+								{% endif %}
 								{% if post.site %}
 								</a>
 								{% endif %}
@@ -144,11 +150,11 @@
 								
 								<p>{{ post.content }}</p>
 								
-								<a href="https://docs.google.com/forms/d/1Yb47zibFoI_g045yoV9f6DRoAwFIJUusFSdaqPiDTWI/viewform?entry.285504012={{post.whichdd}}&entry.1315230717=Demo&entry.303122555={{post.title}}&entry.1471712158" class="demo__correction">submit correction</a>
+								<p class="demo__correction"><a href="https://docs.google.com/forms/d/1Yb47zibFoI_g045yoV9f6DRoAwFIJUusFSdaqPiDTWI/viewform?entry.285504012={{post.whichdd}}&entry.1315230717=Demo&entry.303122555={{post.title}}&entry.1471712158">submit correction</a></p>
 								
 	
 							</li>
-							
+						
 							
 						{% endif %}
 					{% endif %}

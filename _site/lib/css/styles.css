@@ -674,3 +674,7 @@ li[class^='past']:hover div:last-child {
 .maker__school {
   color: #777;
 }
+.demo__correction {
+  font-size: .75em;
+  text-align: right;
+}
