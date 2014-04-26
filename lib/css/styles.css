@@ -348,165 +348,6 @@ footer .colophon {
   clear: both;
   text-align: right;
 }
-@media only screen and (min-width: 40em) {
-  header.main {
-    background-image: url(/lib/img/archive/Apr-2014.jpg);
-    background-position: center center;
-    background-size: cover;
-  }
-  header.main .logo {
-    padding: 3em 0 0;
-  }
-  .container > section.details {
-    background-image: url(/lib/img/schedule.jpg);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-  }
-  .info {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #ec0712;
-    color: white;
-    padding: 1em;
-    width: 12em;
-    height: 12em;
-    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
-  }
-  .info h3 {
-    line-height: 1;
-    margin-bottom: .5em;
-  }
-  .info .further-detail h3 {
-    text-decoration: underline;
-    cursor: help;
-  }
-  .container > section {
-    padding: 2em 0;
-  }
-  footer p {
-    font-size: 75%;
-  }
-}
-@media only screen and (min-width: 70em) {
-  .site {
-    max-width: 50em;
-    width: 65%;
-    font-size: 125%;
-  }
-  header.main {
-    min-height: 40em;
-    height: 100%;
-  }
-  .tagline {
-    font-size: 1.25em;
-  }
-}
-@media only screen and (max-width: 70em) {
-  header.main {
-    background-position: center center;
-  }
-  header.main .tagline .action {
-    font-size: 2em;
-  }
-}
-@media only screen and (min-width: 50em) and (max-width: 70em) {
-  .site {
-    max-width: 45em;
-    width: 75%;
-  }
-  .post,
-  .post-header,
-  .posts {
-    font-size: 106.25%;
-  }
-  header.main {
-    min-height: 30em;
-  }
-}
-@media only screen and (min-width: 40em) and (max-width: 50em) {
-  .site {
-    width: 90%;
-    max-width: 45em;
-    font-size: .85em;
-  }
-  header.main {
-    min-height: 25em;
-  }
-}
-@media only screen and (min-width: 30em) and (max-width: 70em) {
-  .grid li {
-    width: 45%;
-    margin-bottom: 4%;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .grid li,
-  .grid.sponsors li {
-    width: 100%;
-    padding: 1em;
-    margin-bottom: 5%;
-  }
-}
-@media only screen and (max-width: 40em) {
-  header.main {
-    background-position: center bottom;
-    min-height: 30em;
-  }
-  .site {
-    padding: 1em;
-    width: 100%;
-    font-size: .85em;
-  }
-  header.main {
-    font-size: .75em;
-  }
-  header.main .overlay {
-    padding: 1.5em 0 4em;
-  }
-  header.main .info {
-    margin: 2em 0;
-    display: static;
-    text-align: center;
-  }
-  header.main .info > ul.icons {
-    display: none;
-  }
-  header.main .info > ul.logistics {
-    width: 100%;
-  }
-  header.main .info > ul.logistics li {
-    display: inline-block;
-    padding: .5em 1em;
-  }
-  header.main .info > ul.logistics li:last-child {
-    display: none;
-  }
-  header.main .info .micro {
-    display: none;
-    font-size: 0;
-  }
-  .container > section.speaker h1 + p {
-    text-align: center;
-    margin: 0 auto;
-  }
-}
-@media print {
-  body {
-    padding: 3em;
-  }
-  .clubs-sponsors,
-  .intro ul,
-  .info .icons,
-  .tagline a {
-    display: none;
-  }
-  .micro {
-    display: block;
-  }
-}
 .back-to-future {
   background: #ec0712;
   position: fixed;
@@ -689,4 +530,254 @@ li[class^='past']:hover div:last-child {
   font-size: .75em;
   text-align: right;
   clear: both;
+}
+.archive__calendar {
+  margin-bottom: 1em;
+}
+.archive__calendar li {
+  display: inline-block;
+  margin: 0;
+  width: 25%;
+  text-align: center;
+  border: 5px solid transparent;
+}
+.archive__calendar li:hover {
+  background: white !important;
+  border: 5px solid #ccc;
+}
+.archive__calendar li:hover a {
+  color: black !important;
+}
+.archive__calendar h3 {
+  text-transform: uppercase;
+  font-family: "Radikal", helvetica, arial, sans-serif;
+}
+.archive__calendar a {
+  display: block;
+  padding: 1.5em 0;
+  text-decoration: none;
+  color: white !important;
+}
+.archive__calendar .calendar__Mar-2012 {
+  background-color: #adf9e5 !important;
+  border-color: #adf9e5 !important;
+}
+.archive__calendar .calendar__Apr-2012 {
+  background-color: #4a419e !important;
+  border-color: #4a419e !important;
+}
+.archive__calendar .calendar__Jul-2012 {
+  background-color: #fddf28 !important;
+  border-color: #fddf28 !important;
+}
+.archive__calendar .calendar__Oct-2012 {
+  background-color: #36f254 !important;
+  border-color: #36f254 !important;
+}
+.archive__calendar .calendar__Nov-2012 {
+  background-color: #370701 !important;
+  border-color: #370701 !important;
+}
+.archive__calendar .calendar__Dec-2012 {
+  background-color: #855fa9 !important;
+  border-color: #855fa9 !important;
+}
+.archive__calendar .calendar__Mar-2013 {
+  background-color: #2b3331 !important;
+  border-color: #2b3331 !important;
+}
+.archive__calendar .calendar__Apr-2013 {
+  background-color: #57068C !important;
+  border-color: #57068C !important;
+}
+.archive__calendar .calendar__May-2013 {
+  background-color: #487ae3 !important;
+  border-color: #487ae3 !important;
+}
+.archive__calendar .calendar__Oct-2013 {
+  background-color: #64561c !important;
+  border-color: #64561c !important;
+}
+.archive__calendar .calendar__Nov-2013 {
+  background-color: #EE70A5 !important;
+  border-color: #EE70A5 !important;
+}
+.archive__calendar .calendar__Feb-2014 {
+  background-color: #127a30 !important;
+  border-color: #127a30 !important;
+}
+.archive__calendar .calendar__Mar-2014 {
+  background-color: #263855 !important;
+  border-color: #263855 !important;
+}
+.makers__thanks li {
+  display: inline-block;
+}
+@media only screen and (min-width: 40em) {
+  header.main {
+    background-image: url(/lib/img/archive/Apr-2014.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  header.main .logo {
+    padding: 3em 0 0;
+  }
+  .container > section.details {
+    background-image: url(/lib/img/schedule.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  .info {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ec0712;
+    color: white;
+    padding: 1em;
+    width: 12em;
+    height: 12em;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  }
+  .info h3 {
+    line-height: 1;
+    margin-bottom: .5em;
+  }
+  .info .further-detail h3 {
+    text-decoration: underline;
+    cursor: help;
+  }
+  .container > section {
+    padding: 2em 0;
+  }
+  footer p {
+    font-size: 75%;
+  }
+}
+@media only screen and (min-width: 70em) {
+  .site {
+    max-width: 50em;
+    width: 65%;
+    font-size: 125%;
+  }
+  header.main {
+    min-height: 40em;
+    height: 100%;
+  }
+  .tagline {
+    font-size: 1.25em;
+  }
+}
+@media only screen and (max-width: 70em) {
+  header.main {
+    background-position: center center;
+  }
+  header.main .tagline .action {
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 50em) and (max-width: 70em) {
+  .site {
+    max-width: 45em;
+    width: 75%;
+  }
+  .post,
+  .post-header,
+  .posts {
+    font-size: 106.25%;
+  }
+  header.main {
+    min-height: 30em;
+  }
+}
+@media only screen and (min-width: 40em) and (max-width: 50em) {
+  .site {
+    width: 90%;
+    max-width: 45em;
+    font-size: .85em;
+  }
+  header.main {
+    min-height: 25em;
+  }
+}
+@media only screen and (min-width: 30em) and (max-width: 70em) {
+  .grid li {
+    width: 45%;
+    margin-bottom: 4%;
+  }
+  .archive__calendar li {
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .grid li,
+  .grid.sponsors li {
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 5%;
+  }
+  .archive__calendar li {
+    width: 100%;
+  }
+  .archive__calendar li a {
+    padding: 0.5em 0;
+  }
+}
+@media only screen and (max-width: 40em) {
+  header.main {
+    background-position: center bottom;
+    min-height: 30em;
+  }
+  .site {
+    padding: 1em;
+    width: 100%;
+    font-size: .85em;
+  }
+  header.main {
+    font-size: .75em;
+  }
+  header.main .overlay {
+    padding: 1.5em 0 4em;
+  }
+  header.main .info {
+    margin: 2em 0;
+    display: static;
+    text-align: center;
+  }
+  header.main .info > ul.icons {
+    display: none;
+  }
+  header.main .info > ul.logistics {
+    width: 100%;
+  }
+  header.main .info > ul.logistics li {
+    display: inline-block;
+    padding: .5em 1em;
+  }
+  header.main .info > ul.logistics li:last-child {
+    display: none;
+  }
+  header.main .info .micro {
+    display: none;
+    font-size: 0;
+  }
+  .container > section.speaker h1 + p {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media print {
+  body {
+    padding: 3em;
+  }
+  .clubs-sponsors,
+  .intro ul,
+  .info .icons,
+  .tagline a {
+    display: none;
+  }
+  .micro {
+    display: block;
+  }
 }

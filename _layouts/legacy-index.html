@@ -41,7 +41,13 @@
 			
 			</div>
 			</section>
-			
+
+			<section class="calendar">
+				<div class="site">
+					<h1>Calendar</h1>
+					<ul class="archive__calendar">{% for post in site.posts %}{% unless post.category == "demo" %}<li class="calendar__{{post.date | date: '%b-%Y' }}"><h3><a href="{{post.url}}">{{ post.date | date: '%b.%d,%Y' }}</a></h3></li>{% endunless %}{% endfor %}</ul>
+				</div>
+			</section>
 		
 			
 			<section class="legacy-demos">
