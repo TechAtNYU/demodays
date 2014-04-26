@@ -7,7 +7,7 @@ category: demo
 whichdd: December 2012
 maker:
 - name: Misha Ponizil
-  school: NYU 2014
+  school: NYU
   twitter: false
 ---
 

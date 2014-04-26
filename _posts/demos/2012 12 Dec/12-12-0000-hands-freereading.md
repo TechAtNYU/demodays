@@ -6,7 +6,7 @@ category: demo
 whichdd: December 2012
 maker:
 - name: Vivek Patel
-  school: NYU 2013
+  school: NYU
   twitter: false
 ---
 

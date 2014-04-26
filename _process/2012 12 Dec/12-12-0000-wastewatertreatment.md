@@ -6,7 +6,7 @@ category: demo
 whichdd: December 2012
 maker:
 - name: Sarah Scott
-  school: Poly 2014
+  school: NYU Poly
   twitter: false
 ---
 

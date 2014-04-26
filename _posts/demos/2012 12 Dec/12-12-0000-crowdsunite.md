@@ -7,7 +7,7 @@ category: demo
 whichdd: December 2012
 maker:
 - name: Alex Feldman
-  school: NYU 2012
+  school: NYU
   twitter: false
 ---
 

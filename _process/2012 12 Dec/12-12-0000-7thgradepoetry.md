@@ -7,7 +7,7 @@ category: demo
 whichdd: December 2012
 maker:
 - name: Matt Ruzicka
-  school: NYU 2013?
+  school: NYU
   twitter: false
 ---
 

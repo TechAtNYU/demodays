@@ -7,7 +7,7 @@ category: demo
 whichdd: October 2012
 maker:
 - name: Jon Chan
-  school: Gallatin/2012
+  school: NYU
   twitter: false
 ---
 

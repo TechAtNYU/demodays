@@ -7,7 +7,7 @@ category: demo
 whichdd: December 2012
 maker:
 - name: Yair Aviner
-  school: Rutgers Business, Junior
+  school: Rutgers
   twitter: false
 ---
 
