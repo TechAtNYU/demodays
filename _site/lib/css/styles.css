@@ -235,6 +235,26 @@ header.main .tagline .action > span {
   border: 1px dotted white;
   padding: .5em .95em .25em;
 }
+header.alt {
+  *zoom: 1;
+  text-align: center;
+}
+header.alt:before,
+header.alt:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+header.alt:after {
+  clear: both;
+}
+header.alt .logo img {
+  float: left;
+}
+header.alt .logo h1 {
+  padding-top: 0.2em;
+  font-size: 4em;
+}
 .container > section {
   font-size: 110%;
 }
@@ -337,12 +357,15 @@ footer ul li a {
   width: 2em;
   height: 2em;
   text-decoration: none;
-  background: white;
+  background-color: white;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+}
+footer ul li a:hover {
+  background-color: #ccc;
 }
 footer .colophon {
   clear: both;
@@ -355,11 +378,16 @@ footer .colophon {
   left: 0;
   padding: 0.5em;
   color: white !important;
+  text-align: left;
 }
 .back-to-future a {
   font-family: "Radikal-Bold", helvetica, arial, sans-serif;
   font-style: normal;
   color: white !important;
+  text-decoration: underline;
+}
+.back-to-future a:hover {
+  text-decoration: none;
 }
 header a {
   text-decoration: none;

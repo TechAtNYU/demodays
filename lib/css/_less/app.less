@@ -138,6 +138,19 @@ header.main {
 		}
 	}
 }
+header.alt {
+	.clearfix;
+	text-align: center;
+	.logo {
+		img {
+			float: left;
+		}
+		h1 {
+			padding-top: 0.2em;
+			font-size: 4em;
+		}
+	}
+}
 .container > section {
 	font-size: @miniBump;
 	&:nth-child(2n) {
@@ -230,8 +243,11 @@ footer {
 				width: 2em;
 				height: 2em;
 				text-decoration: none;
-				background: white;
+				background-color: white;
 				.rounded-corners(50px);
+				&:hover {
+					background-color: #ccc;
+				}
 			}
 		}
 	}
