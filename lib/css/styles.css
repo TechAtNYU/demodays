@@ -740,7 +740,8 @@ li[class^='past']:hover div:last-child {
 }
 @media only screen and (max-width: 30em) {
   .grid li,
-  .grid.sponsors li {
+  .grid.sponsors li,
+  .grid li.half {
     width: 100%;
     padding: 1em;
     margin-bottom: 5%;
@@ -753,6 +754,22 @@ li[class^='past']:hover div:last-child {
   }
 }
 @media only screen and (max-width: 40em) {
+  header {
+    margin-top: 2.75rem;
+  }
+  .back-to-future {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  }
+  .back-to-future small,
+  .back-to-future h5 {
+    display: inline;
+    font-size: 1.5rem;
+  }
+  .back-to-future h5:before {
+    content: "• ";
+  }
   header.main {
     background-position: center bottom;
     min-height: 30em;
