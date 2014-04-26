@@ -2,10 +2,12 @@
 layout: post
 title: Event Book
 site: http://www.abhinayashutosh.com/project/day-book-coming-soon/
-image: /lib/img/projects/hublished.jpg
-category: demo
+image:
+category: demo 
 whichdd: April 2013
-maker: 
+maker:
 - name: Abhinay Ashutosh
   school: NYU
+  twitter: false
 ---
+

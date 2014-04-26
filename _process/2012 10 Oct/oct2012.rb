@@ -1,7 +1,6 @@
 require 'csv'
 
-applicants = CSV.open("2013-3-9.csv")
-Dir.mkdir("done") unless Dir.exists? "done"
+applicants = CSV.open("oct2012.csv")
 
 applicants.each do |applicant|
   # could not get symbol headers to work for this CVS file, using indexes instead 
@@ -23,14 +22,14 @@ applicants.each do |applicant|
   #md += "site: \n"
   md += "image:\n"
   md += "category: demo \n"
-  md += "whichdd: March 2013\n"
+  md += "whichdd: October 2012\n"
   md += "maker:\n"
   md += "- name: #{applicant[0]}\n"
   md += "  school: #{applicant[1]}\n"
   md += "  twitter: false\n"
   md += "---\n"
   md += "#{applicant[4]}\n"
-  fn = "done/13-03-0000-#{applicant[2].delete(",.? ").downcase}.md"
+  fn = "12-10-0000-#{applicant[2].delete(",.? ").downcase}.md"
   File.open(fn, 'w') do |md_file|
     md_file.puts md 
   end 
