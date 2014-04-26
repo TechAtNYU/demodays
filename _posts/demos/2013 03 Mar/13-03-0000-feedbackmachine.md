@@ -5,8 +5,14 @@ image:
 category: demo 
 whichdd: March 2013
 maker:
-- name: Misha and Jeremiah and David
+- name: Misha Ponizil
   school: NYU
-  twitter: false
+  twitter: mishaponizil
+- name: Jeremiah Malina
+  school: NYU
+  twitter: jjmalina
+- name: David Byrd
+  school: NYU
+  twitter: thebyrd
 ---
 

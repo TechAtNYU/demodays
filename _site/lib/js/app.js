@@ -1,8 +1,6 @@
 (function ($) {
 	var DD = {
 		'config' : {
-			
-			
 		},
 		'init' : function () {
 			$(".further-detail").hover( function() {
@@ -22,12 +20,6 @@
 				if (event.type === "click") {
 					arSpecial.past();
 				} 
-				
-				//else if (event.type === "mouseover") {
-				//	 arSpecial.showMonth();
-				//} else if (event.type === "mouseout") {
-				//	arSpecial.hideMonth();
-				//}
 			});
 		},
 		'archive' : function (element) {
@@ -43,8 +35,6 @@
 	        var $month = $(".archive li");
 	        var headerHeight = $("header").height() / 2;
 			var bottom = top+page;
-			
-		
 			
 			function archiveWidth() {
 				if (windowTest < 650) {

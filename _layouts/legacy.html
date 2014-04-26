@@ -84,7 +84,7 @@
 			
 			<h1>{{ page.title }}</h1>
 			
-			<h3>Archival Content &bull; <a href="https://docs.google.com/forms/d/1Yb47zibFoI_g045yoV9f6DRoAwFIJUusFSdaqPiDTWI/viewform?entry.285504012={{page.title}}&entry.1315230717=Demo&entry.303122555=Fix+for+{{page.title}}&entry.1471712158">Submit correction</a></h3>
+			<h3>Archival Content &bull; <a href="https://docs.google.com/forms/d/1Yb47zibFoI_g045yoV9f6DRoAwFIJUusFSdaqPiDTWI/viewform?entry.285504012={{page.title}}&entry.303122555=Fix+for+{{page.title}}&entry.1471712158">Submit correction</a></h3>
 			
 			<p>The {{page.date | date: '%B %Y' }} DemoDays was held on {{ page.date | date: "%m/%d/%Y" }} at {{ page.location }} in New York City.</p>
 			
@@ -164,9 +164,8 @@
 				{% endfor %}
 				
 				{% if an_integer >= 1 %}
-				&nbsp;
 				{% else %}
-					<li class="oops"><p>Oops, we don't have any data for this month yet. If you showed your work at DemoDays {{page.title}}, please <a href="https://docs.google.com/forms/d/1Yb47zibFoI_g045yoV9f6DRoAwFIJUusFSdaqPiDTWI/viewform?entry.285504012={{page.title}}&entry.1315230717=Demo&entry.303122555=Add+Demo+to+{{page.title}}&entry.1471712158">submit a correction</a>!</p></li>
+					<li class="oops"><p>Oops, we don't have any data for this month yet. If you showed your work at DemoDays {{page.title}}, please <a href="https://docs.google.com/forms/d/1Yb47zibFoI_g045yoV9f6DRoAwFIJUusFSdaqPiDTWI/viewform?entry.285504012={{page.title}}&entry.303122555=Add+Demo+to+{{page.title}}&entry.1471712158">submit a correction</a>!</p></li>
 				{% endif %}
 				</ul>
 					

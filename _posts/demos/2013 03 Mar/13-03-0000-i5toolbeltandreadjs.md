@@ -8,6 +8,6 @@ whichdd: March 2013
 maker:
 - name: David Byrd
   school: NYU
-  twitter: false
+  twitter: thebyrd
 ---
 
