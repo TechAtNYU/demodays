@@ -85,12 +85,6 @@
 			
 			
 			
-			
-			<!--{% capture whatisdemodays %}
-			  {% include whatisdemodays.markdown %}
-			{% endcapture %}
-			{{ whatisdemodays | unindent | markdownify }}-->
-			
 			<h1>Join us next time!</h1>
 			
 			{% include legacy-intro.html %}
@@ -108,8 +102,7 @@
 			<section class="legacy-demos">
 			<div class="site">
 				<h1>Demos</h1>
-				
-				<!--{{ site.category.demo | size }}-->
+			
 				
 				<ul class="grid">
 				{% for post in site.posts %}
@@ -124,12 +117,11 @@
 								<img src="{{post.image}}" class="demo__image">
 								{% else %}
 								<div class="no__image">
-									<h1><i class="ion-android-image" data-pack="android" data-tags="camera, photo"></i></h1>
+									<h1><i class="ion-android-image" data-pack="android" data-tags="camera, photo"></i> </h1>
 									<p>We're still archiving and haven't sourced a photo for {{post.title}} yet.</p>
 									<p>If you have one, please submit a correction!</p>
 									<p>Thank you for your patience.</p>
 								</div>
-								<!--<img src="http://placekitten.com/400/250" class="demo__image">-->
 								{% endif %}
 								{% if post.site %}
 								</a>

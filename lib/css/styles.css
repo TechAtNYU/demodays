@@ -686,4 +686,5 @@ li[class^='past']:hover div:last-child {
 .demo__correction {
   font-size: .75em;
   text-align: right;
+  clear: both;
 }

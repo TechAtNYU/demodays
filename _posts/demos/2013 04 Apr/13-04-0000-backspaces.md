@@ -2,7 +2,7 @@
 layout: post
 title: Backspaces
 site: http://backspac.es
-image:
+image: /lib/img/projects/backspaces.png
 category: demo 
 whichdd: April 2013
 maker:

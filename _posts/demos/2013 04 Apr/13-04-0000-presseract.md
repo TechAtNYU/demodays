@@ -2,7 +2,7 @@
 layout: post
 title: Presseract
 site: http://presseract.com/
-image:
+image: http://presseract.com/images/title_large.png
 category: demo 
 whichdd: April 2013
 maker:

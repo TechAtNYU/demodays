@@ -2,7 +2,7 @@
 layout: post
 title: FPGA FFT Audio Visualization
 site: https://www.youtube.com/watch?v=g-Gh5SFSpzw
-image: /lib/img/projects/hublished.jpg
+image: /lib/img/projects/fftaudio.png
 category: demo
 whichdd: May 2013
 maker: 

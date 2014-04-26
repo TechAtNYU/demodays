@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Event Book
-site: http://www.abhinayashutosh.com/project/day-book-coming-soon/
-image:
+site: http://www.geteventbook.com/
+image: /lib/img/projects/eventbook.png
 category: demo 
 whichdd: April 2013
 maker:
