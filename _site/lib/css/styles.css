@@ -754,9 +754,6 @@ li[class^='past']:hover div:last-child {
   }
 }
 @media only screen and (max-width: 40em) {
-  header {
-    margin-top: 2.75rem;
-  }
   .back-to-future {
     position: fixed;
     z-index: 999;
