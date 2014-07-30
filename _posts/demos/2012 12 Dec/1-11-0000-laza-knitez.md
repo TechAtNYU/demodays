@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Laza Knitez
+title: Laza Knitez Video Game
 
 twitter: false
 site: http://lazaknitez.com/
