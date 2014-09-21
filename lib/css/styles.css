@@ -83,11 +83,11 @@ p {
 a:link,
 a:visited,
 a:active {
-  color: #ec0712;
+  color: #3987dc;
   transition: color 0.25s ease-in-out;
 }
 a:hover {
-  color: #fa5f66;
+  color: #90bceb;
 }
 h3 + ul {
   margin-bottom: 1em;
@@ -121,11 +121,11 @@ body {
   padding-bottom: 2em;
 }
 ::selection {
-  background-color: #ec0712;
+  background-color: #3987dc;
   /* Safari */
 }
 ::-moz-selection {
-  background-color: #ec0712;
+  background-color: #3987dc;
   /* Firefox */
 }
 .container {
@@ -214,7 +214,7 @@ header.main .tagline h1 {
   font-weight: 100;
 }
 header.main .tagline .action {
-  background-color: #ec0712;
+  background-color: #3987dc;
   border: none;
   font: 1em "Radikal", helvetica, arial, sans-serif;
   margin-top: 2em;
@@ -231,7 +231,7 @@ header.main .tagline .action {
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
 }
 header.main .tagline .action:hover {
-  background-color: #99050c;
+  background-color: #1d5da3;
   cursor: pointer;
 }
 header.main .tagline .action > span {
@@ -277,14 +277,14 @@ header.alt .logo h1 {
   text-align: center;
 }
 .container > section.intro li:hover {
-  border: 2px solid #ec0712;
+  border: 2px solid #3987dc;
 }
 .container > section.intro li a {
   text-align: center;
   text-decoration: none;
 }
 .container > section.intro li a:hover {
-  color: #ec0712;
+  color: #3987dc;
 }
 .container > section.details {
   background-color: #666666;
@@ -327,7 +327,7 @@ header.alt .logo h1 {
 }
 footer {
   font-size: 110%;
-  background-color: #ec0712;
+  background-color: #3987dc;
   padding: .5em 0;
 }
 footer a:link,
@@ -375,7 +375,7 @@ footer .colophon {
   text-align: right;
 }
 .back-to-future {
-  background: #ec0712;
+  background: #3987dc;
   position: fixed;
   top: 0;
   left: 0;
@@ -677,7 +677,7 @@ li[class^='past']:hover div:last-child {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #ec0712;
+    background-color: #3987dc;
     color: white;
     padding: 1em;
     width: 12em;
