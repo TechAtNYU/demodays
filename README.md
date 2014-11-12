@@ -29,9 +29,9 @@ DemoDays is compiled with [Jekyll](http://jekyllrb.com/).
 
 DemoDays is currently rather hacky. I built this by myself before the API and before Jekyll 2.x was released. This meant I had to manipulate the posts without using [collections](http://jekyllrb.com/docs/collections/).
 
-What we're doing is tricking Jekyll into believing we have top level "blog posts" in `/_posts/`. Those are what are compiled into the nice archives pages. We name these posts the same as the actual date of that DD. Eg., the DemoDays on July 21st, 2012 is named `21-07-2012-july2012.md`. The permalinks we use abstract away everything else, leaving us with beautiful URLs.
+What we're doing is tricking Jekyll into believing we have top level "blog posts" in `/_posts/`. Those are what are compiled into the [nice archives](http://demodays.co/archive/11/2013/) pages. We name these posts the same as the actual date of that DD. Eg., the DemoDays on July 21st, 2012 is named `21-07-2012-july2012.md`. The permalinks we use abstract away everything else, leaving us with beautiful URLs.
 
-Then in `/_posts/demos` we have a "category" called demos with folders organized by date. These demos posts are not meant to be compiled on their own, but rather looped through and generated on the main post pages. The demo posts all have a year of 0000 but otherwise correspond to the correct date. Since we don't care about compiling the demo posts, it doesn't really matter.
+Then in `/_posts/demos` we have a "category" called [demos](https://github.com/TechAtNYU/demodays/tree/master/_posts/demos) with folders organized by date. These demos posts are not meant to be compiled on their own, but rather looped through and generated on the main post pages. The demo posts all have a year of 0000 but otherwise correspond to the correct date. Since we don't care about compiling the demo posts, it doesn't really matter.
 
 This awkward structure will be replaced as soon as:
 
@@ -113,14 +113,14 @@ maker:
 ##How do I update the archive with last month's demos?
 
 1. Get info:
-  - from header.html: Date, address, RSVP link
-  - from variables.less: @accent and @accentBold
-  - from speaker.markdown: Speaker name and information
-  - from copy.markdown: List of demos and people
+  - from [header.html](https://github.com/TechAtNYU/demodays/blob/master/_includes/header.html#L11): Date, address, RSVP link
+  - from [variables.less](https://github.com/TechAtNYU/demodays/blob/master/lib/css/_less/variables.less#L8): @accent and @accentBold
+  - from speaker.markdown: Speaker name and information [example](https://raw.githubusercontent.com/TechAtNYU/demodays/d11de2bb82cb807b5f68257c7063f3e2ace70837/_includes/speaker.markdown)
+  - from copy.markdown or from other data source: List of demos and people [example](https://raw.githubusercontent.com/TechAtNYU/demodays/dbab8ad2862f7b58e5786975b2e6e44d41a99cf6/_includes/copy.markdown)
 2. Create main page in `_posts` named after date
 3. Update YAML with appropriate data
 4. Create folder in `_posts/demos` named after date
-5. Create a markdown file named after date and project name for each project
+5. Create a markdown file named after date and project name for each project. You will probably need to do research to get the presenters correctly...
 6. Update each file's YAML with appropriate data
 7. Add CSS classes with the right colors in archive.less
 8. Add appropriate greyscaled image to `/lib/img/archive` and name in the format Mon-Year.jpg (see #4 below)
@@ -131,8 +131,12 @@ maker:
 2. Replace RSVP link and Signup link in cta.html
 3. Choose a new color for the upcoming DemoDays (the most fun part of the entire thing!)
 4. Replace @accent and @accentBold colors in variables.less
-5. Find an image and grayscale it using the Illustrator file `/lib/_resources/demo_template.html`
+5. Find an image (...somehow) and grayscale it using the Illustrator file `/lib/_resources/demo_template.html`
 6. Make sure image path is updated in media-queries.less
 7. Update speaker.markdown with new speaker name and information
 8. Update copy.markdown with list of demos and people
 9. ![ragequit](http://media.giphy.com/media/WgurxCFNBZO6Y/giphy.gif)
+
+#Worst. workflow. ever!
+
+I know. This is why we're building the API and Intranet!
