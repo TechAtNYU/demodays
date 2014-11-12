@@ -29,15 +29,17 @@ DemoDays is compiled with [Jekyll](http://jekyllrb.com/).
 
 DemoDays is currently rather hacky. I built this by myself before the API and before Jekyll 2.x was released. This meant I had to manipulate the posts without using [collections](http://jekyllrb.com/docs/collections/).
 
-What we're doing is tricking Jekyll into believing we have top level "blog posts" in `/_posts/`. Those are what are compiled into the nice archives pages. We name these posts the same as the actual date of that DD. Eg., the DemoDays on July 21st, 2012 is named `21-07-2012-july2012.md`. Then in `/_posts/demos` we have a "category" called demos with folders organized by date. The demo posts all have a year of 0000 but otherwise correspond to the correct date. Since we don't care about compiling the demo posts, it doesn't really matter.
+What we're doing is tricking Jekyll into believing we have top level "blog posts" in `/_posts/`. Those are what are compiled into the nice archives pages. We name these posts the same as the actual date of that DD. Eg., the DemoDays on July 21st, 2012 is named `21-07-2012-july2012.md`. The permalinks we use abstract away everything else, leaving us with beautiful URLs.
 
-This bad structure will be replaced as soon as:
+Then in `/_posts/demos` we have a "category" called demos with folders organized by date. These demos posts are not meant to be compiled on their own, but rather looped through and generated on the main post pages. The demo posts all have a year of 0000 but otherwise correspond to the correct date. Since we don't care about compiling the demo posts, it doesn't really matter.
+
+This awkward structure will be replaced as soon as:
 
 1. We upgrade DemoDays to Jekyll 2.x
 2. DemoDays uses an API integration instead of hacking YAML to store data/generate pages
 3. Jekyll is banished from tech@NYU forever since Ethan hates it
 
-(All are forthcoming...)
+(All of the above are forthcoming...)
 
 ##If you dare proceed
 
@@ -81,3 +83,56 @@ legSpeakers:
   - image - hosted and found in `/lib/img/`
   - bioTitle - the main title and company
   - bioDescription - long form description of this person
+
+An individual project looks like this:
+
+```
+---
+layout: post
+title: Bleep.js
+site: https://github.com/mpgarate/bleep.js
+image: /lib/img/projects/bleepjs.png
+category: demo
+whichdd: March 2014
+maker:
+- name: Michael Garate
+  school: NYU
+---
+```
+
+1. Layout - post (placeholder; we do not want to generate these pages anyway)
+2. title - name of project
+3. site - link to live project or Github repo
+4. image - hosted in `/lib/img/projects/`
+5. category - demo (IMPORTANT to not generate)
+6. whichdd: - Month + Year (IMPORTANT to match "title" of main page, so we can properly loop)
+7. maker: an object with Name and School
+
+#TLDR; 
+
+##How do I update the archive with last month's demos?
+
+1. Get info:
+  - from header.html: Date, address, RSVP link
+  - from variables.less: @accent and @accentBold
+  - from speaker.markdown: Speaker name and information
+  - from copy.markdown: List of demos and people
+2. Create main page in `_posts` named after date
+3. Update YAML with appropriate data
+4. Create folder in `_posts/demos` named after date
+5. Create a markdown file named after date and project name for each project
+6. Update each file's YAML with appropriate data
+7. Add CSS classes with the right colors in archive.less
+8. Add appropriate greyscaled image to `/lib/img/archive` and name in the format Mon-Year.jpg (see #4 below)
+
+##How do I update the index page for the upcoming demo?
+
+1. Replace date, address, and RSVP link with new ones in header.html
+2. Replace RSVP link and Signup link in cta.html
+3. Choose a new color for the upcoming DemoDays (the most fun part of the entire thing!)
+4. Replace @accent and @accentBold colors in variables.less
+5. Find an image and grayscale it using the Illustrator file `/lib/_resources/demo_template.html`
+6. Make sure image path is updated in media-queries.less
+7. Update speaker.markdown with new speaker name and information
+8. Update copy.markdown with list of demos and people
+9. ![ragequit](http://media.giphy.com/media/WgurxCFNBZO6Y/giphy.gif)
