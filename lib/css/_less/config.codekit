@@ -42,6 +42,15 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/css\/fonts.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/fonts.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/fonts.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -190,8 +199,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "_less",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "demodays",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "pencil_brown"
 	},
 "projectSettings": {
