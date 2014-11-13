@@ -525,6 +525,10 @@ li[class^='past']:hover div:last-child {
 .past__Apr-2014.active {
   border-color: #ec0712 !important;
 }
+.past__Oct-2014:hover,
+.past__Oct-2014.active {
+  border-color: #3987dc !important;
+}
 .legacy-demos .grid li {
   font-size: 75%;
   text-align: left;
@@ -652,6 +656,10 @@ li[class^='past']:hover div:last-child {
 .archive__calendar .calendar__Apr-2014 {
   background-color: #ec0712 !important;
   border-color: #ec0712 !important;
+}
+.archive__calendar .calendar__Oct-2014 {
+  background-color: #1d5da3 !important;
+  border-color: #1d5da3 !important;
 }
 .makers__thanks li {
   display: inline-block;
