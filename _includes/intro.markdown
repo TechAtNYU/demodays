@@ -1,9 +1,12 @@
 
-#October 2014
+#Local Hack Day + DemoDays
 
-tech@NYU is serving up some mouth-watering demos. Join us at [[SOMEWHERE OVER THE RAINBOW]] to watch some really cool student demos, meet interesting people, and eat some great food.
+Join tech@NYU, [NYU Poly EIA](https://www.facebook.com/Eianyupoly), [Create@Cooper](http://createatcooper.org/), and [Major League Hacking](http://localhackday.mlh.io/) for a very special DemoDays event on December 6th, 2014. We are co-hosting the NYC node of the first MLH Local Hack Day, a nationwide distributed hack day. 
 
-Doors open at 2:30pm, the show starts at 3:00pm.
+
+Celebrate the Fall semester with us at Pivotal Labs for a full day of hacking, socializing, and fun. At Pivotal Labs, we will have food, a Hardware workshop by Create@Cooper, student demos, and a Keynote Speaker. We will also be joined by students across the country for workshops and in livestreams.
+
+Local Hack Day starts at 9AM and goes until 9PM. Join us for hacking, or come to the joint DemoDays and Founder's Forum between 5-7PM!
 
 {% include cta.html %}
 
