@@ -1,7 +1,8 @@
 
-#Speakers
+#Keynote Speaker
 
-##Check back soon for the speakers!
+![Jon Chan](/lib/img/jon-chan.png "Jon Chan")
+###[Jon Chan](https://www.twitter.com/JonHMChan), Founder of [Bento.io](https://www.bento.io) and Software Developer at Stack Overflow.
 
 #Demo Program
 
