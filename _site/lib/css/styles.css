@@ -83,11 +83,11 @@ p {
 a:link,
 a:visited,
 a:active {
-  color: #d66363;
+  color: #6be6d7;
   transition: color 0.25s ease-in-out;
 }
 a:hover {
-  color: #ebb4b4;
+  color: #c2f5ef;
 }
 h3 + ul {
   margin-bottom: 1em;
@@ -121,11 +121,11 @@ body {
   padding-bottom: 2em;
 }
 ::selection {
-  background-color: #d66363;
+  background-color: #6be6d7;
   /* Safari */
 }
 ::-moz-selection {
-  background-color: #d66363;
+  background-color: #6be6d7;
   /* Firefox */
 }
 .container {
@@ -211,9 +211,10 @@ header.main .tagline {
 header.main .tagline h1 {
   color: white;
   font-family: "Radikal-UltraThin", helvetica, arial, sans-serif;
+  font-weight: 100;
 }
 header.main .tagline .action {
-  background-color: #d66363;
+  background-color: #6be6d7;
   border: none;
   font: 1em "Radikal", helvetica, arial, sans-serif;
   margin-top: 2em;
@@ -230,7 +231,7 @@ header.main .tagline .action {
   box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
 }
 header.main .tagline .action:hover {
-  background-color: #48314b;
+  background-color: #24d8c2;
   cursor: pointer;
 }
 header.main .tagline .action > span {
@@ -276,14 +277,14 @@ header.alt .logo h1 {
   text-align: center;
 }
 .container > section.intro li:hover {
-  border: 2px solid #d66363;
+  border: 2px solid #6be6d7;
 }
 .container > section.intro li a {
   text-align: center;
   text-decoration: none;
 }
 .container > section.intro li a:hover {
-  color: #d66363;
+  color: #6be6d7;
 }
 .container > section.details {
   background-color: #666666;
@@ -326,7 +327,7 @@ header.alt .logo h1 {
 }
 footer {
   font-size: 110%;
-  background-color: #d66363;
+  background-color: #6be6d7;
   padding: .5em 0;
 }
 footer a:link,
@@ -374,7 +375,7 @@ footer .colophon {
   text-align: right;
 }
 .back-to-future {
-  background: #d66363;
+  background: #6be6d7;
   position: fixed;
   top: 0;
   left: 0;
@@ -528,6 +529,10 @@ li[class^='past']:hover div:last-child {
 .past__Oct-2014.active {
   border-color: #3987dc !important;
 }
+.past__Dec-2014:hover,
+.past__Dec-2014.active {
+  border-color: #d66363 !important;
+}
 .legacy-demos .grid li {
   font-size: 75%;
   text-align: left;
@@ -660,6 +665,10 @@ li[class^='past']:hover div:last-child {
   background-color: #1d5da3 !important;
   border-color: #1d5da3 !important;
 }
+.archive__calendar .calendar__Dec-2014 {
+  background-color: #d66363 !important;
+  border-color: #d66363 !important;
+}
 .makers__thanks li {
   display: inline-block;
 }
@@ -668,7 +677,7 @@ li[class^='past']:hover div:last-child {
 }
 @media only screen and (min-width: 40em) {
   header.main {
-    background-image: url(/lib/img/hackdays-demodays-splash.jpg);
+    background-image: url(/lib/img/Feb-2015.jpg);
     background-position: center center;
     background-size: cover;
   }
@@ -685,7 +694,7 @@ li[class^='past']:hover div:last-child {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #d66363;
+    background-color: #6be6d7;
     color: white;
     padding: 1em;
     width: 12em;
