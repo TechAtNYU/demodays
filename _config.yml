@@ -1,4 +1,4 @@
 name: demodays
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /archive/:month/:year
