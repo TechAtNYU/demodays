@@ -2,3 +2,4 @@ name: demodays
 markdown: redcarpet
 highlighter: pygments
 permalink: /archive/:month/:year
+exclude: ["circle.yml", "README.md", "requirements.txt", "venv"]
