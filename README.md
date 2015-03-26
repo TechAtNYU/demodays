@@ -1,6 +1,8 @@
 DemoDays.co
 ======================
 
+[![Circle CI](https://circleci.com/gh/TechAtNYU/demodays/tree/master.svg?style=svg)](https://circleci.com/gh/TechAtNYU/demodays/tree/master)
+
 ##About
 
 Event page and [archive](http://demodays.co/archive) for tech@NYU DemoDays in NYC. Live at [demodays.co](http://demodays.co)
