@@ -1,7 +1,9 @@
 
-#Surprise Keynote Speaker
+#Keynote Speaker
 
-Stay tuned with [Startup Week](https://nyusw.com) for a special keynote speaker!
+![Hilary Mason](/lib/img/hilary-mason.jpg "Hilary Mason")
+###[Hilary Mason](https://www.twitter.com/hmason), founder of [Fast Forward Labs](http://www.fastforwardlabs.com/) and former Data Scientist at [Accel](https://accel.com) and [Bit.ly](https://bitly.com/). Cofounder of [HackNY](http://hackny.org/).
+
 
 #Demo Program
 
