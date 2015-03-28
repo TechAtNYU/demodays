@@ -87,7 +87,7 @@ a:active {
   transition: color 0.25s ease-in-out;
 }
 a:hover {
-  color: #ee9fcb;
+  color: #ffe0e0;
 }
 h3 + ul {
   margin-bottom: 1em;
@@ -533,6 +533,10 @@ li[class^='past']:hover div:last-child {
 .past__Dec-2014.active {
   border-color: #d66363 !important;
 }
+.past__Feb-2015:hover,
+.past__Feb-2015.active {
+  border-color: #6be6d7 !important;
+}
 .legacy-demos .grid li {
   font-size: 75%;
   text-align: left;
@@ -669,6 +673,10 @@ li[class^='past']:hover div:last-child {
   background-color: #d66363 !important;
   border-color: #d66363 !important;
 }
+.archive__calendar .calendar__Feb-2015 {
+  background-color: #6be6d7 !important;
+  border-color: #6be6d7 !important;
+}
 .makers__thanks li {
   display: inline-block;
 }
@@ -800,7 +808,7 @@ li[class^='past']:hover div:last-child {
     font-size: 1.5rem;
   }
   .back-to-future h5:before {
-    content: "â€¢ ";
+    content: "• ";
   }
   header.main {
     background-position: center bottom;
