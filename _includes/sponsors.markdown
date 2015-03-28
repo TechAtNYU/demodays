@@ -1,9 +1,9 @@
 
 #Hosts
 
-<ul class="grid">
+<ul class="grid" style="text-align:left;">
   <li><a href="http://techatnyu.org" title="tech@nyu"><img src="/lib/logos/techatnyu.png" alt="tech@nyu"></a></li>
-<!-- Need info about Baruch -->
+  <li><a href="http://hacknyu.org" title="hacknyu"><img src="/lib/logos/nyuscc.png" alt="hacknyu"></a></li>
 </ul>
 
 

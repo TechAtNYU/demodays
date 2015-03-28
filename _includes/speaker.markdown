@@ -1,10 +1,9 @@
 
-#Keynote Speaker
+#Surprise Keynote Speaker
 
-![Mattan Griffel](/lib/img/mattan-griffel.jpeg "Mattan Griffel")
-###[Mattan Griffel](https://www.twitter.com/mattangriffel), CEO of [One Month](https://www.onemonth.com), growth hacker, and Forbes 30 Under 30.
+Stay tuned with [Startup Week](https://nyusw.com) for a special keynote speaker!
 
 #Demo Program
 
 Want to demo your project? Sign up 
-[here](https://docs.google.com/a/nyu.edu/forms/d/1pAs9qC2fjLJ2EUA6Fr-vZJ9gY7sZFhk0Zwr4qDphQEE/viewform)!
+[here](https://docs.google.com/forms/d/1pAs9qC2fjLJ2EUA6Fr-vZJ9gY7sZFhk0Zwr4qDphQEE/viewform)!
