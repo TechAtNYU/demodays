@@ -8,7 +8,7 @@
 			<div class="tagline">
 				<h1>Student demos at the intersection of art, design and code.</h1>
 				
-				<a href="https://www.facebook.com/events/389260677946329/" class="action" target="_blank"><span><span class="ion-ios7-heart" data-pack="ios7" data-tags="love"></span> RSVP</span></a>
+			<a href="{{ page.fbEvent }}" class="action" target="_blank"><span><span class="ion-ios7-heart" data-pack="ios7" data-tags="love"></span> RSVP</span></a>
 			</div>
 			<div class="info">
 				<ul class="icons">
@@ -21,29 +21,28 @@
 					<li class="further-detail"><h3>4/12/2015</h3> 
 						<div class="micro">
 							<ul>
-								<li>Sunday</li>
+								<li>{{ page.date | date: "%A" }}</li>
 							</ul>
 						</div>
 					</li>
-					<li class="further-detail"><h3>2:00-6:00</h3> 
+					<li class="further-detail"><h3>{{ page.time }}</h3> 
 						<div class="micro">
 							<ul>
 								<li>Hacking</li>
 								<li>Demos</li>
-								<li>Surprise Keynote</li>
+								<li>Keynote</li>
 								<li>Fooooood</li>
 							</ul>
 						</div>
-					</li>
-					<li class="further-detail"><h4><a href="https://www.google.com/maps/search/NYU+Polytechnic+School+of+Engineering+pfizer+auditorium/@40.6940741,-73.9869325,17z/data=!3m1!4b1">Pfizer Auditorium, NYU Poly</a></h4> 
+					<li class="further-detail"><h4><a href="https://www.google.com/maps/search/{{ page.location }}">{{ page.location }}</a></h4> 
 						<div class="micro">
 							<ul>
-								<li>5 MetroTech Center 1st Floor, Dibner Building</li>
-								<li>Brooklyn, NY 11201</li>
+								<li>{{ page.addressLine1 }}</li>
+								<li>{{ page.addressLine2 }}</li>
 							</ul>
 						</div>
 					</li>
-					<li><h3><a href="https://www.facebook.com/events/389260677946329/" target="_blank">RSVP</a></h3></li>
+					<li><h3><a href="{{ page.fbEvent }}" target="_blank">RSVP</a></h3></li>
 				</ul>
 			</div>
 		</div>
