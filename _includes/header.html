@@ -1,50 +1,54 @@
 <header class="main">
 	<div class="overlay">
-		<div class="site">
-			<div class="logo">
-				<img src="/lib/img/demodays.png">
-				<h1>DemoDays</h1>
+	{% for post in site.posts %}
+		{% if post.category == "current_demo" %}
+			<div class="site">
+				<div class="logo">
+					<img src="/lib/img/demodays.png">
+					<h1>DemoDays</h1>
+				</div>
+				<div class="tagline">
+					<h1>Student demos at the intersection of art, design and code.</h1>
+					
+				<a href="{{ site.eventLink }}" class="action" target="_blank"><span><span class="ion-ios7-heart" data-pack="ios7" data-tags="love"></span> RSVP</span></a>
+				</div>
+				<div class="info">
+					<ul class="icons">
+						<li><h3 class="ion-ios7-calendar" data-pack="ios7" data-tags="date, time, month, year"></h3></li>
+						<li><h3 class="ion-ios7-clock" data-pack="ios7" data-tags="time, date, hours, minutes, seconds, watch"></h3></li>
+						<li><h4 class="ion-ios7-world" data-pack="ios7" data-tags="globe, earth"></h4><br><br><br></li>
+						<li><h3 class="ion-ios7-heart" data-pack="ios7" data-tags="love"></h3></li>
+					</ul>
+					<ul class="logistics">	
+						<li class="further-detail"><h3>{{ post.date | date: "%-m/%-d/%Y" }}</h3> 
+							<div class="micro">
+								<ul>
+									<li>{{ post.date | date: '%b %Y' }}</li>
+								</ul>
+							</div>
+						</li>
+						<li class="further-detail"><h3>{{ post.time }}</h3> 
+							<div class="micro">
+								<ul>
+									<li>Hacking</li>
+									<li>Demos</li>
+									<li>Keynote</li>
+									<li>Fooooood</li>
+								</ul>
+							</div>
+						<li class="further-detail"><h4><a href="https://www.google.com/maps/search/{{ post.location }}">{{ post.location }}</a></h4> 
+							<div class="micro">
+								<ul>
+									<li>{{ post.addressLine1 }}</li>
+									<li>{{ post.addressLine2 }}</li>
+								</ul>
+							</div>
+						</li>
+						<li><h3><a href="{{ post.eventLink }}" target="_blank">RSVP</a></h3></li>
+					</ul>
+				</div>
 			</div>
-			<div class="tagline">
-				<h1>Student demos at the intersection of art, design and code.</h1>
-				
-			<a href="{{ page.fbEvent }}" class="action" target="_blank"><span><span class="ion-ios7-heart" data-pack="ios7" data-tags="love"></span> RSVP</span></a>
-			</div>
-			<div class="info">
-				<ul class="icons">
-					<li><h3 class="ion-ios7-calendar" data-pack="ios7" data-tags="date, time, month, year"></h3></li>
-					<li><h3 class="ion-ios7-clock" data-pack="ios7" data-tags="time, date, hours, minutes, seconds, watch"></h3></li>
-					<li><h4 class="ion-ios7-world" data-pack="ios7" data-tags="globe, earth"></h4><br><br><br></li>
-					<li><h3 class="ion-ios7-heart" data-pack="ios7" data-tags="love"></h3></li>
-				</ul>
-				<ul class="logistics">	
-					<li class="further-detail"><h3>4/12/2015</h3> 
-						<div class="micro">
-							<ul>
-								<li>{{ page.date | date: "%A" }}</li>
-							</ul>
-						</div>
-					</li>
-					<li class="further-detail"><h3>{{ page.time }}</h3> 
-						<div class="micro">
-							<ul>
-								<li>Hacking</li>
-								<li>Demos</li>
-								<li>Keynote</li>
-								<li>Fooooood</li>
-							</ul>
-						</div>
-					<li class="further-detail"><h4><a href="https://www.google.com/maps/search/{{ page.location }}">{{ page.location }}</a></h4> 
-						<div class="micro">
-							<ul>
-								<li>{{ page.addressLine1 }}</li>
-								<li>{{ page.addressLine2 }}</li>
-							</ul>
-						</div>
-					</li>
-					<li><h3><a href="{{ page.fbEvent }}" target="_blank">RSVP</a></h3></li>
-				</ul>
-			</div>
-		</div>
+		{% endif %}
+	{% endfor %}
 	</div>
 </header>

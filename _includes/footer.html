@@ -1,19 +1,26 @@
 <footer class="end">
 	<div class="site">
 	  
+{% for post in site.posts %}
+	{% if post.category == "current_demo" %}
+		<h2>DemoDays</h2>
+		<p>
+			{% if post.footer %}
+				{{ post.footer }}
+			{% endif %}
+		</p>
+		<p>Want to attend more events like this? <a href="http://techatnyu.org">Learn more about tech@NYU</a>!</p>
+		<ul>
+			<li><a href="https://www.facebook.com/TechatNYU"><i class="ion-social-facebook"><span>facebook</span></i></a></li>
+			<li><a href="https://twitter.com/TechatNYU"><i class="ion-social-twitter"><span>twitter</span></i></a></li>
+			<li><a href="mailto:hello@techatnyu.org"><i class="ion-ios7-email"><span>email</span></i></a></li>
+		</ul>
 		
-  
-<h2>DemoDays</h2>
-<p><a href="http://techatnyu.org">tech@NYU</a> in conjunction with <a href="http://hacknyu.org/">Hack NYU</a>. </p>
-<p>Want to attend more events like this? <a href="http://techatnyu.org">Learn more about tech@NYU</a>!</p>
-<ul>
-	<li><a href="https://www.facebook.com/TechatNYU"><i class="ion-social-facebook"><span>facebook</span></i></a></li>
-	<li><a href="https://twitter.com/TechatNYU"><i class="ion-social-twitter"><span>twitter</span></i></a></li>
-	<li><a href="mailto:hello@techatnyu.org"><i class="ion-ios7-email"><span>email</span></i></a></li>
-</ul>
+		<div class="colophon">
+			<p>made with <a href="http://grungerabbit.com"><i class="ion-ios7-heart-outline"><span>love</span></i></a> <a href="http://danagilliann.me"><i class="ion-ios7-heart-outline"><span>love</span></i></a> in NYC</a></p>
+		</div>
+		{% endif %}
+	{% endfor %}
 
-<div class="colophon">
-	<p>made with <a href="http://grungerabbit.com"><i class="ion-ios7-heart-outline"><span>love</span></i></a> in NYC</a></p>
-</div>
 </div>
 </footer>
