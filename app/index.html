@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="demodaysControllers">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -25,20 +25,18 @@
         </script>
     </head>
     <body>
-        <div class="container">
+        <div ng-controller="IndexCtrl" class="container">
             <header class="main">
     <div class="overlay">
-    
-        
             <div class="site">
                 <div class="logo">
                     <img src="assets/img/demodays.png" alt="demodays_logo">
-                    <h1>DemoDays</h1>
+                    <h1>{{ title }}</h1>
                 </div>
                 <div class="tagline">
-                    <h1>Student demos at the intersection of art, design and code.</h1>
+                  <h1>{{ tagline }}</h1>
                     
-                <a href="" class="action" target="_blank"><span><span class="ion-ios7-heart" data-pack="ios7" data-tags="love"></span> RSVP</span></a>
+                  <a href="{{ RSVPForm }}" class="action" target="_blank"><span><span class="ion-ios7-heart" data-pack="ios7" data-tags="love"></span>{{ RSVP }}</span></a>
                 </div>
                 <div class="info">
                     <ul class="icons">
@@ -48,31 +46,23 @@
                         <li><h3 class="ion-ios7-heart" data-pack="ios7" data-tags="love"></h3></li>
                     </ul>
                     <ul class="logistics">  
-                        <li class="further-detail"><h3>6/11/2015</h3> 
+                      <li class="further-detail"><h3>{{ date }}</h3> 
                             <div class="micro">
                                 <ul>
-                                    <li>Jun 2015</li>
+                                  <li>{{ monthYear }}</li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="further-detail"><h3>2:00-6:00</h3> 
+                        <li class="further-detail"><h3>{{ time }}</h3> 
                             <div class="micro">
-                                <ul>
-                                    <li>Hacking</li>
-                                    <li>Demos</li>
-                                    <li>Keynote</li>
-                                    <li>Fooooood</li>
-                                </ul>
+                              <ul><span ng-bind-html="detailTime"></span></ul>
                             </div>
-                        <li class="further-detail"><h4><a href="https://www.google.com/maps/search/NYU School of Engineering">NYU School of Engineering</a></h4> 
+                            <li class="further-detail"><h4><a href="https://www.google.com/maps/search/{{ location }}">{{ location }}</a></h4> 
                             <div class="micro">
-                                <ul>
-                                    <li>5 MetroTech Center 1st Floor, Dibner Building</li>
-                                    <li>Brooklyn, NY 11201</li>
-                                </ul>
+                              <ul><span ng-bind-html="address"></span></ul>
                             </div>
                         </li>
-                        <li><h3><a href="https://www.facebook.com/events/389260677946329/" target="_blank">RSVP</a></h3></li>
+                        <li><h3><a href="{{ RSVPForm }}" target="_blank">{{ RSVP }}</a></h3></li>
                     </ul>
                 </div>
             </div>
@@ -82,33 +72,23 @@
                <section class="intro">
 <div class="site">
 
-<h1>Demo Days + Startup Week + HackNYU</h1>
+  <h1>{{ currentTitle }}</h1>
 
-<p>Join us for a special Demo Days and Keynote Speaker as part of <a href="http://nyusw.com">Startup Week</a>, in partnership with <a href="http://hacknyu.org">Hack NYU</a>!</p>
+  <p ng-bind-html="currentDesc"></p>
 
 <ul class="grid">   
-    
-        
-            <li class="half demo">
-                <a href="https://docs.google.com/forms/d/1pAs9qC2fjLJ2EUA6Fr-vZJ9gY7sZFhk0Zwr4qDphQEE/viewform" target="_blank">
-                    <h1 class="ion-ios7-lightbulb"></h1>
-                    <h2>Wanna show off?</h2>
-                    <p>SIGN UP</p>
-                </a>
-            </li>
-            
-            <li class="half attend">
-                <a href="https://www.facebook.com/events/389260677946329/" target="_blank">
-                    <h1 class="ion-ios7-glasses"></h1>
-                    <h2>Wanna hang out?</h2>
-                    <p>RSVP</p>
-                </a>
-            </li>
+  <li ng-repeat="showHang in showHangs" class="half {{ showHang.cls }}">
+    <a href="{{ showHang.href }}" target="_blank">
+      <h1 class="{{ showHang.icon }}"></h1>
+      <h2>{{ showHang.title }}</h2>
+      <p>{{ showHang.subtitle }}</p>
+    </a>
+  </li>
 </ul>
 
-<h1>What is DemoDays?</h1>
+<h1>{{ aboutTitle }}</h1>
 
-<p>DemoDays is a monthly student-run event in NYC, organized by tech@NYU, Parsons Code Club, Create@Cooper and Columbia ADI. We&#39;re all about fostering a community of students who create things. We want to provide a platform for student builders to present their work, to celebrate their creations, and let that inspire other students to build projects they care about.</p>
+<p ng-bind-html="aboutDesc"></p>
 
 </div>
 </section>
@@ -117,15 +97,9 @@
 <div class="overlay">
 <div class="site">
 
-<h1>April 12th Program</h1>
+  <h1>{{ programTitle }}</h1>
 
-<p>2:00 - 2:45 Refreshments</p>
-
-<p>3:00 - 4:00 Surprise keynote speaker</p>
-
-<p>4:00 - 5:30 Student demos!</p>
-
-<p>See <a href="http://hacknyu.org/#schedule">HackNYU</a> for the hackathon leading up to this event.</p>
+<p ng-repeat="desc in programDesc" ng-bind-html="desc"></p>
 
 </div>
 </div>
@@ -134,76 +108,60 @@
 <section class="speaker">
 <div class="site">
 
-<h1>Keynote Speaker</h1>
+  <h1>{{ keynoteTitle }}</h1>
+  <div ng-repeat="speaker in keynoteSpeakers">
+    <p><img src="{{ speaker.img }}" alt="{{ speaker.name }}" title="{{ speaker.name }}"></p>
+    <h3 ng-bind-html="speaker.desc"></h3>
+  </div>
 
-<p><img src="assets/img/hilary-mason.jpg" alt="Hilary Mason" title="Hilary Mason"></p>
-
-<h3><a href="https://www.twitter.com/hmason">Hilary Mason</a>, founder of <a href="http://www.fastforwardlabs.com/">Fast Forward Labs</a> and former Data Scientist at <a href="https://accel.com">Accel</a> and <a href="https://bitly.com/">Bit.ly</a>. Cofounder of <a href="http://hackny.org/">HackNY</a>.</h3>
-
-<h1>Demo Program</h1>
-
-<p>Want to demo your project? Sign up 
-<a href="https://docs.google.com/forms/d/1pAs9qC2fjLJ2EUA6Fr-vZJ9gY7sZFhk0Zwr4qDphQEE/viewform">here</a>!</p>
-
+  <h1>{{ signupTitle }}</h1>
+  <p ng-bind-html="signupDesc"></p>
 </div>
 </section>
 
 <section class="clubs-sponsors">
 <div class="site">
 
-<h1>Hosts</h1>
+  <h1>{{ hostsTitle }}</h1>
 
 <ul class="grid" style="text-align:left;">
-  <li><a href="http://techatnyu.org" title="tech@nyu"><img src="assets/logos/techatnyu.png" alt="tech@nyu"></a></li>
-  <li><a href="http://hacknyu.org" title="hacknyu"><img src="assets/logos/nyuscc.png" alt="hacknyu"></a></li>
+  <li ng-repeat="host in hostsImg">
+    <a href="{{ host.href }}" title="{{ host.name }}">
+      <img src="{{ host.src }}" title="{{ host.name }}">
+    </a>
+  </li>
 </ul>
 
-<h1>Previous Sponsors and Hosts</h1>
+<h1>{{ prevSponsorsTitle }}</h1>
 
 <!-- Need to make icon sizes consistent..ex. Squarespace is too small -->
 
 <ul class="grid">
-  <li><a href="http://createatcooper.org/" title="create@cooper"><img src="assets/logos/cooper.png" alt="create@cooper"></a></li>
-  <li><a href="https://www.facebook.com/Eianyupoly"><img src="assets/logos/eia.png" alt="NYU Poly Entrepreneurship &amp; Innovation Association"></a></li>
-  <li><a href="http://localhackday.mlh.io"><img src="assets/logos/mlh.png" alt="Major League Hacking"></a></li>
-  <li><a href="http://spotify.com" title="Spotify"><img src="assets/logos/spotify.png" alt="Spotify"></a></li>
-  <li><a href="http://quirky.com" title="Quirky"><img src="assets/logos/quirky.png" alt="Quirky"></a></li>
-  <li><a href="http://squarespace.com" title="Squarespace"><img src="assets/logos/squarespace.png" alt="Squarespace"></a></li>
-  <li><a href="https://www.catercow.com/" title="CaterCow"><img src="assets/logos/catercow.png" alt="CaterCow"></a></li>
-  <li><a href="https://www.facebook.com/parsonscodeclub" title="Parsons Code Club"><img src="assets/logos/pcc.png" alt="Parsons Code Club"></a></li>
-  <li><a href="http://adicu.com/" title="Columbia Application Development Initiative"><img src="assets/logos/adi.png" alt="Columbia ADI"></a></li>
+  <li ng-repeat="sponsor in prevSponsorsImg"><a href="{{ sponsor.href }}" title="{{ sponsor.title }}"><img src="{{ sponsor.src }}" alt="{{ sponsor.title }}"></a></li>
 </ul>
 
 </div>
 </section>
 
-<section class="main-copy">
+<!--section class="main-copy">
 <div class="site">
 
-<!--h1>Past DemoDays</h1>
+<h1>Past DemoDays</h1>
 
-<p>Visit the <a href="/archive">DemoDays archives</a> to explore past demos!</p-->
+<p>Visit the <a href="/archive">DemoDays archives</a> to explore past demos!</p>
 
 </div>
-</section>
-
-               
-               
-            <footer class="end">
+</section-->
+<footer class="end">
     <div class="site">
-      
-
-    
-        <h2>DemoDays</h2>
-        <p>Want to attend more events like this? <a href="http://techatnyu.org">Learn more about tech@NYU</a>!</p>
+      <h2>{{ footerTitle }}</h2>
+      <p ng-bind-html="footerDesc"></p>
         <ul>
-            <li><a href="https://www.facebook.com/TechatNYU"><i class="ion-social-facebook"><span>facebook</span></i></a></li>
-            <li><a href="https://twitter.com/TechatNYU"><i class="ion-social-twitter"><span>twitter</span></i></a></li>
-            <li><a href="mailto:hello@techatnyu.org"><i class="ion-ios7-email"><span>email</span></i></a></li>
+          <li ng-repeat="social in footerSocial"><a href="{{ social.href }}"><i class="{{ social.icon }}"><span>{{ social.title }}</span></i></a></li>
         </ul>
-        
         <div class="colophon">
-            <p>made with <a href="http://grungerabbit.com"><i class="ion-ios7-heart-outline"><span>love</span></i></a> <a href="http://danagilliann.me"><i class="ion-ios7-heart-outline"><span>love</span></i></a> in NYC</p>
+          <p ng-bind-html="footerSignature"></p>
+          <p ng-repeat="author in footerAuthors"><a href="{{ author.link}}">{{ author.name }} </a></p>
         </div>
 
 </div>
@@ -214,35 +172,10 @@
         <!-- Scripts CDNs -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular-sanitize.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        
         <!-- Website scripts -->
-        <script src="/lib/js/app.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/controllers.js"></script>
     </body>
 </html>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-TO DO:
-1. line 35 file path
-2. Curly braces in the ff
-  - line 35 (img)
-  - line 41 (rsvp link)
-  - line 51 (date)
-  - line 54 (date)
-  - line 58 (time)
-  - line 67 (google map location and location)
-  - line 70 and 71 (address)
-  - line 75 (rsvp link)
-  - line 85 (title of demoday)
-  - line 87 (description)
-  - line 87 (general links)
-  - line 93 (sign up link)
-  - line 101 (rsvp link)
-  - line 120 (program header)
-  - line 122-126 (program agenda)
-  - line 139 (speaker picture)
-  - line 141 (speaker name and details)
-  - line 146 (demo link)
-  - line 156-159 (current co-sponsors)
-  - line 166-174 (previous co-sponsors)
-  - line 209 (made with love)
-- Include "Past DemoDays" (line 183)(line 213-289 -> view "code_storage")
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

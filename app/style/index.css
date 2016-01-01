@@ -181,8 +181,8 @@ hr {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.25);
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+  background-color: rgba(0, 0, 0, 0.25);
   padding: 1.5em 0 3em;
   height: 100%;
 }
@@ -851,6 +851,7 @@ li[class^='past'].active div:last-child, li[class^='past']:hover div:last-child 
   }
   footer p {
     font-size: 75%;
+    display: inline;
   }
 }
 
