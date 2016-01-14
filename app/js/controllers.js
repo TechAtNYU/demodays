@@ -30,7 +30,7 @@
 
     /* About current demoday row */
     $scope.currentTitle = "Demo Days + Startup Week + HackNYU";
-    $scope.currentDesc = "Join us for a special Demo Days and Keynote Speaker as part of <a href=\"http://nyusw.com/\">Startup Week</a>, in partnership with <a href=\"http://hacknyu.org/\">Hack NYU</a>!"; // sanitize
+    $scope.currentDesc = "Join us for a special Demo Days and Keynote Speaker as part of <a href=\"http://nyusw.com/\">Startup Week</a>, in partnership with <a href=\"http://hacknyu.org/\">Hack NYU</a>!"; /* sanitize */
     
     /* Show off & hang out row */
     $scope.showHangs = [
@@ -52,7 +52,7 @@
 
     /* About DemoDays row */
     $scope.aboutTitle = "What is DemoDays?";
-    $scope.aboutDesc = "DemoDays is a monthly student-run event in NYC, organized by tech@NYU, Parsons Code Club, Create@Cooper and Columbia ADI. We're all about fostering a community of students who create things. We want to provide a platform for student builders to present their work, to celebrate their creations, and let that inspire other students to build projects they care about."; // sanitize
+    $scope.aboutDesc = "DemoDays is a monthly student-run event in NYC, organized by tech@NYU, Parsons Code Club, Create@Cooper and Columbia ADI. We're all about fostering a community of students who create things. We want to provide a platform for student builders to present their work, to celebrate their creations, and let that inspire other students to build projects they care about."; /* sanitize */
 
     /* Current program row */
     $scope.programTitle = "April 12th Program";
@@ -61,7 +61,7 @@
       "3:00 - 4:00 Surprise keynote speaker", 
       "4:00 - 5:30 Student demos!", 
       "See <a href=\"http://hacknyu.org/#schedule\">HackNYU</a> for the hackathon leading up to this event.</p>"
-    ]; // sanitize
+    ]; /* sanitize */ // also, is this really necessary? API doesn't seem to have demos
 
     /* Keynote speakers row */
     $scope.keynoteTitle = "Keynote Speaker";
