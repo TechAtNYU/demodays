@@ -3,6 +3,9 @@
 from bs4 import BeautifulSoup
 import requests, json, os, unicodedata, datetime, certifi, urllib3
 
+# Suppresses InsecureRequestWarning
+requests.packages.urllib3.disable_warnings()
+
 headers = {
     'content-type': 'application/vnd.api+json',
     'accept': 'application/*, text/*'
@@ -56,6 +59,7 @@ location = venue.get("name")
 address = venue.get("address")
 
 # presenters info
+# TO DO: Adjust for multiple presenters and no presenter
 presenter_id = demo["relationships"]["presenters"].get("data")[0].get("id")
 p = requests.get("https://api.tnyu.org/v3/presenters/" + presenter_id, headers=headers, verify=False)
 p_data = json.loads(p.text)
@@ -65,10 +69,30 @@ shortBio = presenter.get("shortBio")
 name = presenter.get("name")
 title = presenter.get("title")
 desc = "<a href=\"{}\">{}</a>, {}. {}".format(url, name, title, shortBio)
+keynoteSpeakers = [
+    {
+        "name": name,
+        "desc": desc
+    }
+]
+
+# coorganizers/hosts info
+hosts_len = len(demo["relationships"]["coorganizers"].get("data"))
+# if hosts_len == 0:
+#     hostsImg = [
+#         {
+#             "src": "../assets/logos/techatnyu.png",
+#             "name": "tech@nyu",
+#             "href": "http://techatnyu.org"
+#         }
+#     ]
+# else:
+#     for i in range(0, hosts_len):
+#         hosts_id = demo["relationships"]["coorganizers"].get("data")[0]
 
 # ToDo:
-# Adjust presenters to allow for multiple ones
+# Adjust presenters, hosts to allow for multiple ones
 # What to do for img for presenter? Use Twitter API to get a headshot? Lol.
-# Do above for co-organizers for hosts so relationships.coorganizers.links.related and relationships.coorganizers.links.self
+#
 # Do above for prevSponsors. Find a way to update it after every demoday (think then talk to abhi)
 # Don't commit the key!

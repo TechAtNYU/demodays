@@ -18,7 +18,7 @@ gulp.task('watch', function() {
   gulp.watch(input, ['sass']);
   gulp.on('change', function(event) { 
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-  })
+  });
 });
 
 // connect task

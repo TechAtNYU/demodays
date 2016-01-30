@@ -67,7 +67,7 @@
     $scope.keynoteTitle = "Keynote Speaker";
     $scope.keynoteSpeakers = [
       {
-        img: "../assets/img/hilary-mason.jpg",
+        //img: "../assets/img/hilary-mason.jpg",
         name: "Hilary Mason",
         desc: "<a href=\"https://www.twitter.com/hmason\">Hilary Mason</a>, founder of <a href=\"http://www.fastforwardlabs.com/\">Fast Forward Labs</a> and former Data Scientist at <a href=\"https://accel.com\">Accel</a> and <a href=\"https://bitly.com/\">Bit.ly</a>. Cofounder of <a href=\"http://hackny.org/\">HackNY</a>." // sanitize
       }
@@ -84,11 +84,6 @@
         src: "../assets/logos/techatnyu.png",
         name: "tech@nyu",
         href: "http://techatnyu.org"
-      },
-      { 
-        src: "../assets/logos/nyuscc.png",
-        name: "hacknyu",
-        href: "http://hacknyu.org"
       }
     ];
 
@@ -153,7 +148,7 @@
 
     /* Footer */
     $scope.footerTitle = "DemoDays";
-    $scope.footerDesc = "<a href=\"http://techatnyu.org\">tech@NYU</a> in conjunction with <a href=\"http://hacknyu.org/\">Hack NYU</a>.Want to attend more events like this? <a href=\"http://techatnyu.org\">Learn more about tech@NYU</a>!</p>"; // sanitize
+    $scope.footerDesc = "<a href=\"http://techatnyu.org\">tech@NYU</a>. Want to attend more events like this? <a href=\"http://techatnyu.org\">Learn more about tech@NYU</a>!</p>"; // sanitize
     $scope.footerSocial = [
       { 
         href: "https://www.facebook.com/TechatNYU",
