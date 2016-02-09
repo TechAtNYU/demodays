@@ -1,58 +1,82 @@
 (function() {
   "use strict";
 
-  var demodays = angular.module('demodaysControllers', ['ngSanitize']);
+  var demodays = angular.module('demodaysControllers', [
+     'ngSanitize',
+     'restangular'
+  ]).config(function(RestangularProvider) {
+     RestangularProvider.setBaseUrl('https://api.tnyu.org/v3');
+     // Configuring Restangular to work with JSONAPI spec
+     RestangularProvider.setDefaultHeaders({
+       'Accept': 'application/vnd.api+json, application/*, */*',
+       'Content-Type': 'application/vnd.api+json; ext=bulk'
+     });
+     RestangularProvider.addResponseInterceptor(function(data) {
+       return data;
+     });
+  });
   
   /* Controller of index/homepage */
-  demodays.controller('IndexCtrl', function($scope) { 
-    
-    /* Commonly used */
-    var RSVP = "RSVP";
-    var RSVPForm = "https://www.facebook.com/events/389260677946329/";
-    var demoForm = "https://docs.google.com/forms/d/1pAs9qC2fjLJ2EUA6Fr-vZJ9gY7sZFhk0Zwr4qDphQEE/viewform";
-
-    $scope.RSVP = RSVP;
-    $scope.RSVPForm = RSVPForm;
-
-    /* Title row */
-    $scope.title = "DemoDays";
-    $scope.tagline = "Student demos at the intersections of art, design, and code";
-    $scope.image = "";
-
-    /* Info in box */
-    $scope.date = "6/11/2015";
-    $scope.monthYear = "Jun 2015";
-    $scope.day = "Sunday";
-    $scope.time = "2:00-6:00";
-    $scope.detailTime = "<li>Hacking</li><li>Demos</li><li>Keynote</li><li>Fooooood</li>"; // sanitize
-    $scope.location = "Pfizer Auditorium, NYU Poly";
-    $scope.address = "<li>5 MetroTech Center 1st Floor, Dibner Building</li><li>Brooklyn, NY 11201</li>";
-
+  demodays.controller('IndexCtrl', function($scope, Restangular) { 
+    var attributes, RSVP, RSVPForm, demoForm;
     /* About current demoday row */
-    $scope.currentTitle = "Demo Days + Startup Week + HackNYU";
-    $scope.currentDesc = "Join us for a special Demo Days and Keynote Speaker as part of <a href=\"http://nyusw.com/\">Startup Week</a>, in partnership with <a href=\"http://hacknyu.org/\">Hack NYU</a>!"; /* sanitize */
-    
-    /* Show off & hang out row */
-    $scope.showHangs = [
-      { 
-        icon: "ion-ios7-lightbulb",
-        title: "Wanna show off?",
-        subtitle: "SIGN UP",
-        href: demoForm,
-        cls: "demo"
-      },
-      {
-        icon: "ion-ios7-glasses",
-        title: "Wanna hang out?",
-        subtitle: "RSVP",
-        href: RSVPForm,
-        cls: "attend"
-      }
-    ];
+    Restangular.one("events?sort=-startDateTime&filter[simple][teams]=53f99d48c66b44cf6f8f6d81")
+      .get()
+      .then(function(data) {
+        /* Commonly used */
+        var attributes = data.data[0].attributes;
+        var RSVP = "RSVP";
+        var RSVPForm = attributes.rsvpUrl;
+        
+        /* TO-DO: Parses the and looks for the demo form*/
+        var demoForm = RSVPForm;
+       
+        $scope.RSVP = RSVP;
+        
+        /* Title row */
+        $scope.title = "DemoDays";
+        $scope.tagline = "Student demos at the intersections of art, design, and code";
+        $scope.image = "";
+        
+        /* Info in box */
+        $scope.date = attributes.endDateTime;
+        $scope.start = attributes.startDateTime;
+        $scope.detailTime = "<li>Hacking</li><li>Demos</li><li>Keynote</li><li>Fooooood</li>"; // sanitize
+        
+        $scope.currentTitle = attributes.title;
+        $scope.currentDesc = attributes.description; /* sanitize */
 
-    /* About DemoDays row */
-    $scope.aboutTitle = "What is DemoDays?";
-    $scope.aboutDesc = "DemoDays is a monthly student-run event in NYC, organized by tech@NYU, Parsons Code Club, Create@Cooper and Columbia ADI. We're all about fostering a community of students who create things. We want to provide a platform for student builders to present their work, to celebrate their creations, and let that inspire other students to build projects they care about."; /* sanitize */
+        /* Show off & hang out row */
+        $scope.showHangs = [
+          { 
+            icon: "ion-ios7-lightbulb",
+            title: "Wanna show off?",
+            subtitle: "SIGN UP",
+            href: demoForm,
+            cls: "demo"
+          },
+          {
+            icon: "ion-ios7-glasses",
+            title: "Wanna hang out?",
+            subtitle: "RSVP",
+            href: RSVPForm,
+            cls: "attend"
+          }
+        ];
+        /* About DemoDays row */
+        $scope.aboutTitle = "What is DemoDays?";
+        $scope.aboutDesc = "DemoDays is a monthly student-run event in NYC, organized by tech@NYU, Parsons Code Club, Create@Cooper and Columbia ADI. We're all about fostering a community of students who create things. We want to provide a platform for student builders to present their work, to celebrate their creations, and let that inspire other students to build projects they care about."; /* sanitize */
+        $scope.signupDesc = "Want to demo your project? Sign up <a href=" + demoForm + ">here</a>!"; // sanitize
+
+      });
+    
+    /* Looks for venue */
+    Restangular.one("venues/563f7e2a72b35abaa7978656")
+      .get()
+      .then(function(data) {
+        $scope.location = data.data.attributes.name;
+        $scope.address = data.data.attributes.address;
+      });
 
     /* Current program row */
     $scope.programTitle = "April 12th Program";
@@ -61,7 +85,7 @@
       "3:00 - 4:00 Surprise keynote speaker", 
       "4:00 - 5:30 Student demos!", 
       "See <a href=\"http://hacknyu.org/#schedule\">HackNYU</a> for the hackathon leading up to this event.</p>"
-    ]; /* sanitize */ // also, is this really necessary? API doesn't seem to have demos
+    ]; /* sanitize */ 
 
     /* Keynote speakers row */
     $scope.keynoteTitle = "Keynote Speaker";
@@ -75,7 +99,6 @@
 
     /* Sign up for demos row */
     $scope.signupTitle = "Demo Program";
-    $scope.signupDesc = "Want to demo your project? Sign up <a href=\"" + demoForm + "\">here</a>!"; // sanitize
 
     /* Hosts row */
     $scope.hostsTitle = "Hosts";

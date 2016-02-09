@@ -1,7 +1,7 @@
 # These two commands solve issue of HTTPS Insecure Platform in Python:
 # pip install requests
 from bs4 import BeautifulSoup
-import requests, json, os, unicodedata, datetime, certifi, urllib3
+import requests, json, os, unicodedata, datetime, certifi, urllib3, fileinput, re
 
 # Suppresses InsecureRequestWarning
 requests.packages.urllib3.disable_warnings()
@@ -59,7 +59,6 @@ location = venue.get("name")
 address = venue.get("address")
 
 # presenters info
-# TO DO: Adjust for multiple presenters and no presenter
 presenter_id = demo["relationships"]["presenters"].get("data")[0].get("id")
 p = requests.get("https://api.tnyu.org/v3/presenters/" + presenter_id, headers=headers, verify=False)
 p_data = json.loads(p.text)
@@ -69,30 +68,12 @@ shortBio = presenter.get("shortBio")
 name = presenter.get("name")
 title = presenter.get("title")
 desc = "<a href=\"{}\">{}</a>, {}. {}".format(url, name, title, shortBio)
-keynoteSpeakers = [
-    {
-        "name": name,
-        "desc": desc
-    }
-]
+keynoteSpeakersName = name
+keynoteSpeakersDesc = desc
 
-# coorganizers/hosts info
-hosts_len = len(demo["relationships"]["coorganizers"].get("data"))
-# if hosts_len == 0:
-#     hostsImg = [
-#         {
-#             "src": "../assets/logos/techatnyu.png",
-#             "name": "tech@nyu",
-#             "href": "http://techatnyu.org"
-#         }
-#     ]
-# else:
-#     for i in range(0, hosts_len):
-#         hosts_id = demo["relationships"]["coorganizers"].get("data")[0]
-
-# ToDo:
-# Adjust presenters, hosts to allow for multiple ones
-# What to do for img for presenter? Use Twitter API to get a headshot? Lol.
-#
-# Do above for prevSponsors. Find a way to update it after every demoday (think then talk to abhi)
-# Don't commit the key!
+# Adding everything to controllers.js file
+controllersJS = open("../js/controllers.js","w+")
+for line in controllersJS:
+    if "var RSVPForm" in line:
+        # ended here
+controllersJS.close()

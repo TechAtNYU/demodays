@@ -178,6 +178,8 @@ hr {
 
 .grid img {
   max-width: 100%;
+  max-height: 100px;
+  margin: 0.3em;
 }
 
 .overlay {
@@ -812,7 +814,7 @@ li[class^='past'].active div:last-child, li[class^='past']:hover div:last-child 
 
 @media only screen and (min-width: 40em) {
   header.main {
-    background-image: url(/lib/img/April-2015.jpg);
+    background-image: url(/assets/img/April-2015.jpg);
     background-position: center center;
     background-size: cover;
   }
@@ -820,7 +822,7 @@ li[class^='past'].active div:last-child, li[class^='past']:hover div:last-child 
     padding: 3em 0 0;
   }
   .container > section.details {
-    background-image: url(/lib/img/schedule.jpg);
+    background-image: url(/assets/img/schedule.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -833,7 +835,7 @@ li[class^='past'].active div:last-child, li[class^='past']:hover div:last-child 
     color: white;
     padding: 1em;
     width: 12em;
-    height: 12em;
+    height: auto;
     -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
