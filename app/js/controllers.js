@@ -15,9 +15,9 @@
        return data;
      });
   });
-  
+
   /* Controller of index/homepage */
-  demodays.controller('IndexCtrl', function($scope, Restangular) { 
+  demodays.controller('IndexCtrl', function($scope, Restangular) {
     var attributes, RSVP, RSVPForm, demoForm;
     /* About current demoday row */
     Restangular.one("events?sort=-startDateTime&filter[simple][teams]=53f99d48c66b44cf6f8f6d81")
@@ -28,28 +28,28 @@
         var relationships = data.data[0].relationships;
         var RSVP = "RSVP";
         var RSVPForm = attributes.rsvpUrl;
-        
+
         /* TO-DO: Parses the and looks for the demo form*/
-        var demoForm = RSVPForm;
-       
+        var demoForm = "http://goo.gl/forms/HF2s2uBxSY";
+
         $scope.RSVP = RSVP;
-        
+
         /* Title row */
         $scope.title = "DemoDays";
         $scope.tagline = "Student demos at the intersections of art, design, and code";
         $scope.image = "";
-        
+
         /* Info in box */
         $scope.date = attributes.endDateTime;
         $scope.start = attributes.startDateTime;
         $scope.detailTime = "<li>Hacking</li><li>Demos</li><li>Keynote</li><li>Fooooood</li>"; // sanitize
-        
+
         $scope.currentTitle = attributes.title;
         $scope.currentDesc = attributes.description; /* sanitize */
 
         /* Show off & hang out row */
         $scope.showHangs = [
-          { 
+          {
             icon: "ion-ios7-lightbulb",
             title: "Wanna show off?",
             subtitle: "SIGN UP",
@@ -83,10 +83,10 @@
     $scope.programTitle = "April 12th Program";
     $scope.programDesc = [
       "2:00 - 2:45 Refreshments",
-      "3:00 - 4:00 Surprise keynote speaker", 
-      "4:00 - 5:30 Student demos!", 
+      "3:00 - 4:00 Surprise keynote speaker",
+      "4:00 - 5:30 Student demos!",
       "See <a href=\"http://hacknyu.org/#schedule\">HackNYU</a> for the hackathon leading up to this event.</p>"
-    ]; /* sanitize */ 
+    ]; /* sanitize */
 
     /* Keynote speakers row */
     $scope.keynoteTitle = "Keynote Speaker";
@@ -113,8 +113,8 @@
 
     /* Previous Sponsors and Hosts row */
     $scope.prevSponsorsTitle = "Previous Sponsors and Hosts";
-    $scope.prevSponsorsImg = [ 
-      { 
+    $scope.prevSponsorsImg = [
+      {
         href: "http://createatcooper.org/",
         title: "create@cooper",
         src: "../assets/logos/cooper.png",
@@ -126,7 +126,7 @@
         src: "../assets/logos/eia.png",
         alt: "NYU Poly Entrepreneurship and Innovation Association"
       },
-      { 
+      {
         href: "http://localhackday.mlh.io",
         title: "Local Hack Day",
         src: "../assets/logos/mlh.png",
@@ -174,7 +174,7 @@
     $scope.footerTitle = "DemoDays";
     $scope.footerDesc = "<a href=\"http://techatnyu.org\">tech@NYU</a>. Want to attend more events like this? <a href=\"http://techatnyu.org\">Learn more about tech@NYU</a>!</p>"; // sanitize
     $scope.footerSocial = [
-      { 
+      {
         href: "https://www.facebook.com/TechatNYU",
         icon: "ion-social-facebook",
         title: "facebook"
@@ -191,7 +191,7 @@
       }
     ];
     $scope.footerSignature = "made with <i class=\"ion-ios7-heart-outline\"><span>love</span></i> by";
-    $scope.footerAuthors = [ 
+    $scope.footerAuthors = [
       {
         name: "Cheryl Wu, ",
         link: "http://grungerabbit.com"
