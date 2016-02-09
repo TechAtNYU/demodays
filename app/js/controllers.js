@@ -25,6 +25,7 @@
       .then(function(data) {
         /* Commonly used */
         var attributes = data.data[0].attributes;
+        var relationships = data.data[0].relationships;
         var RSVP = "RSVP";
         var RSVPForm = attributes.rsvpUrl;
         
@@ -68,14 +69,14 @@
         $scope.aboutDesc = "DemoDays is a monthly student-run event in NYC, organized by tech@NYU, Parsons Code Club, Create@Cooper and Columbia ADI. We're all about fostering a community of students who create things. We want to provide a platform for student builders to present their work, to celebrate their creations, and let that inspire other students to build projects they care about."; /* sanitize */
         $scope.signupDesc = "Want to demo your project? Sign up <a href=" + demoForm + ">here</a>!"; // sanitize
 
-      });
-    
-    /* Looks for venue */
-    Restangular.one("venues/563f7e2a72b35abaa7978656")
-      .get()
-      .then(function(data) {
-        $scope.location = data.data.attributes.name;
-        $scope.address = data.data.attributes.address;
+        /* Looks for venue */
+        Restangular.one("venues/" + relationships.venue.data.id)
+          .get()
+          .then(function(venueData) {
+            $scope.location = venueData.data.attributes.name;
+            $scope.address = venueData.data.attributes.address;
+          });
+
       });
 
     /* Current program row */
