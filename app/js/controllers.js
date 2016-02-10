@@ -70,6 +70,110 @@
         $scope.aboutDesc = "DemoDays is a monthly student-run event in NYC, organized by tech@NYU, Parsons Code Club, Create@Cooper and Columbia ADI. We're all about fostering a community of students who create things. We want to provide a platform for student builders to present their work, to celebrate their creations, and let that inspire other students to build projects they care about."; /* sanitize */
         $scope.signupDesc = "Want to demo your project? Sign up <a href=" + demoForm + ">here</a>!"; // sanitize
 
+        /* Sign up for demos row */
+        $scope.signupTitle = "Demo Program";
+
+        /* Hosts row */
+        $scope.hostsTitle = "Hosts";
+        $scope.hostsImg = [
+          {
+            src: "../assets/logos/techatnyu.png",
+            name: "tech@nyu",
+            href: "http://techatnyu.org"
+          }
+        ];
+
+        /* Previous Sponsors and Hosts row */
+        $scope.prevSponsorsTitle = "Previous Sponsors and Hosts";
+        $scope.prevSponsorsImg = [
+          {
+            href: "http://createatcooper.org/",
+            title: "create@cooper",
+            src: "../assets/logos/cooper.png",
+            alt: "create@cooper"
+          },
+          {
+            href: "https://www.facebook.com/Eianyupoly",
+            title: "EIA",
+            src: "../assets/logos/eia.png",
+            alt: "NYU Poly Entrepreneurship and Innovation Association"
+          },
+          {
+            href: "http://localhackday.mlh.io",
+            title: "Local Hack Day",
+            src: "../assets/logos/mlh.png",
+            alt: "Major League Hacking"
+          },
+          {
+            href: "http://spotify.com",
+            title: "Spotify",
+            src: "../assets/logos/spotify.png",
+            alt: "Spotify"
+          },
+          {
+            href: "http://quirky.com",
+            title: "Quirky",
+            src: "../assets/logos/quirky.png",
+            alt: "Quirky"
+          },
+          {
+            href: "http://squarespace.com",
+            title: "Squarespace",
+            src: "../assets/logos/squarespace.png",
+            alt: "Squarespace"
+          },
+          {
+            href: "https://www.catercow.com/",
+            title: "CaterCow",
+            src: "../assets/logos/catercow.png",
+            alt: "CaterCow"
+          },
+          {
+            href: "https://www.facebook.com/parsonscodeclub",
+            title: "Parsons Code Club",
+            src: "../assets/logos/pcc.png",
+            alt: "Parsons Code Club"
+          },
+          {
+            href: "http://adicu.com/",
+            title: "Columbia Application Development Initiative",
+            src: "../assets/logos/adi.png",
+            alt: "Columbia ADI"
+          }
+        ]
+
+        /* Footer */
+        $scope.footerTitle = "DemoDays";
+        $scope.footerDesc = "<a href=\"http://techatnyu.org\">tech@NYU</a>. Want to attend more events like this? <a href=\"http://techatnyu.org\">Learn more about tech@NYU</a>!</p>"; // sanitize
+        $scope.footerSocial = [
+          {
+            href: "https://www.facebook.com/TechatNYU",
+            icon: "ion-social-facebook",
+            title: "facebook"
+          },
+          {
+            href: "https://twitter.com/TechatNYU",
+            icon: "ion-social-twitter",
+            title: "twitter"
+          },
+          {
+            href: "mailto:hello@techatnyu.org",
+            icon: "ion-ios7-email",
+            title: "email"
+          }
+        ];
+        $scope.footerSignature = "made with <i class=\"ion-ios7-heart-outline\"><span>love</span></i> by";
+        $scope.footerAuthors = [
+          {
+            name: "Cheryl Wu, ",
+            link: "http://grungerabbit.com"
+          },
+          {
+            name: "Dana Lee",
+            link: "http://danagilliann.me"
+          }
+        ];
+
         /* Looks for venue */
         Restangular.one("venues/" + relationships.venue.data.id)
           .get()
@@ -80,6 +184,7 @@
 
       });
 
+    /* Ignore this for now */
     /* Current program row */
     $scope.programTitle = "April 12th Program";
     $scope.programDesc = [
@@ -99,109 +204,6 @@
       }
     ];
 
-    /* Sign up for demos row */
-    $scope.signupTitle = "Demo Program";
-
-    /* Hosts row */
-    $scope.hostsTitle = "Hosts";
-    $scope.hostsImg = [
-      {
-        src: "../assets/logos/techatnyu.png",
-        name: "tech@nyu",
-        href: "http://techatnyu.org"
-      }
-    ];
-
-    /* Previous Sponsors and Hosts row */
-    $scope.prevSponsorsTitle = "Previous Sponsors and Hosts";
-    $scope.prevSponsorsImg = [
-      {
-        href: "http://createatcooper.org/",
-        title: "create@cooper",
-        src: "../assets/logos/cooper.png",
-        alt: "create@cooper"
-      },
-      {
-        href: "https://www.facebook.com/Eianyupoly",
-        title: "EIA",
-        src: "../assets/logos/eia.png",
-        alt: "NYU Poly Entrepreneurship and Innovation Association"
-      },
-      {
-        href: "http://localhackday.mlh.io",
-        title: "Local Hack Day",
-        src: "../assets/logos/mlh.png",
-        alt: "Major League Hacking"
-      },
-      {
-        href: "http://spotify.com",
-        title: "Spotify",
-        src: "../assets/logos/spotify.png",
-        alt: "Spotify"
-      },
-      {
-        href: "http://quirky.com",
-        title: "Quirky",
-        src: "../assets/logos/quirky.png",
-        alt: "Quirky"
-      },
-      {
-        href: "http://squarespace.com",
-        title: "Squarespace",
-        src: "../assets/logos/squarespace.png",
-        alt: "Squarespace"
-      },
-      {
-        href: "https://www.catercow.com/",
-        title: "CaterCow",
-        src: "../assets/logos/catercow.png",
-        alt: "CaterCow"
-      },
-      {
-        href: "https://www.facebook.com/parsonscodeclub",
-        title: "Parsons Code Club",
-        src: "../assets/logos/pcc.png",
-        alt: "Parsons Code Club"
-      },
-      {
-        href: "http://adicu.com/",
-        title: "Columbia Application Development Initiative",
-        src: "../assets/logos/adi.png",
-        alt: "Columbia ADI"
-      }
-    ]
-
-    /* Footer */
-    $scope.footerTitle = "DemoDays";
-    $scope.footerDesc = "<a href=\"http://techatnyu.org\">tech@NYU</a>. Want to attend more events like this? <a href=\"http://techatnyu.org\">Learn more about tech@NYU</a>!</p>"; // sanitize
-    $scope.footerSocial = [
-      {
-        href: "https://www.facebook.com/TechatNYU",
-        icon: "ion-social-facebook",
-        title: "facebook"
-      },
-      {
-        href: "https://twitter.com/TechatNYU",
-        icon: "ion-social-twitter",
-        title: "twitter"
-      },
-      {
-        href: "mailto:hello@techatnyu.org",
-        icon: "ion-ios7-email",
-        title: "email"
-      }
-    ];
-    $scope.footerSignature = "made with <i class=\"ion-ios7-heart-outline\"><span>love</span></i> by";
-    $scope.footerAuthors = [
-      {
-        name: "Cheryl Wu, ",
-        link: "http://grungerabbit.com"
-      },
-      {
-        name: "Dana Lee",
-        link: "http://danagilliann.me"
-      }
-    ];
   });
 
 })();
