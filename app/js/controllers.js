@@ -32,7 +32,8 @@
         /* TO-DO: Parses the and looks for the demo form*/
         var demoForm = "http://goo.gl/forms/HF2s2uBxSY";
 
-        $scope.RSVP = RSVP;
+        $scope.RSVP = "RSVP";
+        $scope.RSVPForm = RSVPForm;
 
         /* Title row */
         $scope.title = "DemoDays";
