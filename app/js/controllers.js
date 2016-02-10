@@ -180,9 +180,9 @@
           .then(function(venueData) {
             $scope.location = venueData.data.attributes.name;
             $scope.address = venueData.data.attributes.address;
-          });
+          }); /* Closes the venues Restangular */
 
-      });
+      }); /* Closes the event Restangular */
 
     /* Ignore this for now */
     /* Current program row */
