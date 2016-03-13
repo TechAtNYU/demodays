@@ -26,7 +26,6 @@
         /* Commonly used */
         var attributes = data.data[0].attributes;
         var relationships = data.data[0].relationships;
-        var RSVP = "RSVP";
         var RSVPForm = attributes.rsvpUrl;
 
         /* TO-DO: Parses the and looks for the demo form*/
@@ -174,7 +173,8 @@
           }
         ];
 
-        /* Looks for venue */
+        /* Second use of Restangular
+        * Looks for venue */
         Restangular.one("venues/" + relationships.venue.data.id)
           .get()
           .then(function(venueData) {
