@@ -29,7 +29,7 @@
         var RSVPForm = attributes.rsvpUrl;
 
         /* TO-DO: Parses the and looks for the demo form*/
-        var demoForm = "http://goo.gl/forms/HF2s2uBxSY";
+        var demoForm = "http://goo.gl/forms/0olOnjywim";
 
         $scope.RSVP = "RSVP";
         $scope.RSVPForm = RSVPForm;
