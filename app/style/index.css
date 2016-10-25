@@ -146,12 +146,12 @@ body {
   padding-bottom: 2em;
 }
 
-\::selection {
+::selection {
   background-color: #ff7a7a;
   /* Safari */
 }
 
-\::-moz-selection {
+::-moz-selection {
   background-color: #ff7a7a;
   /* Firefox */
 }
