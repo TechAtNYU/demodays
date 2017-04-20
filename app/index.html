@@ -6,6 +6,10 @@
         <title>DemoDays, presented by tech@NYU</title>
         <meta name="viewport" content="width=device-width">
 
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400" rel="stylesheet">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style/index.css">
         <meta name="description" content="DemoDays - Student demos at the intersection of art, design and code, in New York City. Hosted by tech@NYU in conjunction with create@cooper, Parsons Code Club, and Columbia ADI" />
@@ -18,150 +22,78 @@
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
           ga('create', 'UA-45437819-1', 'demodays.co');
           ga('send', 'pageview');
+
         </script>
     </head>
     <body>
-        <div ng-controller="IndexCtrl" class="container">
-            <header class="main">
-    <div class="overlay">
-            <div class="site">
-                <div class="logo">
-                    <img src="assets/img/demodays.png" alt="demodays_logo">
-                    <h1>{{ title }}</h1>
-                </div>
-                <div class="tagline">
-                  <h1>{{ tagline }}</h1>
-
-                  <a href="{{ RSVPForm }}" class="action" target="_blank"><span><span class="ion-ios7-heart" data-pack="ios7" data-tags="love"></span>{{ RSVP }}</span></a>
-                </div>
-                <div class="info">
-                    <ul class="icons">
-                        <li><h3 class="ion-ios7-calendar" data-pack="ios7" data-tags="date, time, month, year"></h3></li>
-                        <li><h3 class="ion-ios7-clock" data-pack="ios7" data-tags="time, date, hours, minutes, seconds, watch"></h3></li>
-                        <li><h4 class="ion-ios7-world" data-pack="ios7" data-tags="globe, earth"></h4></li>
-                        <li><h3 class="ion-ios7-heart" data-pack="ios7" data-tags="love"></h3></li>
-                    </ul>
-                    <ul class="logistics">
-                      <li class="further-detail"><h3>{{ date | date: 'MM/dd/yyyy' }}</h3>
-                            <div class="micro">
-                                <ul>
-                                  <li>{{ date | date: 'MMM yyyy'}}</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="further-detail"><h3>{{ start | date: 'h:mma'}}
-                            -{{ date | date: 'h:mma' }}</h3>
-                            <div class="micro">
-                              <ul><span ng-bind-html="detailTime"></span></ul>
-                            </div>
-                        </li>
-                        <li class="further-detail"><h4><a href="https://www.google.com/maps/search/{{ location }}">{{ location }}</a></h4>
-                            <div class="micro">
-                              <ul><span>{{ address }}</span></ul>
-                            </div>
-                        </li>
-                        <li><h3><a href="{{ RSVPForm }}" target="_blank">{{ RSVP }}</a></h3></li>
-                    </ul>
-                </div>
+      <div class="container-fluid">
+        <div class="col-md-4 col-xs-12">
+          <div class="left-panel">
+            <div class="logo-box">
+              <img class="logo" src="assets/img/demo_days-logo.png" />
+              <span class="motto">student demos at the intersection of art, design, and code</span>
             </div>
-    </div>
-</header>
+            <div class="social-bar">
+              <a class = "col-md-3" href="https://www.facebook.com/TechatNYU">Facebook</a>
+              <a class = "col-md-3" href="https://twitter.com/TechatNYU">Twitter</a>
+              <a class = "col-md-3" href="https://medium.com/@TechatNYU">Medium</a>
+              <a class = "col-md-3" href="https://www.instagram.com/techatnyu/">Instagram</a>
 
-               <section class="intro">
-<div class="site">
-
-  <h1>{{ currentTitle }}</h1>
-
-  <p ng-bind-html="currentDesc"></p>
-
-<ul class="grid">
-  <li ng-repeat="showHang in showHangs" class="half {{ showHang.cls }}">
-    <a href="{{ showHang.href }}" target="_blank">
-      <h1 class="{{ showHang.icon }}"></h1>
-      <h2>{{ showHang.title }}</h2>
-      <p>{{ showHang.subtitle }}</p>
-    </a>
-  </li>
-</ul>
-
-<h1>{{ aboutTitle }}</h1>
-
-<p ng-bind-html="aboutDesc"></p>
-
-</div>
-</section>
-
-<!--section class="details">
-<div class="overlay">
-<div class="site">
-  <h1>{{ programTitle }}</h1>
-<p ng-repeat="desc in programDesc" ng-bind-html="desc"></p>
-</div>
-</div>
-</section-->
-
-<section class="speaker">
-<div class="site">
-
-  <!--h1>{{ keynoteTitle }}</h1>
-  <div ng-repeat="speaker in keynoteSpeakers">
-    <p><img src="{{ speaker.img }}" alt="{{ speaker.name }}" title="{{ speaker.name }}"></p>
-    <h3 ng-bind-html="speaker.desc"></h3>
-  </div-->
-
-  <h1>{{ signupTitle }}</h1>
-  <p ng-bind-html="signupDesc"></p>
-</div>
-</section>
-
-<section class="clubs-sponsors">
-<div class="site">
-
-  <h1>{{ hostsTitle }}</h1>
-
-<ul class="grid" style="text-align:left;">
-  <li ng-repeat="host in hostsImg">
-    <a href="{{ host.href }}" title="{{ host.name }}">
-      <img src="{{ host.src }}" title="{{ host.name }}">
-    </a>
-  </li>
-</ul>
-
-<h1>{{ prevSponsorsTitle }}</h1>
-
-<!-- Need to make icon sizes consistent..ex. Squarespace is too small -->
-
-<ul class="grid">
-  <li ng-repeat="sponsor in prevSponsorsImg"><a href="{{ sponsor.href }}" title="{{ sponsor.title }}"><img src="{{ sponsor.src }}" alt="{{ sponsor.title }}"></a></li>
-</ul>
-
-</div>
-</section>
-
-<!--section class="main-copy">
-<div class="site">
-<h1>Past DemoDays</h1>
-<p>Visit the <a href="/archive">DemoDays archives</a> to explore past demos!</p>
-</div>
-</section-->
-<footer class="end">
-    <div class="site">
-      <h2>{{ footerTitle }}</h2>
-      <p ng-bind-html="footerDesc"></p>
-        <ul>
-          <li ng-repeat="social in footerSocial"><a href="{{ social.href }}"><i class="{{ social.icon }}"><span>{{ social.title }}</span></i></a></li>
-        </ul>
-        <div class="colophon">
-          <p ng-bind-html="footerSignature"></p>
-          <p ng-repeat="author in footerAuthors"><a href="{{ author.link}}">{{ author.name }} </a></p>
+              <span class="col-md-12 grunger"> In loving memory of Cheryl Wu </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 col-xs-12">
+          <div class="right-panel">
+            <div class="background-image"></div>
+            <div class="center-panel">
+              <div class="content">
+                <div>
+                  <span class="title"> December Demo Day with Roomi CEO </span>
+                </div>
+                <div class="details">
+                  <span class="location"> Where: LaGuardia Co-op </span>
+                  <span class="time"> When: 12.12.2016 at 12 pm </span>
+                </div>
+                <div class="buttons">
+                  <div class="col-lg-8">
+                    <button type="button" class="btn">Apply to present your demo</button>
+                  </div>
+                  <div class="col-lg-4">
+                    <a href="{{ RSVPForm }}">
+                      <button type="button" class="btn">RSVP</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="description-box">
+              <div class="description">
+                <div class="desc-text" id="top-desc">Demo Days is a monthly student-run event in NYC, organized by Tech@NYU, Parsons Code Club, Create@Cooper, and ColumbiaADI.</div>
+                <div class="desc-text">We're all about fostering a community of students who create things. We want to provide a platform for student builders to present their work, to celebrate their creations, and to let that inspire other students to build projects they care about.</div>
+              </div>
+            </div>
+            <div class="sponsor-box">
+              <div class="spons-title">PREVIOUS SPONSORS &amp; HOSTS</div>
+              <ul class="sponsors">
+                <li>create@cooper</li>
+                <li>EIA at Tandon</li>
+                <li>Major League Hacking</li>
+                <li>Spotify</li>
+                <li>Quirky</li>
+                <li>Tumblr</li>
+                <li>Squarespace</li>
+                <li>CaterCow</li>
+              </ul>
+              <div class="contact">Want to sponsor or host a Demo Day? <br> Please contact <a href="mailto:hello@techatnyu.org">hello@techatnyu.org</a>.</div>
+            </div>
+          </div>
         </div>
 
-</div>
-</footer>
-
-        </div> <!-- /container -->
+      </div> <!-- /container -->
 
         <!-- Scripts CDNs -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
@@ -170,6 +102,7 @@
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/restangular/1.3.1/restangular.min.js"></script>
         <script src="http://cdn.rawgit.com/jpillora/xdomain/0.6.15/dist/0.6/xdomain.min.js" slave="https://api.tnyu.org/v2/proxy.html"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
         <!-- Website scripts -->
         <script src="js/index.js"></script>
