@@ -117,7 +117,7 @@ img {
 
   overflow: hidden;
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 25%;
   width: 50%;
   height: 0;
@@ -227,6 +227,8 @@ img {
 }
 
 .sponsors {
+  margin: 0;
+  padding: 0;
   margin-top: 30px;
   list-style-type: none;
   text-align: center;
